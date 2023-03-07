@@ -18,3 +18,8 @@ select,
 textarea {
     max-width: 280px;
 }
+
+.navbar.bg-primary li a{
+    color:white;
+    font-weight:bold;
+}
