@@ -6,25 +6,33 @@
     <title>@ViewBag.Title - My ASP.NET Application</title>
     @Styles.Render("~/Content/css")
     @Scripts.Render("~/bundles/modernizr")
+    <link rel="stylesheet" href="~/Style/all.min.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
     <link rel="stylesheet" href="~/Content/Site.css" />
 </head>
 <body>
     <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-dark bg-primary">
         <div class="container">
-            @Html.ActionLink("Application name", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
+            <a class="navbar-brand" href="#">
+                <img src="~/Images/png-transparent-philippines-smart-communications-pldt-mobile-phones-lte-others-miscellaneous-text-logo.png" alt="Logo" width="300">
+            </a>
             <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" title="Toggle navigation" aria-controls="navbarSupportedContent"
                     aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse d-sm-inline-flex justify-content-between">
-                <ul class="navbar-nav flex-grow-1">
-                    <li>@Html.ActionLink("Home", "Index", "Home", new { area = "" }, new { @class = "nav-link" })</li>
-                    <li>@Html.ActionLink("Reward", "Index", "Reward", new { area = "" }, new { @class = "nav-link" })</li>
-                    <li>@Html.ActionLink("Confirm", "Confirm", "Reward", new { area = "" }, new { @class = "nav-link" })</li>
-                    <li>@Html.ActionLink("Customer Return", "Index", "Return", new { area = "" }, new { @class = "nav-link" })</li>
-                </ul>
-            </div>
+            @{
+                if (User.Identity.IsAuthenticated)
+                {
+                    <div class="collapse navbar-collapse d-sm-inline-flex justify-content-between">
+                        <ul class="navbar-nav flex-grow-1">
+                            <li>@Html.ActionLink("Home", "Index", "Home", new { area = "" }, new { @class = "nav-link" })</li>
+                            <li>@Html.ActionLink("Reward", "Index", "Reward", new { area = "" }, new { @class = "nav-link" })</li>
+                            <li>@Html.ActionLink("Confirm", "Confirm", "Reward", new { area = "" }, new { @class = "nav-link" })</li>
+                            <li>@Html.ActionLink("Customer Return", "Index", "Return", new { area = "" }, new { @class = "nav-link" })</li>
+                        </ul>
+                    </div>
+                }
+            }
         </div>
     </nav>
     <div class="container body-content">
