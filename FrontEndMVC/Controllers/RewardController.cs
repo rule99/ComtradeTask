@@ -13,5 +13,10 @@ namespace FrontEndMVC.Controllers
         {
             return View();
         }
+
+        public ActionResult Confirm() 
+        {
+            return View();
+        }     
     }
 }

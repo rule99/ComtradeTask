@@ -1,0 +1,47 @@
+﻿
+@{
+    ViewBag.Title = "Confirm";
+}
+
+
+<div class="row">
+    <div class="col-2"></div>
+    <div class="col">
+        <form>
+            <div class="mb-3">
+                <label class="col-form-label">Search Customer</label>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="rbID" id="rbID">
+                    <label class="form-check-label" for="rbID">
+                        By ID
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="rbName" id="rbName" checked>
+                    <label class="form-check-label" for="rbName">
+                        By Name
+                    </label>
+                </div>
+            </div>
+            <div class="mb-3">
+                <div class="input-group mb-3">
+                    <span class="input-group-text" id="lblName">Customer Name</span>
+                    <input type="text" class="form-control" placeholder="" aria-label="lblName" aria-describedby="basic-addon1" id="name" name="name">
+                </div>
+            </div>
+            <div class="mb-3">
+                <div class="input-group mb-3">
+                    <span class="input-group-text" id="lblID">Customer ID</span>
+                    <input type="text" class="form-control" placeholder="" aria-label="ID" aria-describedby="basic-addon1" id="Cid" name="Cid">
+                </div>
+
+            </div>
+          
+            <button type="submit" class="btn btn-primary">Confirm purchase</button>
+        </form>
+    </div>
+    <div class="col-2"></div>
+</div>
+
+
+
