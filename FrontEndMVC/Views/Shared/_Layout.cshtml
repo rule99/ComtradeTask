@@ -21,11 +21,11 @@
                 <span class="navbar-toggler-icon"></span>
             </button>
             @{
-                if (!User.Identity.IsAuthenticated)
+                if (User.Identity.IsAuthenticated)
                 {
                     <div class="collapse navbar-collapse d-sm-inline-flex justify-content-between">
                         <ul class="navbar-nav flex-grow-1">
-                            <li>@Html.ActionLink("Home", "Index", "Home", new { area = "" }, new { @class = "nav-link" })</li>
+                            <li>@Html.ActionLink("Home", "MainMenu", "Home", new { area = "" }, new { @class = "nav-link" })</li>
                             <li>@Html.ActionLink("Reward", "Index", "Reward", new { area = "" }, new { @class = "nav-link" })</li>
                             <li>@Html.ActionLink("Confirm", "Confirm", "Reward", new { area = "" }, new { @class = "nav-link" })</li>
                             <li>@Html.ActionLink("Customer Return", "Index", "Return", new { area = "" }, new { @class = "nav-link" })</li>

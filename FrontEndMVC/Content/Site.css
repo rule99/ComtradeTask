@@ -23,3 +23,8 @@ textarea {
     color:white;
     font-weight:bold;
 }
+
+.btn.btn-success {
+    color: white !important;
+    font-weight: 500 !important;
+}
