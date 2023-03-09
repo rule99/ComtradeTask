@@ -1,3 +1,4 @@
+using BackEndAPI;
 using BackEndAPI.Data;
 using Microsoft.EntityFrameworkCore;
 
@@ -10,7 +11,7 @@ builder.Services.AddDbContext<CustomerDBContext>(options =>
 });
 
 builder.Services.AddScoped<SoapCustomerService.SOAPDemoSoap>();
-
+builder.Services.AddAutoMapper(typeof(MappingConfig));
 builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
