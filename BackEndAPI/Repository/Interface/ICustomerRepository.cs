@@ -10,5 +10,7 @@ namespace BackEndAPI.Repository.Interface
         Task<CustomerBO> Get(int id);
 
         Task<CustomerBO> GetByName(string name);
+
+        Task RewardCustomer(int id, string agent);
     }
 }

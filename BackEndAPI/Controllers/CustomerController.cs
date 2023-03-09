@@ -25,13 +25,13 @@ namespace BackEndAPI.Controllers
         [HttpGet]
         [ProducesResponseType(StatusCodes.Status200OK)]
         [ProducesResponseType(StatusCodes.Status400BadRequest)]
-        public async Task<ActionResult<APIResponse>> GetAll()
+        public async Task<ActionResult<List<Customer>>> GetAll()
         {
             try
             {
                 var result = await _customerRepository.GetAll();
-                _response.Result = result;
-                _response.StatusCode = HttpStatusCode.OK;
+                
+                return result;
             }
             catch (Exception ex)
             {
@@ -39,30 +39,28 @@ namespace BackEndAPI.Controllers
                 _response.Result = "Server Error"+ ex;
                 _response.StatusCode = HttpStatusCode.InternalServerError;
                 _response.IsSuccess = false;
-                return BadRequest( _response);
+                return BadRequest( ex);
             }
-            return _response;
+            
         }
 
         [HttpGet("{id:int}")]
         [ProducesResponseType(StatusCodes.Status200OK)]
         [ProducesResponseType(StatusCodes.Status404NotFound)]
         [ProducesResponseType(StatusCodes.Status400BadRequest)]
-        public async Task<ActionResult<APIResponse>> GetByID(int id)
+        public async Task<ActionResult<CustomerBO>> GetByID(int id)
         {
             try
             {
                 CustomerBO result = await _customerRepository.Get(id);
                 if (result != null)
                 {
-                    _response.Result = result;
-                    _response.StatusCode = HttpStatusCode.OK;
+                    return Ok(result);
                 }
                 else
                 {
-                    _response.Result = "Customer not FOund";
-                    _response.StatusCode = HttpStatusCode.NotFound;
-                    return NotFound(_response);
+                    
+                    return NotFound(result);
                 }
                
             }
@@ -72,10 +70,10 @@ namespace BackEndAPI.Controllers
                 _response.Result = "Server Error" + ex;
                 _response.StatusCode = HttpStatusCode.InternalServerError;
                 _response.IsSuccess = false;
-                return BadRequest(_response);
+                return BadRequest(ex);
             }
            
-            return _response;
+            
         }
 
         [HttpGet("{name}")]
@@ -92,6 +90,7 @@ namespace BackEndAPI.Controllers
                 {
                     _response.Result = result;
                     _response.StatusCode = HttpStatusCode.OK;
+                    return Ok(result);
                 }
                 else
                 {
@@ -107,10 +106,10 @@ namespace BackEndAPI.Controllers
                 _response.Result = "Server Error" + ex;
                 _response.StatusCode = HttpStatusCode.InternalServerError;
                 _response.IsSuccess = false;
-                return BadRequest(_response);
+                return BadRequest(ex);
             }
 
-            return _response;
+            
         }
 
     }

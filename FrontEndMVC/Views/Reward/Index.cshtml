@@ -1,6 +1,31 @@
-﻿
+﻿@model FrontEndMVC.Models.CustomerBO
 @{
     ViewBag.Title = "Index";
+}
+
+@{
+    if (TempData["odgovor"]!=null)
+            {
+    <div class="row">
+        <div class="mb-3 CustomerDetails">
+
+            <div class="row">
+                <div class="col-2">
+                    <label class="col-form-label fw-bold CustomerIme">Customer Name: @Model.Name</label>
+                </div>
+                <div class="col-2" style="text-align:left">
+                    <label class="col-form-label fw-bold CustomerID">Customer ID: @Model.Id</label>
+                </div>
+            </div>
+            <div class="row mt-2">
+                <div class="col">
+                    <label class="col-form-label fw-bold CUstomerSSN">Customer SSN:@Model.SSN </label>
+                </div>
+            </div>
+            <button type="submit" class="btn btn-primary mt-2" onclick="RewardCustomer(@Html.Raw(Json.Encode(Model)))">Reward</button>
+        </div>
+    </div>
+            }
 }
 
 <div class="row">
@@ -10,13 +35,13 @@
             <div class="mb-3">
                 <label class="col-form-label">Search Customer</label>
                 <div class="form-check">
-                    <input class="form-check-input" type="radio" name="rbID" id="rbID">
+                    <input class="form-check-input" type="radio" name="searchOptions" id="rbID">
                     <label class="form-check-label" for="rbID">
                         By ID
                     </label>
                 </div>
                 <div class="form-check">
-                    <input class="form-check-input" type="radio" name="rbName" id="rbName" checked>
+                    <input class="form-check-input" type="radio" name="searchOptions" id="rbName" checked>
                     <label class="form-check-label" for="rbName">
                         By Name
                     </label>
@@ -35,26 +60,29 @@
                 </div>
 
             </div>
-            <div class="mb-3 CustomerDetails" style="display:none">
-               
-                    <div class="row">
-                        <div class="col">
-                            <label class="col-form-label CustomerIme">Customer Name: </label>
-                        </div>
-                        <div class="col" style="text-align:left">
-                            <label class="col-form-label CustomerID">Customer ID: </label>
-                        </div>
-                    </div>
-                    <div class="row mt-2">
-                        <div class="col">
-                            <label class="col-form-label CUstomerSSN">Customer SSN: </label>
-                        </div>
-                    </div>
-                    <button type="submit" class="btn btn-primary">Reward</button>
-            </div>
-            <button type="button" class="btn btn-primary">Search</button>
+         
+             <button type="button" class="btn btn-primary" onclick="FindCustomer()">Search</button>
         </form>
     </div>
     <div class="col-2"></div>
 </div>
+<script>
 
+    function FindCustomer() {
+        if ($('#rbID').is(":checked")) {
+            var id = $('#Cid').val();
+            window.location.href = "/Reward/FindCustomerButtonCLicked/" + id;
+        }
+        else {
+            var name = $('#name').val();
+            window.location.href = "/Reward/FindCustomerButtonNameClicked?name=" + name;
+        }
+    }
+
+    function RewardCustomer(item) {
+        
+      window.location.href = "/Reward/RewardCustomer/" + item.Id;
+    
+}
+
+</script>

@@ -77,5 +77,41 @@ namespace BackEndAPI.Repository
             }
             return customerBO;
         }
+
+        public async Task RewardCustomer(int id, string agent)
+        {
+            Person Pcustomer= await _SOAPDemoSoapClient.FindPersonAsync(id.ToString());
+            if (Pcustomer == null) { return; }
+            CustomerBO customerBO = PersonToCustomerBOTransform(Pcustomer, id);
+            Customer customer=_mapper.Map<Customer>(customerBO);
+            _db.Customers.AddAsync(customer);
+            _db.SaveChangesAsync();
+        }
+
+        internal async Task<bool> AlreadyRewardCustomer(int id, string agent)
+        {
+            bool check = await _db.Customers.AnyAsync(c => c.Id == id);
+            if (check)
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
+        }
+
+        internal async Task<bool> AgentLimit(string agent)
+        {
+            int count=await _db.Customers.CountAsync(c=>c.AgentUserName==agent && c.DateRewarded==DateTime.Today);
+            if(count>4) 
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
+        }
     }
 }

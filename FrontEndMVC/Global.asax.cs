@@ -5,6 +5,9 @@ using System.Web;
 using System.Web.Mvc;
 using System.Web.Optimization;
 using System.Web.Routing;
+using System.Web.Services.Description;
+using System.Net.Http;
+using FrontEndMVC.Service;
 
 namespace FrontEndMVC
 {
@@ -12,6 +15,10 @@ namespace FrontEndMVC
     {
         protected void Application_Start()
         {
+
+            
+
+
             AreaRegistration.RegisterAllAreas();
             FilterConfig.RegisterGlobalFilters(GlobalFilters.Filters);
             RouteConfig.RegisterRoutes(RouteTable.Routes);
