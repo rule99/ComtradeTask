@@ -78,5 +78,40 @@ namespace BackEndAPI.Controllers
             return _response;
         }
 
+        [HttpGet("{name}")]
+        [ProducesResponseType(StatusCodes.Status200OK)]
+        [ProducesResponseType(StatusCodes.Status404NotFound)]
+        [ProducesResponseType(StatusCodes.Status400BadRequest)]
+        public async Task<ActionResult<APIResponse>> GetByName(string name)
+        {
+
+            try
+            {
+                CustomerBO result = await _customerRepository.GetByName(name);
+                if (result != null)
+                {
+                    _response.Result = result;
+                    _response.StatusCode = HttpStatusCode.OK;
+                }
+                else
+                {
+                    _response.Result = "Customer not FOund";
+                    _response.StatusCode = HttpStatusCode.NotFound;
+                    return NotFound(_response);
+                }
+
+            }
+            catch (Exception ex)
+            {
+
+                _response.Result = "Server Error" + ex;
+                _response.StatusCode = HttpStatusCode.InternalServerError;
+                _response.IsSuccess = false;
+                return BadRequest(_response);
+            }
+
+            return _response;
+        }
+
     }
 }

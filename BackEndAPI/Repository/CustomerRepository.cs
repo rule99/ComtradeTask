@@ -65,5 +65,17 @@ namespace BackEndAPI.Repository
             }
             return customersList;
         }
+
+        public async Task<CustomerBO> GetByName(string name)
+        {
+            CustomerBO customerBO = _mapper.Map<CustomerBO>(await _db.Customers.FirstOrDefaultAsync(c => c.Name == name));
+            if (customerBO == null)
+            {
+                PersonIdentification[] result = await _SOAPDemoSoapClient.GetListByNameAsync(name);
+                if (result == null) { return null; }
+                customerBO = _mapper.Map<CustomerBO>(result[0]);
+            }
+            return customerBO;
+        }
     }
 }
