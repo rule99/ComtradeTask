@@ -13,7 +13,7 @@ builder.Services.AddDbContext<CustomerDBContext>(options =>
     options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnectionString"));
 });
 
-builder.Services.AddScoped<SoapCustomerService.SOAPDemoSoap>();
+builder.Services.AddScoped<CustomerSoapService.SOAPDemoSoapClient>();
 builder.Services.AddAutoMapper(typeof(MappingConfig));
 builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle

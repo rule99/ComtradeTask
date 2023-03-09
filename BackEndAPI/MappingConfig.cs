@@ -1,6 +1,7 @@
 ﻿using AutoMapper;
 using BackEndAPI.Model;
 using BackEndAPI.Model.BO;
+using CustomerSoapService;
 
 namespace BackEndAPI
 {
@@ -9,6 +10,15 @@ namespace BackEndAPI
         public MappingConfig()
         {
             CreateMap<Customer,CustomerBO>().ReverseMap();
+
+            CreateMap<CustomerBO,PersonIdentification>().ReverseMap();
+
+            CreateMap<Customer, PersonIdentification>().ReverseMap();
+
+            CreateMap<CustomerBO, Person>().ReverseMap();
+
+            CreateMap<Customer, Person>().ReverseMap();
+
         }
     }
 }

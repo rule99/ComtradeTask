@@ -10,6 +10,8 @@
 
         public string SSN { get; set; }
 
+        public Home Home { get; set; }
+
         public int ReturnCustomer { get; set; }
     }
 }

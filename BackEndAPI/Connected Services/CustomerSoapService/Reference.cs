@@ -7,76 +7,49 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace SoapCustomerService
+namespace CustomerSoapService
 {
     
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
-    [System.ServiceModel.ServiceContractAttribute(Namespace="http://tempuri.org", ConfigurationName="SoapCustomerService.SOAPDemoSoap")]
+    [System.ServiceModel.ServiceContractAttribute(Namespace="http://tempuri.org", ConfigurationName="CustomerSoapService.SOAPDemoSoap")]
     public interface SOAPDemoSoap
     {
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/SOAP.Demo.AddInteger", ReplyAction="*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
-        long AddInteger(long Arg1, long Arg2);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/SOAP.Demo.AddInteger", ReplyAction="*")]
         System.Threading.Tasks.Task<long> AddIntegerAsync(long Arg1, long Arg2);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/SOAP.Demo.DivideInteger", ReplyAction="*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
-        long DivideInteger(long Arg1, long Arg2);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/SOAP.Demo.DivideInteger", ReplyAction="*")]
         System.Threading.Tasks.Task<long> DivideIntegerAsync(long Arg1, long Arg2);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/SOAP.Demo.FindPerson", ReplyAction="*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
-        SoapCustomerService.Person FindPerson(string id);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/SOAP.Demo.FindPerson", ReplyAction="*")]
-        System.Threading.Tasks.Task<SoapCustomerService.Person> FindPersonAsync(string id);
+        System.Threading.Tasks.Task<CustomerSoapService.Person> FindPersonAsync(string id);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/SOAP.Demo.GetByName", ReplyAction="*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
-        SoapCustomerService.ArrayOfXElement GetByName(string name);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/SOAP.Demo.GetByName", ReplyAction="*")]
-        System.Threading.Tasks.Task<SoapCustomerService.ArrayOfXElement> GetByNameAsync(string name);
+        System.Threading.Tasks.Task<CustomerSoapService.ArrayOfXElement> GetByNameAsync(string name);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/SOAP.Demo.GetDataSetByName", ReplyAction="*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
-        System.Xml.XmlElement GetDataSetByName(string name);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/SOAP.Demo.GetDataSetByName", ReplyAction="*")]
         System.Threading.Tasks.Task<System.Xml.XmlElement> GetDataSetByNameAsync(string name);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/SOAP.Demo.GetListByName", ReplyAction="*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
-        SoapCustomerService.PersonIdentification[] GetListByName(string name);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/SOAP.Demo.GetListByName", ReplyAction="*")]
-        System.Threading.Tasks.Task<SoapCustomerService.PersonIdentification[]> GetListByNameAsync(string name);
+        System.Threading.Tasks.Task<CustomerSoapService.PersonIdentification[]> GetListByNameAsync(string name);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/SOAP.Demo.LookupCity", ReplyAction="*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
-        SoapCustomerService.Address LookupCity(string zip);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/SOAP.Demo.LookupCity", ReplyAction="*")]
-        System.Threading.Tasks.Task<SoapCustomerService.Address> LookupCityAsync(string zip);
+        System.Threading.Tasks.Task<CustomerSoapService.Address> LookupCityAsync(string zip);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/SOAP.Demo.Mission", ReplyAction="*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
-        string Mission();
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/SOAP.Demo.Mission", ReplyAction="*")]
         System.Threading.Tasks.Task<string> MissionAsync();
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/SOAP.Demo.QueryByName", ReplyAction="*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
-        System.Xml.XmlElement QueryByName(string name);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/SOAP.Demo.QueryByName", ReplyAction="*")]
         System.Threading.Tasks.Task<System.Xml.XmlElement> QueryByNameAsync(string name);
     }
     
@@ -499,13 +472,13 @@ namespace SoapCustomerService
     }
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
-    public interface SOAPDemoSoapChannel : SoapCustomerService.SOAPDemoSoap, System.ServiceModel.IClientChannel
+    public interface SOAPDemoSoapChannel : CustomerSoapService.SOAPDemoSoap, System.ServiceModel.IClientChannel
     {
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
-    public partial class SOAPDemoSoapClient : System.ServiceModel.ClientBase<SoapCustomerService.SOAPDemoSoap>, SoapCustomerService.SOAPDemoSoap
+    public partial class SOAPDemoSoapClient : System.ServiceModel.ClientBase<CustomerSoapService.SOAPDemoSoap>, CustomerSoapService.SOAPDemoSoap
     {
         
         /// <summary>
@@ -548,19 +521,9 @@ namespace SoapCustomerService
         {
         }
         
-        public long AddInteger(long Arg1, long Arg2)
-        {
-            return base.Channel.AddInteger(Arg1, Arg2);
-        }
-        
         public System.Threading.Tasks.Task<long> AddIntegerAsync(long Arg1, long Arg2)
         {
             return base.Channel.AddIntegerAsync(Arg1, Arg2);
-        }
-        
-        public long DivideInteger(long Arg1, long Arg2)
-        {
-            return base.Channel.DivideInteger(Arg1, Arg2);
         }
         
         public System.Threading.Tasks.Task<long> DivideIntegerAsync(long Arg1, long Arg2)
@@ -568,29 +531,14 @@ namespace SoapCustomerService
             return base.Channel.DivideIntegerAsync(Arg1, Arg2);
         }
         
-        public SoapCustomerService.Person FindPerson(string id)
-        {
-            return base.Channel.FindPerson(id);
-        }
-        
-        public System.Threading.Tasks.Task<SoapCustomerService.Person> FindPersonAsync(string id)
+        public System.Threading.Tasks.Task<CustomerSoapService.Person> FindPersonAsync(string id)
         {
             return base.Channel.FindPersonAsync(id);
         }
         
-        public SoapCustomerService.ArrayOfXElement GetByName(string name)
-        {
-            return base.Channel.GetByName(name);
-        }
-        
-        public System.Threading.Tasks.Task<SoapCustomerService.ArrayOfXElement> GetByNameAsync(string name)
+        public System.Threading.Tasks.Task<CustomerSoapService.ArrayOfXElement> GetByNameAsync(string name)
         {
             return base.Channel.GetByNameAsync(name);
-        }
-        
-        public System.Xml.XmlElement GetDataSetByName(string name)
-        {
-            return base.Channel.GetDataSetByName(name);
         }
         
         public System.Threading.Tasks.Task<System.Xml.XmlElement> GetDataSetByNameAsync(string name)
@@ -598,39 +546,19 @@ namespace SoapCustomerService
             return base.Channel.GetDataSetByNameAsync(name);
         }
         
-        public SoapCustomerService.PersonIdentification[] GetListByName(string name)
-        {
-            return base.Channel.GetListByName(name);
-        }
-        
-        public System.Threading.Tasks.Task<SoapCustomerService.PersonIdentification[]> GetListByNameAsync(string name)
+        public System.Threading.Tasks.Task<CustomerSoapService.PersonIdentification[]> GetListByNameAsync(string name)
         {
             return base.Channel.GetListByNameAsync(name);
         }
         
-        public SoapCustomerService.Address LookupCity(string zip)
-        {
-            return base.Channel.LookupCity(zip);
-        }
-        
-        public System.Threading.Tasks.Task<SoapCustomerService.Address> LookupCityAsync(string zip)
+        public System.Threading.Tasks.Task<CustomerSoapService.Address> LookupCityAsync(string zip)
         {
             return base.Channel.LookupCityAsync(zip);
-        }
-        
-        public string Mission()
-        {
-            return base.Channel.Mission();
         }
         
         public System.Threading.Tasks.Task<string> MissionAsync()
         {
             return base.Channel.MissionAsync();
-        }
-        
-        public System.Xml.XmlElement QueryByName(string name)
-        {
-            return base.Channel.QueryByName(name);
         }
         
         public System.Threading.Tasks.Task<System.Xml.XmlElement> QueryByNameAsync(string name)

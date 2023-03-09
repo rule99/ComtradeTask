@@ -17,6 +17,11 @@ namespace BackEndAPI.Model
 
         public int ReturnCustomer { get; set; }
 
+        [ForeignKey("Home")]
+        public int HomeID { get; set; }
+
+        public Home Home { get; set; }
+
         public DateTime DateRewarded { get; set; }
 
         public string AgentUserName { get; set; }
