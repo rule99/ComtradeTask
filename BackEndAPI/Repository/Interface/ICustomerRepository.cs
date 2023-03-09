@@ -1,4 +1,5 @@
 ﻿using BackEndAPI.Model;
+using BackEndAPI.Model.BO;
 
 namespace BackEndAPI.Repository.Interface
 {
@@ -6,7 +7,7 @@ namespace BackEndAPI.Repository.Interface
     {
         Task<List<Customer>> GetAll();
 
-        Task<Customer> Get(int id);
+        Task<CustomerBO> Get(int id);
 
 
     }

@@ -4,6 +4,7 @@ using BackEndAPI.Model;
 using BackEndAPI.Model.BO;
 using BackEndAPI.Repository.Interface;
 using CustomerSoapService;
+using Microsoft.EntityFrameworkCore;
 using System.Data;
 using System.Xml;
 using System.Xml.Linq;
@@ -22,9 +23,36 @@ namespace BackEndAPI.Repository
            _mapper= mapper;
         }
 
-        public async Task<Customer> Get(int id)
+        public async Task<CustomerBO> Get(int id)
         {
-            throw new NotImplementedException();
+           CustomerBO customerBO = _mapper.Map<CustomerBO>(await _db.Customers.FirstOrDefaultAsync(c=>c.Id==id));
+            if(customerBO == null) 
+            {
+                Person result = await _SOAPDemoSoapClient.FindPersonAsync(id.ToString());
+                if(result == null) { return null; }
+                customerBO =PersonToCustomerBOTransform(result,id);   
+            }
+            return customerBO;
+        }
+
+        private CustomerBO? PersonToCustomerBOTransform(Person result, int id)
+        {
+
+            CustomerBO cust = new CustomerBO()
+            {
+                Name = result.Name,
+                Birth = result.DOB,
+                SSN = result.SSN,
+                Id = id,
+                ReturnCustomer = 0,
+                Home = new HomeBO()
+                {
+                    Adress = result.Home.Street,
+                    City = result.Home.City,
+                    Zip = result.Home.Zip
+                }
+            };
+            return cust;
         }
 
         public async Task<List<Customer>> GetAll()

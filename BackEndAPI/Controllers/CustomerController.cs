@@ -23,6 +23,8 @@ namespace BackEndAPI.Controllers
         }
 
         [HttpGet]
+        [ProducesResponseType(StatusCodes.Status200OK)]
+        [ProducesResponseType(StatusCodes.Status400BadRequest)]
         public async Task<ActionResult<APIResponse>> GetAll()
         {
             try
@@ -34,19 +36,46 @@ namespace BackEndAPI.Controllers
             catch (Exception ex)
             {
 
-                _response.Result = "Server Error";
+                _response.Result = "Server Error"+ ex;
                 _response.StatusCode = HttpStatusCode.InternalServerError;
                 _response.IsSuccess = false;
+                return BadRequest( _response);
             }
             return _response;
         }
 
         [HttpGet("{id:int}")]
-        public async Task<ActionResult> GetAll(int id)
+        [ProducesResponseType(StatusCodes.Status200OK)]
+        [ProducesResponseType(StatusCodes.Status404NotFound)]
+        [ProducesResponseType(StatusCodes.Status400BadRequest)]
+        public async Task<ActionResult<APIResponse>> GetByID(int id)
         {
+            try
+            {
+                CustomerBO result = await _customerRepository.Get(id);
+                if (result != null)
+                {
+                    _response.Result = result;
+                    _response.StatusCode = HttpStatusCode.OK;
+                }
+                else
+                {
+                    _response.Result = "Customer not FOund";
+                    _response.StatusCode = HttpStatusCode.NotFound;
+                    return NotFound(_response);
+                }
+               
+            }
+            catch (Exception ex)
+            {
+
+                _response.Result = "Server Error" + ex;
+                _response.StatusCode = HttpStatusCode.InternalServerError;
+                _response.IsSuccess = false;
+                return BadRequest(_response);
+            }
            
-            
-            return Ok();
+            return _response;
         }
 
     }
