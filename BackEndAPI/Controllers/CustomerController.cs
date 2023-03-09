@@ -44,10 +44,11 @@ namespace BackEndAPI.Controllers
             
         }
 
-        [HttpGet("{id:int}")]
+        [HttpGet("{id:int}", Name = "GetByID")]
         [ProducesResponseType(StatusCodes.Status200OK)]
         [ProducesResponseType(StatusCodes.Status404NotFound)]
         [ProducesResponseType(StatusCodes.Status400BadRequest)]
+        
         public async Task<ActionResult<CustomerBO>> GetByID(int id)
         {
             try
@@ -80,7 +81,7 @@ namespace BackEndAPI.Controllers
         [ProducesResponseType(StatusCodes.Status200OK)]
         [ProducesResponseType(StatusCodes.Status404NotFound)]
         [ProducesResponseType(StatusCodes.Status400BadRequest)]
-        public async Task<ActionResult<APIResponse>> GetByName(string name)
+        public async Task<ActionResult<CustomerBO>> GetByName(string name)
         {
 
             try
@@ -96,7 +97,7 @@ namespace BackEndAPI.Controllers
                 {
                     _response.Result = "Customer not FOund";
                     _response.StatusCode = HttpStatusCode.NotFound;
-                    return NotFound(_response);
+                    return NotFound(result);
                 }
 
             }
@@ -110,6 +111,29 @@ namespace BackEndAPI.Controllers
             }
 
             
+        }
+
+        [HttpPost("{id}")]
+        public async Task<ActionResult> RewardCustomer(int id, [FromBody]string agent)
+        {
+           if(await _customerRepository.AlreadyRewardCustomer(id, agent))
+            {
+                return BadRequest("Already rewarded");
+            }
+           else if(await _customerRepository.AgentLimit(agent)) 
+            {
+                return BadRequest("Agent reached max customer rewarded");
+            }
+            else
+            {
+               await _customerRepository.RewardCustomer(id, agent);
+                return CreatedAtRoute("GetByID", new { id = id });
+
+            }
+            
+
+            
+
         }
 
     }

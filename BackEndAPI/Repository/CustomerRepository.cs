@@ -83,9 +83,39 @@ namespace BackEndAPI.Repository
             Person Pcustomer= await _SOAPDemoSoapClient.FindPersonAsync(id.ToString());
             if (Pcustomer == null) { return; }
             CustomerBO customerBO = PersonToCustomerBOTransform(Pcustomer, id);
-            Customer customer=_mapper.Map<Customer>(customerBO);
-            _db.Customers.AddAsync(customer);
-            _db.SaveChangesAsync();
+            Home home = new Home()
+            {
+                Adress = customerBO.Home.Adress,
+                City = customerBO.Home.City,
+                Zip = customerBO.Home.Zip,
+
+            };
+            await _db.Homes.AddAsync(home);
+            await _db.SaveChangesAsync();
+            customerBO.Home.Id = home.Id;
+            Customer customer = CustomerBoToCustomerTransformation(customerBO);
+            customer.HomeID = home.Id;
+            customer.DateRewarded = DateTime.Now;
+            customer.AgentUserName = agent;
+            await _db.Customers.AddAsync(customer);
+            await _db.SaveChangesAsync();
+        }
+
+        private Customer CustomerBoToCustomerTransformation(CustomerBO customerBO)
+        {
+            Customer cu = new Customer()
+            {
+                Id = customerBO.Id,
+                Birth = customerBO.Birth,
+                SSN = customerBO.SSN,
+                Name = customerBO.Name,
+
+            };
+             if (customerBO.Home.Id != 0)
+            {
+                cu.HomeID = customerBO.Home.Id;
+            }
+             return cu;
         }
 
         internal async Task<bool> AlreadyRewardCustomer(int id, string agent)

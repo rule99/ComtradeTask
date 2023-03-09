@@ -7860,3 +7860,1898 @@ WHERE [c].[Name] = @__name_0
 2023-03-09 18:35:18.128 +01:00 [DBG] Disposed connection to database '' on server '' (2ms).
 2023-03-09 18:35:18.128 +01:00 [INF] Request finished HTTP/1.1 GET https://localhost:7119/api/Customer/Adam,Wolfgang F. - - - 200 - application/json;+charset=utf-8 79726.1889ms
 2023-03-09 18:35:26.075 +01:00 [DBG] Connection id "0HMP0OHK5J6D4" received FIN.
+2023-03-09 19:13:04.701 +01:00 [DBG] Registered model binder providers, in the following order: ["Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider"]
+2023-03-09 19:13:04.786 +01:00 [DBG] Hosting starting
+2023-03-09 19:13:04.928 +01:00 [DBG] Using development certificate: CN=localhost (Thumbprint: C157B902E5C0417D2199EABA8399DEF1CA376564)
+2023-03-09 19:13:04.978 +01:00 [INF] Now listening on: https://localhost:7119
+2023-03-09 19:13:04.978 +01:00 [INF] Now listening on: http://localhost:5148
+2023-03-09 19:13:04.978 +01:00 [DBG] Loaded hosting startup assembly BackEndAPI
+2023-03-09 19:13:04.978 +01:00 [DBG] Loaded hosting startup assembly Microsoft.AspNetCore.Watch.BrowserRefresh
+2023-03-09 19:13:04.978 +01:00 [DBG] Loaded hosting startup assembly Microsoft.WebTools.BrowserLink.Net
+2023-03-09 19:13:04.979 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-03-09 19:13:04.979 +01:00 [INF] Hosting environment: Development
+2023-03-09 19:13:04.979 +01:00 [INF] Content root path: C:\Kursevi\ComtradeTask\BackEndAPI\
+2023-03-09 19:13:04.979 +01:00 [DBG] Hosting started
+2023-03-09 19:13:05.092 +01:00 [DBG] Connection id "0HMP0P7MQJBDF" accepted.
+2023-03-09 19:13:05.093 +01:00 [DBG] Connection id "0HMP0P7MQJBDF" started.
+2023-03-09 19:13:05.095 +01:00 [DBG] Connection id "0HMP0P7MQJBDG" accepted.
+2023-03-09 19:13:05.095 +01:00 [DBG] Connection id "0HMP0P7MQJBDG" started.
+2023-03-09 19:13:05.113 +01:00 [DBG] Connection id "0HMP0P7MQJBDG" received FIN.
+2023-03-09 19:13:05.113 +01:00 [DBG] Connection id "0HMP0P7MQJBDF" received FIN.
+2023-03-09 19:13:05.138 +01:00 [DBG] Failed to authenticate HTTPS connection.
+System.IO.IOException:  Received an unexpected EOF or 0 bytes from the transport stream.
+   at System.Net.Security.SslStream.<FillHandshakeBufferAsync>g__InternalFillHandshakeBufferAsync|189_0[TIOAdapter](TIOAdapter adap, ValueTask`1 task, Int32 minSize)
+   at System.Net.Security.SslStream.ReceiveBlobAsync[TIOAdapter](TIOAdapter adapter)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](TIOAdapter adapter, Boolean receiveFirst, Byte[] reAuthenticationData, Boolean isApm)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2023-03-09 19:13:05.138 +01:00 [DBG] Failed to authenticate HTTPS connection.
+System.IO.IOException:  Received an unexpected EOF or 0 bytes from the transport stream.
+   at System.Net.Security.SslStream.<FillHandshakeBufferAsync>g__InternalFillHandshakeBufferAsync|189_0[TIOAdapter](TIOAdapter adap, ValueTask`1 task, Int32 minSize)
+   at System.Net.Security.SslStream.ReceiveBlobAsync[TIOAdapter](TIOAdapter adapter)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](TIOAdapter adapter, Boolean receiveFirst, Byte[] reAuthenticationData, Boolean isApm)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2023-03-09 19:13:05.174 +01:00 [DBG] Connection id "0HMP0P7MQJBDF" stopped.
+2023-03-09 19:13:05.174 +01:00 [DBG] Connection id "0HMP0P7MQJBDG" stopped.
+2023-03-09 19:13:05.177 +01:00 [DBG] Connection id "0HMP0P7MQJBDG" sending FIN because: "The Socket transport's send loop completed gracefully."
+2023-03-09 19:13:05.177 +01:00 [DBG] Connection id "0HMP0P7MQJBDF" sending FIN because: "The Socket transport's send loop completed gracefully."
+2023-03-09 19:13:05.298 +01:00 [DBG] Connection id "0HMP0P7MQJBDH" accepted.
+2023-03-09 19:13:05.298 +01:00 [DBG] Connection id "0HMP0P7MQJBDH" started.
+2023-03-09 19:13:05.357 +01:00 [DBG] Connection 0HMP0P7MQJBDH established using the following protocol: "Tls12"
+2023-03-09 19:13:05.417 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7119/swagger/index.html - -
+2023-03-09 19:13:05.450 +01:00 [DBG] Wildcard detected, all requests with hosts will be allowed.
+2023-03-09 19:13:05.471 +01:00 [DBG] No candidates found for the request path '/swagger/index.html'
+2023-03-09 19:13:05.471 +01:00 [DBG] Request did not match any endpoints
+2023-03-09 19:13:05.683 +01:00 [DBG] Response markup is scheduled to include browser refresh script injection.
+2023-03-09 19:13:05.801 +01:00 [DBG] Response markup was updated to include browser refresh script injection.
+2023-03-09 19:13:05.805 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7119/swagger/index.html - - - 200 - text/html;charset=utf-8 391.8094ms
+2023-03-09 19:13:05.846 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7119/_framework/aspnetcore-browser-refresh.js - -
+2023-03-09 19:13:05.857 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7119/_framework/aspnetcore-browser-refresh.js - - - 200 11990 application/javascript;+charset=utf-8 10.4355ms
+2023-03-09 19:13:05.879 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7119/_vs/browserLink - -
+2023-03-09 19:13:05.920 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7119/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 41.4778ms
+2023-03-09 19:13:06.132 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7119/swagger/v1/swagger.json - -
+2023-03-09 19:13:06.132 +01:00 [DBG] No candidates found for the request path '/swagger/v1/swagger.json'
+2023-03-09 19:13:06.132 +01:00 [DBG] Request did not match any endpoints
+2023-03-09 19:13:06.264 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7119/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 132.2984ms
+2023-03-09 19:13:32.655 +01:00 [DBG] Registered model binder providers, in the following order: ["Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider"]
+2023-03-09 19:13:32.736 +01:00 [DBG] Hosting starting
+2023-03-09 19:13:32.886 +01:00 [DBG] Using development certificate: CN=localhost (Thumbprint: C157B902E5C0417D2199EABA8399DEF1CA376564)
+2023-03-09 19:13:32.925 +01:00 [INF] Now listening on: https://localhost:7119
+2023-03-09 19:13:32.925 +01:00 [INF] Now listening on: http://localhost:5148
+2023-03-09 19:13:32.925 +01:00 [DBG] Loaded hosting startup assembly BackEndAPI
+2023-03-09 19:13:32.925 +01:00 [DBG] Loaded hosting startup assembly Microsoft.AspNetCore.Watch.BrowserRefresh
+2023-03-09 19:13:32.926 +01:00 [DBG] Loaded hosting startup assembly Microsoft.WebTools.BrowserLink.Net
+2023-03-09 19:13:32.926 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-03-09 19:13:32.927 +01:00 [INF] Hosting environment: Development
+2023-03-09 19:13:32.927 +01:00 [INF] Content root path: C:\Kursevi\ComtradeTask\BackEndAPI\
+2023-03-09 19:13:32.927 +01:00 [DBG] Hosting started
+2023-03-09 19:13:33.209 +01:00 [DBG] Connection id "0HMP0P7V6NRNR" accepted.
+2023-03-09 19:13:33.210 +01:00 [DBG] Connection id "0HMP0P7V6NRNS" accepted.
+2023-03-09 19:13:33.210 +01:00 [DBG] Connection id "0HMP0P7V6NRNS" started.
+2023-03-09 19:13:33.210 +01:00 [DBG] Connection id "0HMP0P7V6NRNR" started.
+2023-03-09 19:13:33.228 +01:00 [DBG] Connection id "0HMP0P7V6NRNS" received FIN.
+2023-03-09 19:13:33.228 +01:00 [DBG] Connection id "0HMP0P7V6NRNR" received FIN.
+2023-03-09 19:13:33.258 +01:00 [DBG] Failed to authenticate HTTPS connection.
+System.IO.IOException:  Received an unexpected EOF or 0 bytes from the transport stream.
+   at System.Net.Security.SslStream.<FillHandshakeBufferAsync>g__InternalFillHandshakeBufferAsync|189_0[TIOAdapter](TIOAdapter adap, ValueTask`1 task, Int32 minSize)
+   at System.Net.Security.SslStream.ReceiveBlobAsync[TIOAdapter](TIOAdapter adapter)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](TIOAdapter adapter, Boolean receiveFirst, Byte[] reAuthenticationData, Boolean isApm)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2023-03-09 19:13:33.258 +01:00 [DBG] Failed to authenticate HTTPS connection.
+System.IO.IOException:  Received an unexpected EOF or 0 bytes from the transport stream.
+   at System.Net.Security.SslStream.<FillHandshakeBufferAsync>g__InternalFillHandshakeBufferAsync|189_0[TIOAdapter](TIOAdapter adap, ValueTask`1 task, Int32 minSize)
+   at System.Net.Security.SslStream.ReceiveBlobAsync[TIOAdapter](TIOAdapter adapter)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](TIOAdapter adapter, Boolean receiveFirst, Byte[] reAuthenticationData, Boolean isApm)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2023-03-09 19:13:33.311 +01:00 [DBG] Connection id "0HMP0P7V6NRNS" stopped.
+2023-03-09 19:13:33.311 +01:00 [DBG] Connection id "0HMP0P7V6NRNR" stopped.
+2023-03-09 19:13:33.314 +01:00 [DBG] Connection id "0HMP0P7V6NRNR" sending FIN because: "The Socket transport's send loop completed gracefully."
+2023-03-09 19:13:33.314 +01:00 [DBG] Connection id "0HMP0P7V6NRNS" sending FIN because: "The Socket transport's send loop completed gracefully."
+2023-03-09 19:13:33.455 +01:00 [DBG] Connection id "0HMP0P7V6NRNT" accepted.
+2023-03-09 19:13:33.456 +01:00 [DBG] Connection id "0HMP0P7V6NRNT" started.
+2023-03-09 19:13:33.515 +01:00 [DBG] Connection 0HMP0P7V6NRNT established using the following protocol: "Tls12"
+2023-03-09 19:13:33.564 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7119/swagger/index.html - -
+2023-03-09 19:13:33.600 +01:00 [DBG] Wildcard detected, all requests with hosts will be allowed.
+2023-03-09 19:13:33.626 +01:00 [DBG] No candidates found for the request path '/swagger/index.html'
+2023-03-09 19:13:33.626 +01:00 [DBG] Request did not match any endpoints
+2023-03-09 19:13:33.970 +01:00 [DBG] Response markup is scheduled to include browser refresh script injection.
+2023-03-09 19:13:34.109 +01:00 [DBG] Response markup was updated to include browser refresh script injection.
+2023-03-09 19:13:34.116 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7119/swagger/index.html - - - 200 - text/html;charset=utf-8 555.1881ms
+2023-03-09 19:13:34.145 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7119/_framework/aspnetcore-browser-refresh.js - -
+2023-03-09 19:13:34.149 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7119/_framework/aspnetcore-browser-refresh.js - - - 200 11990 application/javascript;+charset=utf-8 4.3649ms
+2023-03-09 19:13:34.171 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7119/_vs/browserLink - -
+2023-03-09 19:13:34.193 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7119/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 21.2574ms
+2023-03-09 19:13:34.380 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7119/swagger/v1/swagger.json - -
+2023-03-09 19:13:34.380 +01:00 [DBG] No candidates found for the request path '/swagger/v1/swagger.json'
+2023-03-09 19:13:34.380 +01:00 [DBG] Request did not match any endpoints
+2023-03-09 19:13:34.501 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7119/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 121.6879ms
+2023-03-09 19:13:47.870 +01:00 [INF] Request starting HTTP/2 POST https://localhost:7119/api/Customer/1 application/json 6
+2023-03-09 19:13:47.874 +01:00 [DBG] 1 candidate(s) found for the request path '/api/Customer/1'
+2023-03-09 19:13:47.877 +01:00 [DBG] Endpoint 'BackEndAPI.Controllers.CustomerController.RewardCustomer (BackEndAPI)' with route pattern 'api/Customer/{id}' is valid for the request path '/api/Customer/1'
+2023-03-09 19:13:47.877 +01:00 [DBG] Request matched endpoint 'BackEndAPI.Controllers.CustomerController.RewardCustomer (BackEndAPI)'
+2023-03-09 19:13:47.878 +01:00 [DBG] Static files was skipped as the request already matched an endpoint.
+2023-03-09 19:13:47.880 +01:00 [INF] Executing endpoint 'BackEndAPI.Controllers.CustomerController.RewardCustomer (BackEndAPI)'
+2023-03-09 19:13:47.911 +01:00 [INF] Route matched with {action = "RewardCustomer", controller = "Customer"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult] RewardCustomer(Int32, System.String) on controller BackEndAPI.Controllers.CustomerController (BackEndAPI).
+2023-03-09 19:13:47.911 +01:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2023-03-09 19:13:47.911 +01:00 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2023-03-09 19:13:47.911 +01:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2023-03-09 19:13:47.911 +01:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2023-03-09 19:13:47.911 +01:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2023-03-09 19:13:47.912 +01:00 [DBG] Executing controller factory for controller BackEndAPI.Controllers.CustomerController (BackEndAPI)
+2023-03-09 19:13:48.035 +01:00 [DBG] An 'IServiceProvider' was created for internal use by Entity Framework.
+2023-03-09 19:13:48.246 +01:00 [DBG] Executed controller factory for controller BackEndAPI.Controllers.CustomerController (BackEndAPI)
+2023-03-09 19:13:48.257 +01:00 [DBG] Attempting to bind parameter 'id' of type 'System.Int32' ...
+2023-03-09 19:13:48.259 +01:00 [DBG] Attempting to bind parameter 'id' of type 'System.Int32' using the name 'id' in request data ...
+2023-03-09 19:13:48.259 +01:00 [DBG] Done attempting to bind parameter 'id' of type 'System.Int32'.
+2023-03-09 19:13:48.259 +01:00 [DBG] Done attempting to bind parameter 'id' of type 'System.Int32'.
+2023-03-09 19:13:48.259 +01:00 [DBG] Attempting to validate the bound parameter 'id' of type 'System.Int32' ...
+2023-03-09 19:13:48.260 +01:00 [DBG] Done attempting to validate the bound parameter 'id' of type 'System.Int32'.
+2023-03-09 19:13:48.261 +01:00 [DBG] Attempting to bind parameter 'agent' of type 'System.String' ...
+2023-03-09 19:13:48.261 +01:00 [DBG] Attempting to bind parameter 'agent' of type 'System.String' using the name '' in request data ...
+2023-03-09 19:13:48.262 +01:00 [DBG] Selected input formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonInputFormatter' for content type 'application/json'.
+2023-03-09 19:13:48.269 +01:00 [DBG] Connection id "0HMP0P7V6NRNT", Request id "0HMP0P7V6NRNT:00000009": started reading request body.
+2023-03-09 19:13:48.270 +01:00 [DBG] Connection id "0HMP0P7V6NRNT", Request id "0HMP0P7V6NRNT:00000009": done reading request body.
+2023-03-09 19:13:48.287 +01:00 [DBG] JSON input formatter succeeded, deserializing to type 'System.String'
+2023-03-09 19:13:48.287 +01:00 [DBG] Done attempting to bind parameter 'agent' of type 'System.String'.
+2023-03-09 19:13:48.287 +01:00 [DBG] Done attempting to bind parameter 'agent' of type 'System.String'.
+2023-03-09 19:13:48.287 +01:00 [DBG] Attempting to validate the bound parameter 'agent' of type 'System.String' ...
+2023-03-09 19:13:48.290 +01:00 [DBG] Done attempting to validate the bound parameter 'agent' of type 'System.String'.
+2023-03-09 19:13:49.084 +01:00 [DBG] Entity Framework Core 7.0.3 initialized 'CustomerDBContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:7.0.3' with options: None
+2023-03-09 19:13:49.152 +01:00 [DBG] Compiling query expression: 
+'DbSet<Customer>()
+    .Any(c => c.Id == __id_0)'
+2023-03-09 19:13:49.388 +01:00 [DBG] Generated query execution expression: 
+'queryContext => ShapedQueryCompilingExpressionVisitor.SingleAsync<bool>(
+    asyncEnumerable: new SingleQueryingEnumerable<bool>(
+        (RelationalQueryContext)queryContext, 
+        RelationalCommandCache.QueryExpression(
+            Projection Mapping:
+                EmptyProjectionMember -> 0
+            SELECT EXISTS (
+                SELECT 1
+                FROM Customers AS c
+                WHERE c.Id == @__id_0)), 
+        null, 
+        Func<QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator, bool>, 
+        BackEndAPI.Data.CustomerDBContext, 
+        False, 
+        False, 
+        True
+    ), 
+    cancellationToken: queryContext.CancellationToken)'
+2023-03-09 19:13:49.440 +01:00 [DBG] Creating DbCommand for 'ExecuteReader'.
+2023-03-09 19:13:49.442 +01:00 [DBG] Creating DbConnection.
+2023-03-09 19:13:49.475 +01:00 [DBG] Created DbConnection. (28ms).
+2023-03-09 19:13:49.482 +01:00 [DBG] Created DbCommand for 'ExecuteReader' (38ms).
+2023-03-09 19:13:49.489 +01:00 [DBG] Initialized DbCommand for 'ExecuteReader' (49ms).
+2023-03-09 19:13:49.496 +01:00 [DBG] Opening connection to database 'CustomerDatabase' on server '.'.
+2023-03-09 19:13:49.802 +01:00 [DBG] Opened connection to database 'CustomerDatabase' on server '.'.
+2023-03-09 19:13:49.814 +01:00 [DBG] Executing DbCommand [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Customers] AS [c]
+        WHERE [c].[Id] = @__id_0) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2023-03-09 19:13:49.888 +01:00 [INF] Executed DbCommand (80ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Customers] AS [c]
+        WHERE [c].[Id] = @__id_0) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2023-03-09 19:13:49.915 +01:00 [DBG] Closing data reader to 'CustomerDatabase' on server '.'.
+2023-03-09 19:13:49.924 +01:00 [DBG] A data reader for 'CustomerDatabase' on server '.' is being disposed after spending 30ms reading results.
+2023-03-09 19:13:49.929 +01:00 [DBG] Closing connection to database 'CustomerDatabase' on server '.'.
+2023-03-09 19:13:49.938 +01:00 [DBG] Closed connection to database 'CustomerDatabase' on server '.' (9ms).
+2023-03-09 19:13:49.940 +01:00 [DBG] Compiling query expression: 
+'DbSet<Customer>()
+    .Count(c => c.AgentUserName == __agent_0 && c.DateRewarded == DateTime.Today)'
+2023-03-09 19:13:49.973 +01:00 [DBG] Generated query execution expression: 
+'queryContext => ShapedQueryCompilingExpressionVisitor.SingleAsync<int>(
+    asyncEnumerable: new SingleQueryingEnumerable<int>(
+        (RelationalQueryContext)queryContext, 
+        RelationalCommandCache.QueryExpression(
+            Projection Mapping:
+                EmptyProjectionMember -> 0
+            SELECT COUNT(*)
+            FROM Customers AS c
+            WHERE (c.AgentUserName == @__agent_0) && (c.DateRewarded == CONVERT(date, GETDATE()))), 
+        null, 
+        Func<QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator, int>, 
+        BackEndAPI.Data.CustomerDBContext, 
+        False, 
+        False, 
+        True
+    ), 
+    cancellationToken: queryContext.CancellationToken)'
+2023-03-09 19:13:49.988 +01:00 [DBG] Creating DbCommand for 'ExecuteReader'.
+2023-03-09 19:13:49.989 +01:00 [DBG] Created DbCommand for 'ExecuteReader' (0ms).
+2023-03-09 19:13:49.990 +01:00 [DBG] Initialized DbCommand for 'ExecuteReader' (1ms).
+2023-03-09 19:13:49.990 +01:00 [DBG] Opening connection to database 'CustomerDatabase' on server '.'.
+2023-03-09 19:13:49.991 +01:00 [DBG] Opened connection to database 'CustomerDatabase' on server '.'.
+2023-03-09 19:13:49.991 +01:00 [DBG] Executing DbCommand [Parameters=[@__agent_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Customers] AS [c]
+WHERE [c].[AgentUserName] = @__agent_0 AND [c].[DateRewarded] = CONVERT(date, GETDATE())
+2023-03-09 19:13:49.996 +01:00 [INF] Executed DbCommand (5ms) [Parameters=[@__agent_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Customers] AS [c]
+WHERE [c].[AgentUserName] = @__agent_0 AND [c].[DateRewarded] = CONVERT(date, GETDATE())
+2023-03-09 19:13:50.001 +01:00 [DBG] Closing data reader to 'CustomerDatabase' on server '.'.
+2023-03-09 19:13:50.001 +01:00 [DBG] A data reader for 'CustomerDatabase' on server '.' is being disposed after spending 4ms reading results.
+2023-03-09 19:13:50.001 +01:00 [DBG] Closing connection to database 'CustomerDatabase' on server '.'.
+2023-03-09 19:13:50.001 +01:00 [DBG] Closed connection to database 'CustomerDatabase' on server '.' (0ms).
+2023-03-09 19:14:18.912 +01:00 [INF] Executed action BackEndAPI.Controllers.CustomerController.RewardCustomer (BackEndAPI) in 30997.4648ms
+2023-03-09 19:14:18.914 +01:00 [INF] Executed endpoint 'BackEndAPI.Controllers.CustomerController.RewardCustomer (BackEndAPI)'
+2023-03-09 19:14:18.915 +01:00 [ERR] An unhandled exception has occurred while executing the request.
+AutoMapper.AutoMapperMappingException: Error mapping types.
+
+Mapping types:
+CustomerBO -> Customer
+BackEndAPI.Model.BO.CustomerBO -> BackEndAPI.Model.Customer
+
+Type Map configuration:
+CustomerBO -> Customer
+BackEndAPI.Model.BO.CustomerBO -> BackEndAPI.Model.Customer
+
+Destination Member:
+Home
+
+ ---> AutoMapper.AutoMapperMappingException: Missing type map configuration or unsupported mapping.
+
+Mapping types:
+HomeBO -> Home
+BackEndAPI.Model.BO.HomeBO -> BackEndAPI.Model.Home
+
+Destination Member:
+Home
+
+   at lambda_method16(Closure , HomeBO , Home , ResolutionContext )
+   at lambda_method15(Closure , Object , Customer , ResolutionContext )
+   --- End of inner exception stack trace ---
+   at lambda_method15(Closure , Object , Customer , ResolutionContext )
+   at BackEndAPI.Repository.CustomerRepository.RewardCustomer(Int32 id, String agent) in C:\Kursevi\ComtradeTask\BackEndAPI\Repository\CustomerRepository.cs:line 86
+   at BackEndAPI.Controllers.CustomerController.RewardCustomer(Int32 id, String agent) in C:\Kursevi\ComtradeTask\BackEndAPI\Controllers\CustomerController.cs:line 128
+   at lambda_method5(Closure , Object )
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2023-03-09 19:14:19.011 +01:00 [DBG] 'CustomerDBContext' disposed.
+2023-03-09 19:14:19.018 +01:00 [DBG] Disposing connection to database 'CustomerDatabase' on server '.'.
+2023-03-09 19:14:19.020 +01:00 [DBG] Disposed connection to database '' on server '' (2ms).
+2023-03-09 19:14:19.021 +01:00 [INF] Request finished HTTP/2 POST https://localhost:7119/api/Customer/1 application/json 6 - 500 - text/plain;+charset=utf-8 31151.4367ms
+2023-03-09 19:15:49.419 +01:00 [DBG] Registered model binder providers, in the following order: ["Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider"]
+2023-03-09 19:15:49.494 +01:00 [DBG] Hosting starting
+2023-03-09 19:15:49.637 +01:00 [DBG] Using development certificate: CN=localhost (Thumbprint: C157B902E5C0417D2199EABA8399DEF1CA376564)
+2023-03-09 19:15:49.692 +01:00 [INF] Now listening on: https://localhost:7119
+2023-03-09 19:15:49.692 +01:00 [INF] Now listening on: http://localhost:5148
+2023-03-09 19:15:49.692 +01:00 [DBG] Loaded hosting startup assembly BackEndAPI
+2023-03-09 19:15:49.692 +01:00 [DBG] Loaded hosting startup assembly Microsoft.AspNetCore.Watch.BrowserRefresh
+2023-03-09 19:15:49.692 +01:00 [DBG] Loaded hosting startup assembly Microsoft.WebTools.BrowserLink.Net
+2023-03-09 19:15:49.692 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-03-09 19:15:49.693 +01:00 [INF] Hosting environment: Development
+2023-03-09 19:15:49.693 +01:00 [INF] Content root path: C:\Kursevi\ComtradeTask\BackEndAPI\
+2023-03-09 19:15:49.693 +01:00 [DBG] Hosting started
+2023-03-09 19:15:49.752 +01:00 [DBG] Connection id "0HMP0P97STIC3" accepted.
+2023-03-09 19:15:49.753 +01:00 [DBG] Connection id "0HMP0P97STIC3" started.
+2023-03-09 19:15:49.755 +01:00 [DBG] Connection id "0HMP0P97STIC4" accepted.
+2023-03-09 19:15:49.755 +01:00 [DBG] Connection id "0HMP0P97STIC4" started.
+2023-03-09 19:15:49.772 +01:00 [DBG] Connection id "0HMP0P97STIC4" received FIN.
+2023-03-09 19:15:49.772 +01:00 [DBG] Connection id "0HMP0P97STIC3" received FIN.
+2023-03-09 19:15:49.784 +01:00 [DBG] Failed to authenticate HTTPS connection.
+System.IO.IOException:  Received an unexpected EOF or 0 bytes from the transport stream.
+   at System.Net.Security.SslStream.<FillHandshakeBufferAsync>g__InternalFillHandshakeBufferAsync|189_0[TIOAdapter](TIOAdapter adap, ValueTask`1 task, Int32 minSize)
+   at System.Net.Security.SslStream.ReceiveBlobAsync[TIOAdapter](TIOAdapter adapter)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](TIOAdapter adapter, Boolean receiveFirst, Byte[] reAuthenticationData, Boolean isApm)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2023-03-09 19:15:49.784 +01:00 [DBG] Failed to authenticate HTTPS connection.
+System.IO.IOException:  Received an unexpected EOF or 0 bytes from the transport stream.
+   at System.Net.Security.SslStream.<FillHandshakeBufferAsync>g__InternalFillHandshakeBufferAsync|189_0[TIOAdapter](TIOAdapter adap, ValueTask`1 task, Int32 minSize)
+   at System.Net.Security.SslStream.ReceiveBlobAsync[TIOAdapter](TIOAdapter adapter)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](TIOAdapter adapter, Boolean receiveFirst, Byte[] reAuthenticationData, Boolean isApm)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2023-03-09 19:15:49.827 +01:00 [DBG] Connection id "0HMP0P97STIC3" stopped.
+2023-03-09 19:15:49.827 +01:00 [DBG] Connection id "0HMP0P97STIC4" stopped.
+2023-03-09 19:15:49.829 +01:00 [DBG] Connection id "0HMP0P97STIC4" sending FIN because: "The Socket transport's send loop completed gracefully."
+2023-03-09 19:15:49.829 +01:00 [DBG] Connection id "0HMP0P97STIC3" sending FIN because: "The Socket transport's send loop completed gracefully."
+2023-03-09 19:15:49.953 +01:00 [DBG] Connection id "0HMP0P97STIC5" accepted.
+2023-03-09 19:15:49.953 +01:00 [DBG] Connection id "0HMP0P97STIC5" started.
+2023-03-09 19:15:50.005 +01:00 [DBG] Connection 0HMP0P97STIC5 established using the following protocol: "Tls12"
+2023-03-09 19:15:50.062 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7119/swagger/index.html - -
+2023-03-09 19:15:50.099 +01:00 [DBG] Wildcard detected, all requests with hosts will be allowed.
+2023-03-09 19:15:50.118 +01:00 [DBG] No candidates found for the request path '/swagger/index.html'
+2023-03-09 19:15:50.119 +01:00 [DBG] Request did not match any endpoints
+2023-03-09 19:15:50.320 +01:00 [DBG] Response markup is scheduled to include browser refresh script injection.
+2023-03-09 19:15:50.416 +01:00 [DBG] Response markup was updated to include browser refresh script injection.
+2023-03-09 19:15:50.421 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7119/swagger/index.html - - - 200 - text/html;charset=utf-8 364.8804ms
+2023-03-09 19:15:50.453 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7119/_framework/aspnetcore-browser-refresh.js - -
+2023-03-09 19:15:50.462 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7119/_framework/aspnetcore-browser-refresh.js - - - 200 11990 application/javascript;+charset=utf-8 9.3943ms
+2023-03-09 19:15:50.482 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7119/_vs/browserLink - -
+2023-03-09 19:15:50.523 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7119/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 40.5966ms
+2023-03-09 19:15:50.691 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7119/swagger/v1/swagger.json - -
+2023-03-09 19:15:50.691 +01:00 [DBG] No candidates found for the request path '/swagger/v1/swagger.json'
+2023-03-09 19:15:50.691 +01:00 [DBG] Request did not match any endpoints
+2023-03-09 19:15:50.807 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7119/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 116.3290ms
+2023-03-09 19:16:00.578 +01:00 [INF] Request starting HTTP/2 POST https://localhost:7119/api/Customer/1 application/json 6
+2023-03-09 19:16:00.586 +01:00 [DBG] 1 candidate(s) found for the request path '/api/Customer/1'
+2023-03-09 19:16:00.589 +01:00 [DBG] Endpoint 'BackEndAPI.Controllers.CustomerController.RewardCustomer (BackEndAPI)' with route pattern 'api/Customer/{id}' is valid for the request path '/api/Customer/1'
+2023-03-09 19:16:00.589 +01:00 [DBG] Request matched endpoint 'BackEndAPI.Controllers.CustomerController.RewardCustomer (BackEndAPI)'
+2023-03-09 19:16:00.590 +01:00 [DBG] Static files was skipped as the request already matched an endpoint.
+2023-03-09 19:16:00.596 +01:00 [INF] Executing endpoint 'BackEndAPI.Controllers.CustomerController.RewardCustomer (BackEndAPI)'
+2023-03-09 19:16:00.634 +01:00 [INF] Route matched with {action = "RewardCustomer", controller = "Customer"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult] RewardCustomer(Int32, System.String) on controller BackEndAPI.Controllers.CustomerController (BackEndAPI).
+2023-03-09 19:16:00.634 +01:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2023-03-09 19:16:00.634 +01:00 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2023-03-09 19:16:00.634 +01:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2023-03-09 19:16:00.634 +01:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2023-03-09 19:16:00.634 +01:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2023-03-09 19:16:00.635 +01:00 [DBG] Executing controller factory for controller BackEndAPI.Controllers.CustomerController (BackEndAPI)
+2023-03-09 19:16:00.766 +01:00 [DBG] An 'IServiceProvider' was created for internal use by Entity Framework.
+2023-03-09 19:16:00.969 +01:00 [DBG] Executed controller factory for controller BackEndAPI.Controllers.CustomerController (BackEndAPI)
+2023-03-09 19:16:00.982 +01:00 [DBG] Attempting to bind parameter 'id' of type 'System.Int32' ...
+2023-03-09 19:16:00.983 +01:00 [DBG] Attempting to bind parameter 'id' of type 'System.Int32' using the name 'id' in request data ...
+2023-03-09 19:16:00.983 +01:00 [DBG] Done attempting to bind parameter 'id' of type 'System.Int32'.
+2023-03-09 19:16:00.983 +01:00 [DBG] Done attempting to bind parameter 'id' of type 'System.Int32'.
+2023-03-09 19:16:00.983 +01:00 [DBG] Attempting to validate the bound parameter 'id' of type 'System.Int32' ...
+2023-03-09 19:16:00.984 +01:00 [DBG] Done attempting to validate the bound parameter 'id' of type 'System.Int32'.
+2023-03-09 19:16:00.985 +01:00 [DBG] Attempting to bind parameter 'agent' of type 'System.String' ...
+2023-03-09 19:16:00.986 +01:00 [DBG] Attempting to bind parameter 'agent' of type 'System.String' using the name '' in request data ...
+2023-03-09 19:16:00.986 +01:00 [DBG] Selected input formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonInputFormatter' for content type 'application/json'.
+2023-03-09 19:16:00.997 +01:00 [DBG] Connection id "0HMP0P97STIC5", Request id "0HMP0P97STIC5:00000009": started reading request body.
+2023-03-09 19:16:00.997 +01:00 [DBG] Connection id "0HMP0P97STIC5", Request id "0HMP0P97STIC5:00000009": done reading request body.
+2023-03-09 19:16:01.002 +01:00 [DBG] JSON input formatter succeeded, deserializing to type 'System.String'
+2023-03-09 19:16:01.002 +01:00 [DBG] Done attempting to bind parameter 'agent' of type 'System.String'.
+2023-03-09 19:16:01.002 +01:00 [DBG] Done attempting to bind parameter 'agent' of type 'System.String'.
+2023-03-09 19:16:01.002 +01:00 [DBG] Attempting to validate the bound parameter 'agent' of type 'System.String' ...
+2023-03-09 19:16:01.006 +01:00 [DBG] Done attempting to validate the bound parameter 'agent' of type 'System.String'.
+2023-03-09 19:16:01.765 +01:00 [DBG] Entity Framework Core 7.0.3 initialized 'CustomerDBContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:7.0.3' with options: None
+2023-03-09 19:16:01.827 +01:00 [DBG] Compiling query expression: 
+'DbSet<Customer>()
+    .Any(c => c.Id == __id_0)'
+2023-03-09 19:16:02.041 +01:00 [DBG] Generated query execution expression: 
+'queryContext => ShapedQueryCompilingExpressionVisitor.SingleAsync<bool>(
+    asyncEnumerable: new SingleQueryingEnumerable<bool>(
+        (RelationalQueryContext)queryContext, 
+        RelationalCommandCache.QueryExpression(
+            Projection Mapping:
+                EmptyProjectionMember -> 0
+            SELECT EXISTS (
+                SELECT 1
+                FROM Customers AS c
+                WHERE c.Id == @__id_0)), 
+        null, 
+        Func<QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator, bool>, 
+        BackEndAPI.Data.CustomerDBContext, 
+        False, 
+        False, 
+        True
+    ), 
+    cancellationToken: queryContext.CancellationToken)'
+2023-03-09 19:16:02.096 +01:00 [DBG] Creating DbCommand for 'ExecuteReader'.
+2023-03-09 19:16:02.099 +01:00 [DBG] Creating DbConnection.
+2023-03-09 19:16:02.131 +01:00 [DBG] Created DbConnection. (30ms).
+2023-03-09 19:16:02.139 +01:00 [DBG] Created DbCommand for 'ExecuteReader' (39ms).
+2023-03-09 19:16:02.147 +01:00 [DBG] Initialized DbCommand for 'ExecuteReader' (51ms).
+2023-03-09 19:16:02.154 +01:00 [DBG] Opening connection to database 'CustomerDatabase' on server '.'.
+2023-03-09 19:16:02.444 +01:00 [DBG] Opened connection to database 'CustomerDatabase' on server '.'.
+2023-03-09 19:16:02.456 +01:00 [DBG] Executing DbCommand [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Customers] AS [c]
+        WHERE [c].[Id] = @__id_0) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2023-03-09 19:16:02.535 +01:00 [INF] Executed DbCommand (84ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Customers] AS [c]
+        WHERE [c].[Id] = @__id_0) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2023-03-09 19:16:02.560 +01:00 [DBG] Closing data reader to 'CustomerDatabase' on server '.'.
+2023-03-09 19:16:02.569 +01:00 [DBG] A data reader for 'CustomerDatabase' on server '.' is being disposed after spending 28ms reading results.
+2023-03-09 19:16:02.575 +01:00 [DBG] Closing connection to database 'CustomerDatabase' on server '.'.
+2023-03-09 19:16:02.584 +01:00 [DBG] Closed connection to database 'CustomerDatabase' on server '.' (8ms).
+2023-03-09 19:16:02.586 +01:00 [DBG] Compiling query expression: 
+'DbSet<Customer>()
+    .Count(c => c.AgentUserName == __agent_0 && c.DateRewarded == DateTime.Today)'
+2023-03-09 19:16:02.620 +01:00 [DBG] Generated query execution expression: 
+'queryContext => ShapedQueryCompilingExpressionVisitor.SingleAsync<int>(
+    asyncEnumerable: new SingleQueryingEnumerable<int>(
+        (RelationalQueryContext)queryContext, 
+        RelationalCommandCache.QueryExpression(
+            Projection Mapping:
+                EmptyProjectionMember -> 0
+            SELECT COUNT(*)
+            FROM Customers AS c
+            WHERE (c.AgentUserName == @__agent_0) && (c.DateRewarded == CONVERT(date, GETDATE()))), 
+        null, 
+        Func<QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator, int>, 
+        BackEndAPI.Data.CustomerDBContext, 
+        False, 
+        False, 
+        True
+    ), 
+    cancellationToken: queryContext.CancellationToken)'
+2023-03-09 19:16:02.634 +01:00 [DBG] Creating DbCommand for 'ExecuteReader'.
+2023-03-09 19:16:02.634 +01:00 [DBG] Created DbCommand for 'ExecuteReader' (0ms).
+2023-03-09 19:16:02.635 +01:00 [DBG] Initialized DbCommand for 'ExecuteReader' (0ms).
+2023-03-09 19:16:02.635 +01:00 [DBG] Opening connection to database 'CustomerDatabase' on server '.'.
+2023-03-09 19:16:02.636 +01:00 [DBG] Opened connection to database 'CustomerDatabase' on server '.'.
+2023-03-09 19:16:02.636 +01:00 [DBG] Executing DbCommand [Parameters=[@__agent_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Customers] AS [c]
+WHERE [c].[AgentUserName] = @__agent_0 AND [c].[DateRewarded] = CONVERT(date, GETDATE())
+2023-03-09 19:16:02.641 +01:00 [INF] Executed DbCommand (5ms) [Parameters=[@__agent_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Customers] AS [c]
+WHERE [c].[AgentUserName] = @__agent_0 AND [c].[DateRewarded] = CONVERT(date, GETDATE())
+2023-03-09 19:16:02.643 +01:00 [DBG] Closing data reader to 'CustomerDatabase' on server '.'.
+2023-03-09 19:16:02.643 +01:00 [DBG] A data reader for 'CustomerDatabase' on server '.' is being disposed after spending 2ms reading results.
+2023-03-09 19:16:02.643 +01:00 [DBG] Closing connection to database 'CustomerDatabase' on server '.'.
+2023-03-09 19:16:02.643 +01:00 [DBG] Closed connection to database 'CustomerDatabase' on server '.' (0ms).
+2023-03-09 19:19:58.386 +01:00 [DBG] Registered model binder providers, in the following order: ["Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider"]
+2023-03-09 19:19:58.510 +01:00 [DBG] Hosting starting
+2023-03-09 19:19:58.678 +01:00 [DBG] Using development certificate: CN=localhost (Thumbprint: C157B902E5C0417D2199EABA8399DEF1CA376564)
+2023-03-09 19:19:58.731 +01:00 [INF] Now listening on: https://localhost:7119
+2023-03-09 19:19:58.731 +01:00 [INF] Now listening on: http://localhost:5148
+2023-03-09 19:19:58.731 +01:00 [DBG] Loaded hosting startup assembly BackEndAPI
+2023-03-09 19:19:58.731 +01:00 [DBG] Loaded hosting startup assembly Microsoft.AspNetCore.Watch.BrowserRefresh
+2023-03-09 19:19:58.731 +01:00 [DBG] Loaded hosting startup assembly Microsoft.WebTools.BrowserLink.Net
+2023-03-09 19:19:58.731 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-03-09 19:19:58.732 +01:00 [INF] Hosting environment: Development
+2023-03-09 19:19:58.732 +01:00 [INF] Content root path: C:\Kursevi\ComtradeTask\BackEndAPI\
+2023-03-09 19:19:58.732 +01:00 [DBG] Hosting started
+2023-03-09 19:19:59.046 +01:00 [DBG] Connection id "0HMP0PBI6C5KK" accepted.
+2023-03-09 19:19:59.047 +01:00 [DBG] Connection id "0HMP0PBI6C5KK" started.
+2023-03-09 19:19:59.048 +01:00 [DBG] Connection id "0HMP0PBI6C5KL" accepted.
+2023-03-09 19:19:59.048 +01:00 [DBG] Connection id "0HMP0PBI6C5KL" started.
+2023-03-09 19:19:59.051 +01:00 [DBG] Connection id "0HMP0PBI6C5KL" received FIN.
+2023-03-09 19:19:59.051 +01:00 [DBG] Connection id "0HMP0PBI6C5KK" received FIN.
+2023-03-09 19:19:59.082 +01:00 [DBG] Failed to authenticate HTTPS connection.
+System.IO.IOException:  Received an unexpected EOF or 0 bytes from the transport stream.
+   at System.Net.Security.SslStream.ReceiveBlobAsync[TIOAdapter](TIOAdapter adapter)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](TIOAdapter adapter, Boolean receiveFirst, Byte[] reAuthenticationData, Boolean isApm)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2023-03-09 19:19:59.082 +01:00 [DBG] Failed to authenticate HTTPS connection.
+System.IO.IOException:  Received an unexpected EOF or 0 bytes from the transport stream.
+   at System.Net.Security.SslStream.ReceiveBlobAsync[TIOAdapter](TIOAdapter adapter)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](TIOAdapter adapter, Boolean receiveFirst, Byte[] reAuthenticationData, Boolean isApm)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2023-03-09 19:19:59.119 +01:00 [DBG] Connection id "0HMP0PBI6C5KL" stopped.
+2023-03-09 19:19:59.119 +01:00 [DBG] Connection id "0HMP0PBI6C5KK" stopped.
+2023-03-09 19:19:59.121 +01:00 [DBG] Connection id "0HMP0PBI6C5KK" sending FIN because: "The Socket transport's send loop completed gracefully."
+2023-03-09 19:19:59.121 +01:00 [DBG] Connection id "0HMP0PBI6C5KL" sending FIN because: "The Socket transport's send loop completed gracefully."
+2023-03-09 19:19:59.233 +01:00 [DBG] Connection id "0HMP0PBI6C5KM" accepted.
+2023-03-09 19:19:59.233 +01:00 [DBG] Connection id "0HMP0PBI6C5KM" started.
+2023-03-09 19:19:59.310 +01:00 [DBG] Connection 0HMP0PBI6C5KM established using the following protocol: "Tls12"
+2023-03-09 19:19:59.370 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7119/swagger/index.html - -
+2023-03-09 19:19:59.407 +01:00 [DBG] Wildcard detected, all requests with hosts will be allowed.
+2023-03-09 19:19:59.426 +01:00 [DBG] No candidates found for the request path '/swagger/index.html'
+2023-03-09 19:19:59.426 +01:00 [DBG] Request did not match any endpoints
+2023-03-09 19:19:59.626 +01:00 [DBG] Response markup is scheduled to include browser refresh script injection.
+2023-03-09 19:19:59.819 +01:00 [DBG] Response markup was updated to include browser refresh script injection.
+2023-03-09 19:19:59.822 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7119/swagger/index.html - - - 200 - text/html;charset=utf-8 458.5189ms
+2023-03-09 19:19:59.863 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7119/_framework/aspnetcore-browser-refresh.js - -
+2023-03-09 19:19:59.869 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7119/_framework/aspnetcore-browser-refresh.js - - - 200 11990 application/javascript;+charset=utf-8 6.1620ms
+2023-03-09 19:19:59.898 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7119/_vs/browserLink - -
+2023-03-09 19:19:59.941 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7119/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 43.4985ms
+2023-03-09 19:20:00.154 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7119/swagger/v1/swagger.json - -
+2023-03-09 19:20:00.154 +01:00 [DBG] No candidates found for the request path '/swagger/v1/swagger.json'
+2023-03-09 19:20:00.154 +01:00 [DBG] Request did not match any endpoints
+2023-03-09 19:20:00.295 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7119/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 140.8764ms
+2023-03-09 19:20:08.483 +01:00 [INF] Request starting HTTP/2 POST https://localhost:7119/api/Customer/1 application/json 6
+2023-03-09 19:20:08.490 +01:00 [DBG] 1 candidate(s) found for the request path '/api/Customer/1'
+2023-03-09 19:20:08.494 +01:00 [DBG] Endpoint 'BackEndAPI.Controllers.CustomerController.RewardCustomer (BackEndAPI)' with route pattern 'api/Customer/{id}' is valid for the request path '/api/Customer/1'
+2023-03-09 19:20:08.495 +01:00 [DBG] Request matched endpoint 'BackEndAPI.Controllers.CustomerController.RewardCustomer (BackEndAPI)'
+2023-03-09 19:20:08.496 +01:00 [DBG] Static files was skipped as the request already matched an endpoint.
+2023-03-09 19:20:08.498 +01:00 [INF] Executing endpoint 'BackEndAPI.Controllers.CustomerController.RewardCustomer (BackEndAPI)'
+2023-03-09 19:20:08.527 +01:00 [INF] Route matched with {action = "RewardCustomer", controller = "Customer"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult] RewardCustomer(Int32, System.String) on controller BackEndAPI.Controllers.CustomerController (BackEndAPI).
+2023-03-09 19:20:08.528 +01:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2023-03-09 19:20:08.528 +01:00 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2023-03-09 19:20:08.528 +01:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2023-03-09 19:20:08.528 +01:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2023-03-09 19:20:08.528 +01:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2023-03-09 19:20:08.528 +01:00 [DBG] Executing controller factory for controller BackEndAPI.Controllers.CustomerController (BackEndAPI)
+2023-03-09 19:20:08.655 +01:00 [DBG] An 'IServiceProvider' was created for internal use by Entity Framework.
+2023-03-09 19:20:08.878 +01:00 [DBG] Executed controller factory for controller BackEndAPI.Controllers.CustomerController (BackEndAPI)
+2023-03-09 19:20:08.889 +01:00 [DBG] Attempting to bind parameter 'id' of type 'System.Int32' ...
+2023-03-09 19:20:08.890 +01:00 [DBG] Attempting to bind parameter 'id' of type 'System.Int32' using the name 'id' in request data ...
+2023-03-09 19:20:08.890 +01:00 [DBG] Done attempting to bind parameter 'id' of type 'System.Int32'.
+2023-03-09 19:20:08.891 +01:00 [DBG] Done attempting to bind parameter 'id' of type 'System.Int32'.
+2023-03-09 19:20:08.891 +01:00 [DBG] Attempting to validate the bound parameter 'id' of type 'System.Int32' ...
+2023-03-09 19:20:08.892 +01:00 [DBG] Done attempting to validate the bound parameter 'id' of type 'System.Int32'.
+2023-03-09 19:20:08.894 +01:00 [DBG] Attempting to bind parameter 'agent' of type 'System.String' ...
+2023-03-09 19:20:08.894 +01:00 [DBG] Attempting to bind parameter 'agent' of type 'System.String' using the name '' in request data ...
+2023-03-09 19:20:08.895 +01:00 [DBG] Selected input formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonInputFormatter' for content type 'application/json'.
+2023-03-09 19:20:08.906 +01:00 [DBG] Connection id "0HMP0PBI6C5KM", Request id "0HMP0PBI6C5KM:00000009": started reading request body.
+2023-03-09 19:20:08.906 +01:00 [DBG] Connection id "0HMP0PBI6C5KM", Request id "0HMP0PBI6C5KM:00000009": done reading request body.
+2023-03-09 19:20:08.912 +01:00 [DBG] JSON input formatter succeeded, deserializing to type 'System.String'
+2023-03-09 19:20:08.912 +01:00 [DBG] Done attempting to bind parameter 'agent' of type 'System.String'.
+2023-03-09 19:20:08.912 +01:00 [DBG] Done attempting to bind parameter 'agent' of type 'System.String'.
+2023-03-09 19:20:08.912 +01:00 [DBG] Attempting to validate the bound parameter 'agent' of type 'System.String' ...
+2023-03-09 19:20:08.917 +01:00 [DBG] Done attempting to validate the bound parameter 'agent' of type 'System.String'.
+2023-03-09 19:20:09.660 +01:00 [DBG] Entity Framework Core 7.0.3 initialized 'CustomerDBContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:7.0.3' with options: None
+2023-03-09 19:20:09.722 +01:00 [DBG] Compiling query expression: 
+'DbSet<Customer>()
+    .Any(c => c.Id == __id_0)'
+2023-03-09 19:20:09.942 +01:00 [DBG] Generated query execution expression: 
+'queryContext => ShapedQueryCompilingExpressionVisitor.SingleAsync<bool>(
+    asyncEnumerable: new SingleQueryingEnumerable<bool>(
+        (RelationalQueryContext)queryContext, 
+        RelationalCommandCache.QueryExpression(
+            Projection Mapping:
+                EmptyProjectionMember -> 0
+            SELECT EXISTS (
+                SELECT 1
+                FROM Customers AS c
+                WHERE c.Id == @__id_0)), 
+        null, 
+        Func<QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator, bool>, 
+        BackEndAPI.Data.CustomerDBContext, 
+        False, 
+        False, 
+        True
+    ), 
+    cancellationToken: queryContext.CancellationToken)'
+2023-03-09 19:20:09.998 +01:00 [DBG] Creating DbCommand for 'ExecuteReader'.
+2023-03-09 19:20:10.000 +01:00 [DBG] Creating DbConnection.
+2023-03-09 19:20:10.034 +01:00 [DBG] Created DbConnection. (30ms).
+2023-03-09 19:20:10.042 +01:00 [DBG] Created DbCommand for 'ExecuteReader' (43ms).
+2023-03-09 19:20:10.050 +01:00 [DBG] Initialized DbCommand for 'ExecuteReader' (53ms).
+2023-03-09 19:20:10.058 +01:00 [DBG] Opening connection to database 'CustomerDatabase' on server '.'.
+2023-03-09 19:20:10.360 +01:00 [DBG] Opened connection to database 'CustomerDatabase' on server '.'.
+2023-03-09 19:20:10.373 +01:00 [DBG] Executing DbCommand [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Customers] AS [c]
+        WHERE [c].[Id] = @__id_0) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2023-03-09 19:20:10.449 +01:00 [INF] Executed DbCommand (82ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Customers] AS [c]
+        WHERE [c].[Id] = @__id_0) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2023-03-09 19:20:10.473 +01:00 [DBG] Closing data reader to 'CustomerDatabase' on server '.'.
+2023-03-09 19:20:10.482 +01:00 [DBG] A data reader for 'CustomerDatabase' on server '.' is being disposed after spending 28ms reading results.
+2023-03-09 19:20:10.488 +01:00 [DBG] Closing connection to database 'CustomerDatabase' on server '.'.
+2023-03-09 19:20:10.497 +01:00 [DBG] Closed connection to database 'CustomerDatabase' on server '.' (8ms).
+2023-03-09 19:20:10.499 +01:00 [DBG] Compiling query expression: 
+'DbSet<Customer>()
+    .Count(c => c.AgentUserName == __agent_0 && c.DateRewarded == DateTime.Today)'
+2023-03-09 19:20:10.536 +01:00 [DBG] Generated query execution expression: 
+'queryContext => ShapedQueryCompilingExpressionVisitor.SingleAsync<int>(
+    asyncEnumerable: new SingleQueryingEnumerable<int>(
+        (RelationalQueryContext)queryContext, 
+        RelationalCommandCache.QueryExpression(
+            Projection Mapping:
+                EmptyProjectionMember -> 0
+            SELECT COUNT(*)
+            FROM Customers AS c
+            WHERE (c.AgentUserName == @__agent_0) && (c.DateRewarded == CONVERT(date, GETDATE()))), 
+        null, 
+        Func<QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator, int>, 
+        BackEndAPI.Data.CustomerDBContext, 
+        False, 
+        False, 
+        True
+    ), 
+    cancellationToken: queryContext.CancellationToken)'
+2023-03-09 19:20:10.550 +01:00 [DBG] Creating DbCommand for 'ExecuteReader'.
+2023-03-09 19:20:10.551 +01:00 [DBG] Created DbCommand for 'ExecuteReader' (0ms).
+2023-03-09 19:20:10.552 +01:00 [DBG] Initialized DbCommand for 'ExecuteReader' (1ms).
+2023-03-09 19:20:10.553 +01:00 [DBG] Opening connection to database 'CustomerDatabase' on server '.'.
+2023-03-09 19:20:10.554 +01:00 [DBG] Opened connection to database 'CustomerDatabase' on server '.'.
+2023-03-09 19:20:10.554 +01:00 [DBG] Executing DbCommand [Parameters=[@__agent_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Customers] AS [c]
+WHERE [c].[AgentUserName] = @__agent_0 AND [c].[DateRewarded] = CONVERT(date, GETDATE())
+2023-03-09 19:20:10.558 +01:00 [INF] Executed DbCommand (4ms) [Parameters=[@__agent_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Customers] AS [c]
+WHERE [c].[AgentUserName] = @__agent_0 AND [c].[DateRewarded] = CONVERT(date, GETDATE())
+2023-03-09 19:20:10.560 +01:00 [DBG] Closing data reader to 'CustomerDatabase' on server '.'.
+2023-03-09 19:20:10.560 +01:00 [DBG] A data reader for 'CustomerDatabase' on server '.' is being disposed after spending 2ms reading results.
+2023-03-09 19:20:10.560 +01:00 [DBG] Closing connection to database 'CustomerDatabase' on server '.'.
+2023-03-09 19:20:10.560 +01:00 [DBG] Closed connection to database 'CustomerDatabase' on server '.' (0ms).
+2023-03-09 19:20:21.292 +01:00 [DBG] 'CustomerDBContext' generated a temporary value for the property 'Id.Home'. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-03-09 19:20:21.338 +01:00 [DBG] Context 'CustomerDBContext' started tracking 'Home' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-03-09 19:20:23.803 +01:00 [DBG] SaveChanges starting for 'CustomerDBContext'.
+2023-03-09 19:20:23.805 +01:00 [DBG] DetectChanges starting for 'CustomerDBContext'.
+2023-03-09 19:20:23.812 +01:00 [DBG] DetectChanges completed for 'CustomerDBContext'.
+2023-03-09 19:20:23.881 +01:00 [DBG] Opening connection to database 'CustomerDatabase' on server '.'.
+2023-03-09 19:20:23.881 +01:00 [DBG] Opened connection to database 'CustomerDatabase' on server '.'.
+2023-03-09 19:20:23.885 +01:00 [DBG] Creating DbCommand for 'ExecuteReader'.
+2023-03-09 19:20:23.885 +01:00 [DBG] Created DbCommand for 'ExecuteReader' (0ms).
+2023-03-09 19:20:23.885 +01:00 [DBG] Initialized DbCommand for 'ExecuteReader' (0ms).
+2023-03-09 19:20:23.885 +01:00 [DBG] Executing DbCommand [Parameters=[@p0='?' (Size = 4000), @p1='?' (Size = 4000), @p2='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [Homes] ([Adress], [City], [Zip])
+OUTPUT INSERTED.[Id]
+VALUES (@p0, @p1, @p2);
+2023-03-09 19:20:43.998 +01:00 [ERR] Failed executing DbCommand (20,110ms) [Parameters=[@p0='?' (Size = 4000), @p1='?' (Size = 4000), @p2='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [Homes] ([Adress], [City], [Zip])
+OUTPUT INSERTED.[Id]
+VALUES (@p0, @p1, @p2);
+2023-03-09 19:20:44.007 +01:00 [DBG] Closing connection to database 'CustomerDatabase' on server '.'.
+2023-03-09 19:20:44.007 +01:00 [DBG] Closed connection to database 'CustomerDatabase' on server '.' (0ms).
+2023-03-09 19:20:44.099 +01:00 [ERR] An exception occurred in the database while saving changes for context type 'BackEndAPI.Data.CustomerDBContext'.
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): Invalid object name 'Homes'.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__208_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.Tasks.Task.<>c.<.cctor>b__272_0(Object obj)
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+ClientConnectionId:b3d8f5c1-af20-45ad-be15-830dad1ab3d9
+Error Number:208,State:1,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.SqlServerModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): Invalid object name 'Homes'.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__208_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.Tasks.Task.<>c.<.cctor>b__272_0(Object obj)
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+ClientConnectionId:b3d8f5c1-af20-45ad-be15-830dad1ab3d9
+Error Number:208,State:1,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.SqlServerModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+2023-03-09 19:20:44.100 +01:00 [INF] Executed action BackEndAPI.Controllers.CustomerController.RewardCustomer (BackEndAPI) in 35568.6602ms
+2023-03-09 19:20:44.101 +01:00 [INF] Executed endpoint 'BackEndAPI.Controllers.CustomerController.RewardCustomer (BackEndAPI)'
+2023-03-09 19:20:44.103 +01:00 [ERR] An unhandled exception has occurred while executing the request.
+AutoMapper.AutoMapperMappingException: Error mapping types.
+
+Mapping types:
+CustomerBO -> Customer
+BackEndAPI.Model.BO.CustomerBO -> BackEndAPI.Model.Customer
+
+Type Map configuration:
+CustomerBO -> Customer
+BackEndAPI.Model.BO.CustomerBO -> BackEndAPI.Model.Customer
+
+Destination Member:
+Home
+
+ ---> AutoMapper.AutoMapperMappingException: Missing type map configuration or unsupported mapping.
+
+Mapping types:
+HomeBO -> Home
+BackEndAPI.Model.BO.HomeBO -> BackEndAPI.Model.Home
+
+Destination Member:
+Home
+
+   at lambda_method62(Closure , HomeBO , Home , ResolutionContext )
+   at lambda_method61(Closure , Object , Customer , ResolutionContext )
+   --- End of inner exception stack trace ---
+   at lambda_method61(Closure , Object , Customer , ResolutionContext )
+   at BackEndAPI.Repository.CustomerRepository.RewardCustomer(Int32 id, String agent) in C:\Kursevi\ComtradeTask\BackEndAPI\Repository\CustomerRepository.cs:line 96
+   at BackEndAPI.Controllers.CustomerController.RewardCustomer(Int32 id, String agent) in C:\Kursevi\ComtradeTask\BackEndAPI\Controllers\CustomerController.cs:line 128
+   at lambda_method5(Closure , Object )
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2023-03-09 19:20:44.181 +01:00 [DBG] 'CustomerDBContext' disposed.
+2023-03-09 19:20:44.192 +01:00 [DBG] Disposing connection to database 'CustomerDatabase' on server '.'.
+2023-03-09 19:20:44.194 +01:00 [DBG] Disposed connection to database '' on server '' (2ms).
+2023-03-09 19:20:44.196 +01:00 [INF] Request finished HTTP/2 POST https://localhost:7119/api/Customer/1 application/json 6 - 500 - text/plain;+charset=utf-8 35712.2706ms
+2023-03-09 19:21:37.445 +01:00 [DBG] Registered model binder providers, in the following order: ["Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider"]
+2023-03-09 19:21:37.525 +01:00 [DBG] Hosting starting
+2023-03-09 19:21:37.678 +01:00 [DBG] Using development certificate: CN=localhost (Thumbprint: C157B902E5C0417D2199EABA8399DEF1CA376564)
+2023-03-09 19:21:37.728 +01:00 [INF] Now listening on: https://localhost:7119
+2023-03-09 19:21:37.728 +01:00 [INF] Now listening on: http://localhost:5148
+2023-03-09 19:21:37.728 +01:00 [DBG] Loaded hosting startup assembly BackEndAPI
+2023-03-09 19:21:37.728 +01:00 [DBG] Loaded hosting startup assembly Microsoft.AspNetCore.Watch.BrowserRefresh
+2023-03-09 19:21:37.728 +01:00 [DBG] Loaded hosting startup assembly Microsoft.WebTools.BrowserLink.Net
+2023-03-09 19:21:37.729 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-03-09 19:21:37.729 +01:00 [INF] Hosting environment: Development
+2023-03-09 19:21:37.729 +01:00 [INF] Content root path: C:\Kursevi\ComtradeTask\BackEndAPI\
+2023-03-09 19:21:37.730 +01:00 [DBG] Hosting started
+2023-03-09 19:21:38.111 +01:00 [DBG] Connection id "0HMP0PCFN559Q" received FIN.
+2023-03-09 19:21:38.121 +01:00 [DBG] Connection id "0HMP0PCFN559Q" accepted.
+2023-03-09 19:21:38.122 +01:00 [DBG] Connection id "0HMP0PCFN559Q" started.
+2023-03-09 19:21:38.146 +01:00 [DBG] Failed to authenticate HTTPS connection.
+System.IO.IOException:  Received an unexpected EOF or 0 bytes from the transport stream.
+   at System.Net.Security.SslStream.ReceiveBlobAsync[TIOAdapter](TIOAdapter adapter)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](TIOAdapter adapter, Boolean receiveFirst, Byte[] reAuthenticationData, Boolean isApm)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2023-03-09 19:21:38.181 +01:00 [DBG] Connection id "0HMP0PCFN559Q" stopped.
+2023-03-09 19:21:38.184 +01:00 [DBG] Connection id "0HMP0PCFN559Q" sending FIN because: "The Socket transport's send loop completed gracefully."
+2023-03-09 19:21:38.287 +01:00 [DBG] Connection id "0HMP0PCFN559R" accepted.
+2023-03-09 19:21:38.288 +01:00 [DBG] Connection id "0HMP0PCFN559R" started.
+2023-03-09 19:21:38.361 +01:00 [DBG] Connection 0HMP0PCFN559R established using the following protocol: "Tls12"
+2023-03-09 19:21:38.416 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7119/swagger/index.html - -
+2023-03-09 19:21:38.453 +01:00 [DBG] Wildcard detected, all requests with hosts will be allowed.
+2023-03-09 19:21:38.475 +01:00 [DBG] No candidates found for the request path '/swagger/index.html'
+2023-03-09 19:21:38.476 +01:00 [DBG] Request did not match any endpoints
+2023-03-09 19:21:38.702 +01:00 [DBG] Response markup is scheduled to include browser refresh script injection.
+2023-03-09 19:21:38.836 +01:00 [DBG] Response markup was updated to include browser refresh script injection.
+2023-03-09 19:21:38.842 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7119/swagger/index.html - - - 200 - text/html;charset=utf-8 431.1882ms
+2023-03-09 19:21:38.876 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7119/_framework/aspnetcore-browser-refresh.js - -
+2023-03-09 19:21:38.883 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7119/_framework/aspnetcore-browser-refresh.js - - - 200 11990 application/javascript;+charset=utf-8 6.7104ms
+2023-03-09 19:21:38.911 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7119/_vs/browserLink - -
+2023-03-09 19:21:38.934 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7119/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 23.2970ms
+2023-03-09 19:21:39.127 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7119/swagger/v1/swagger.json - -
+2023-03-09 19:21:39.127 +01:00 [DBG] No candidates found for the request path '/swagger/v1/swagger.json'
+2023-03-09 19:21:39.127 +01:00 [DBG] Request did not match any endpoints
+2023-03-09 19:21:39.237 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7119/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 109.9334ms
+2023-03-09 19:21:46.095 +01:00 [INF] Request starting HTTP/2 POST https://localhost:7119/api/Customer/1 application/json 6
+2023-03-09 19:21:46.100 +01:00 [DBG] 1 candidate(s) found for the request path '/api/Customer/1'
+2023-03-09 19:21:46.103 +01:00 [DBG] Endpoint 'BackEndAPI.Controllers.CustomerController.RewardCustomer (BackEndAPI)' with route pattern 'api/Customer/{id}' is valid for the request path '/api/Customer/1'
+2023-03-09 19:21:46.103 +01:00 [DBG] Request matched endpoint 'BackEndAPI.Controllers.CustomerController.RewardCustomer (BackEndAPI)'
+2023-03-09 19:21:46.104 +01:00 [DBG] Static files was skipped as the request already matched an endpoint.
+2023-03-09 19:21:46.106 +01:00 [INF] Executing endpoint 'BackEndAPI.Controllers.CustomerController.RewardCustomer (BackEndAPI)'
+2023-03-09 19:21:46.133 +01:00 [INF] Route matched with {action = "RewardCustomer", controller = "Customer"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult] RewardCustomer(Int32, System.String) on controller BackEndAPI.Controllers.CustomerController (BackEndAPI).
+2023-03-09 19:21:46.134 +01:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2023-03-09 19:21:46.134 +01:00 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2023-03-09 19:21:46.134 +01:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2023-03-09 19:21:46.134 +01:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2023-03-09 19:21:46.134 +01:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2023-03-09 19:21:46.135 +01:00 [DBG] Executing controller factory for controller BackEndAPI.Controllers.CustomerController (BackEndAPI)
+2023-03-09 19:21:46.249 +01:00 [DBG] An 'IServiceProvider' was created for internal use by Entity Framework.
+2023-03-09 19:21:46.458 +01:00 [DBG] Executed controller factory for controller BackEndAPI.Controllers.CustomerController (BackEndAPI)
+2023-03-09 19:21:46.469 +01:00 [DBG] Attempting to bind parameter 'id' of type 'System.Int32' ...
+2023-03-09 19:21:46.470 +01:00 [DBG] Attempting to bind parameter 'id' of type 'System.Int32' using the name 'id' in request data ...
+2023-03-09 19:21:46.471 +01:00 [DBG] Done attempting to bind parameter 'id' of type 'System.Int32'.
+2023-03-09 19:21:46.471 +01:00 [DBG] Done attempting to bind parameter 'id' of type 'System.Int32'.
+2023-03-09 19:21:46.471 +01:00 [DBG] Attempting to validate the bound parameter 'id' of type 'System.Int32' ...
+2023-03-09 19:21:46.472 +01:00 [DBG] Done attempting to validate the bound parameter 'id' of type 'System.Int32'.
+2023-03-09 19:21:46.473 +01:00 [DBG] Attempting to bind parameter 'agent' of type 'System.String' ...
+2023-03-09 19:21:46.474 +01:00 [DBG] Attempting to bind parameter 'agent' of type 'System.String' using the name '' in request data ...
+2023-03-09 19:21:46.475 +01:00 [DBG] Selected input formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonInputFormatter' for content type 'application/json'.
+2023-03-09 19:21:46.484 +01:00 [DBG] Connection id "0HMP0PCFN559R", Request id "0HMP0PCFN559R:00000009": started reading request body.
+2023-03-09 19:21:46.484 +01:00 [DBG] Connection id "0HMP0PCFN559R", Request id "0HMP0PCFN559R:00000009": done reading request body.
+2023-03-09 19:21:46.489 +01:00 [DBG] JSON input formatter succeeded, deserializing to type 'System.String'
+2023-03-09 19:21:46.489 +01:00 [DBG] Done attempting to bind parameter 'agent' of type 'System.String'.
+2023-03-09 19:21:46.489 +01:00 [DBG] Done attempting to bind parameter 'agent' of type 'System.String'.
+2023-03-09 19:21:46.489 +01:00 [DBG] Attempting to validate the bound parameter 'agent' of type 'System.String' ...
+2023-03-09 19:21:46.495 +01:00 [DBG] Done attempting to validate the bound parameter 'agent' of type 'System.String'.
+2023-03-09 19:21:47.224 +01:00 [DBG] Entity Framework Core 7.0.3 initialized 'CustomerDBContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:7.0.3' with options: None
+2023-03-09 19:21:47.284 +01:00 [DBG] Compiling query expression: 
+'DbSet<Customer>()
+    .Any(c => c.Id == __id_0)'
+2023-03-09 19:21:47.508 +01:00 [DBG] Generated query execution expression: 
+'queryContext => ShapedQueryCompilingExpressionVisitor.SingleAsync<bool>(
+    asyncEnumerable: new SingleQueryingEnumerable<bool>(
+        (RelationalQueryContext)queryContext, 
+        RelationalCommandCache.QueryExpression(
+            Projection Mapping:
+                EmptyProjectionMember -> 0
+            SELECT EXISTS (
+                SELECT 1
+                FROM Customers AS c
+                WHERE c.Id == @__id_0)), 
+        null, 
+        Func<QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator, bool>, 
+        BackEndAPI.Data.CustomerDBContext, 
+        False, 
+        False, 
+        True
+    ), 
+    cancellationToken: queryContext.CancellationToken)'
+2023-03-09 19:21:47.561 +01:00 [DBG] Creating DbCommand for 'ExecuteReader'.
+2023-03-09 19:21:47.563 +01:00 [DBG] Creating DbConnection.
+2023-03-09 19:21:47.594 +01:00 [DBG] Created DbConnection. (28ms).
+2023-03-09 19:21:47.601 +01:00 [DBG] Created DbCommand for 'ExecuteReader' (38ms).
+2023-03-09 19:21:47.609 +01:00 [DBG] Initialized DbCommand for 'ExecuteReader' (49ms).
+2023-03-09 19:21:47.616 +01:00 [DBG] Opening connection to database 'CustomerDatabase' on server '.'.
+2023-03-09 19:21:47.903 +01:00 [DBG] Opened connection to database 'CustomerDatabase' on server '.'.
+2023-03-09 19:21:47.916 +01:00 [DBG] Executing DbCommand [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Customers] AS [c]
+        WHERE [c].[Id] = @__id_0) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2023-03-09 19:21:47.989 +01:00 [INF] Executed DbCommand (79ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Customers] AS [c]
+        WHERE [c].[Id] = @__id_0) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2023-03-09 19:21:48.015 +01:00 [DBG] Closing data reader to 'CustomerDatabase' on server '.'.
+2023-03-09 19:21:48.025 +01:00 [DBG] A data reader for 'CustomerDatabase' on server '.' is being disposed after spending 29ms reading results.
+2023-03-09 19:21:48.030 +01:00 [DBG] Closing connection to database 'CustomerDatabase' on server '.'.
+2023-03-09 19:21:48.039 +01:00 [DBG] Closed connection to database 'CustomerDatabase' on server '.' (8ms).
+2023-03-09 19:21:48.041 +01:00 [DBG] Compiling query expression: 
+'DbSet<Customer>()
+    .Count(c => c.AgentUserName == __agent_0 && c.DateRewarded == DateTime.Today)'
+2023-03-09 19:21:48.078 +01:00 [DBG] Generated query execution expression: 
+'queryContext => ShapedQueryCompilingExpressionVisitor.SingleAsync<int>(
+    asyncEnumerable: new SingleQueryingEnumerable<int>(
+        (RelationalQueryContext)queryContext, 
+        RelationalCommandCache.QueryExpression(
+            Projection Mapping:
+                EmptyProjectionMember -> 0
+            SELECT COUNT(*)
+            FROM Customers AS c
+            WHERE (c.AgentUserName == @__agent_0) && (c.DateRewarded == CONVERT(date, GETDATE()))), 
+        null, 
+        Func<QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator, int>, 
+        BackEndAPI.Data.CustomerDBContext, 
+        False, 
+        False, 
+        True
+    ), 
+    cancellationToken: queryContext.CancellationToken)'
+2023-03-09 19:21:48.092 +01:00 [DBG] Creating DbCommand for 'ExecuteReader'.
+2023-03-09 19:21:48.092 +01:00 [DBG] Created DbCommand for 'ExecuteReader' (0ms).
+2023-03-09 19:21:48.093 +01:00 [DBG] Initialized DbCommand for 'ExecuteReader' (0ms).
+2023-03-09 19:21:48.093 +01:00 [DBG] Opening connection to database 'CustomerDatabase' on server '.'.
+2023-03-09 19:21:48.094 +01:00 [DBG] Opened connection to database 'CustomerDatabase' on server '.'.
+2023-03-09 19:21:48.094 +01:00 [DBG] Executing DbCommand [Parameters=[@__agent_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Customers] AS [c]
+WHERE [c].[AgentUserName] = @__agent_0 AND [c].[DateRewarded] = CONVERT(date, GETDATE())
+2023-03-09 19:21:48.097 +01:00 [INF] Executed DbCommand (3ms) [Parameters=[@__agent_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Customers] AS [c]
+WHERE [c].[AgentUserName] = @__agent_0 AND [c].[DateRewarded] = CONVERT(date, GETDATE())
+2023-03-09 19:21:48.100 +01:00 [DBG] Closing data reader to 'CustomerDatabase' on server '.'.
+2023-03-09 19:21:48.100 +01:00 [DBG] A data reader for 'CustomerDatabase' on server '.' is being disposed after spending 2ms reading results.
+2023-03-09 19:21:48.100 +01:00 [DBG] Closing connection to database 'CustomerDatabase' on server '.'.
+2023-03-09 19:21:48.100 +01:00 [DBG] Closed connection to database 'CustomerDatabase' on server '.' (0ms).
+2023-03-09 19:22:04.419 +01:00 [DBG] 'CustomerDBContext' generated a temporary value for the property 'Id.Home'. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-03-09 19:22:04.460 +01:00 [DBG] Context 'CustomerDBContext' started tracking 'Home' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-03-09 19:22:06.517 +01:00 [DBG] SaveChanges starting for 'CustomerDBContext'.
+2023-03-09 19:22:06.519 +01:00 [DBG] DetectChanges starting for 'CustomerDBContext'.
+2023-03-09 19:22:06.526 +01:00 [DBG] DetectChanges completed for 'CustomerDBContext'.
+2023-03-09 19:22:06.587 +01:00 [DBG] Opening connection to database 'CustomerDatabase' on server '.'.
+2023-03-09 19:22:06.587 +01:00 [DBG] Opened connection to database 'CustomerDatabase' on server '.'.
+2023-03-09 19:22:06.591 +01:00 [DBG] Creating DbCommand for 'ExecuteReader'.
+2023-03-09 19:22:06.591 +01:00 [DBG] Created DbCommand for 'ExecuteReader' (0ms).
+2023-03-09 19:22:06.591 +01:00 [DBG] Initialized DbCommand for 'ExecuteReader' (0ms).
+2023-03-09 19:22:06.591 +01:00 [DBG] Executing DbCommand [Parameters=[@p0='?' (Size = 4000), @p1='?' (Size = 4000), @p2='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [Homes] ([Adress], [City], [Zip])
+OUTPUT INSERTED.[Id]
+VALUES (@p0, @p1, @p2);
+2023-03-09 19:22:06.610 +01:00 [ERR] Failed executing DbCommand (7ms) [Parameters=[@p0='?' (Size = 4000), @p1='?' (Size = 4000), @p2='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [Homes] ([Adress], [City], [Zip])
+OUTPUT INSERTED.[Id]
+VALUES (@p0, @p1, @p2);
+2023-03-09 19:22:06.616 +01:00 [DBG] Closing connection to database 'CustomerDatabase' on server '.'.
+2023-03-09 19:22:06.616 +01:00 [DBG] Closed connection to database 'CustomerDatabase' on server '.' (0ms).
+2023-03-09 19:22:06.627 +01:00 [ERR] An exception occurred in the database while saving changes for context type 'BackEndAPI.Data.CustomerDBContext'.
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): Invalid object name 'Homes'.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__208_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.Tasks.Task.<>c.<.cctor>b__272_0(Object obj)
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+ClientConnectionId:b306852e-1895-4267-ace1-3dec63b8b4d5
+Error Number:208,State:1,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.SqlServerModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): Invalid object name 'Homes'.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__208_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.Tasks.Task.<>c.<.cctor>b__272_0(Object obj)
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+ClientConnectionId:b306852e-1895-4267-ace1-3dec63b8b4d5
+Error Number:208,State:1,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.SqlServerModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+2023-03-09 19:22:06.794 +01:00 [INF] Executed action BackEndAPI.Controllers.CustomerController.RewardCustomer (BackEndAPI) in 20656.7583ms
+2023-03-09 19:22:06.796 +01:00 [INF] Executed endpoint 'BackEndAPI.Controllers.CustomerController.RewardCustomer (BackEndAPI)'
+2023-03-09 19:22:06.797 +01:00 [ERR] An unhandled exception has occurred while executing the request.
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): Invalid object name 'Homes'.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__208_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.Tasks.Task.<>c.<.cctor>b__272_0(Object obj)
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+ClientConnectionId:b306852e-1895-4267-ace1-3dec63b8b4d5
+Error Number:208,State:1,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.SqlServerModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at BackEndAPI.Repository.CustomerRepository.RewardCustomer(Int32 id, String agent) in C:\Kursevi\ComtradeTask\BackEndAPI\Repository\CustomerRepository.cs:line 94
+   at BackEndAPI.Controllers.CustomerController.RewardCustomer(Int32 id, String agent) in C:\Kursevi\ComtradeTask\BackEndAPI\Controllers\CustomerController.cs:line 128
+   at lambda_method5(Closure , Object )
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2023-03-09 19:22:06.928 +01:00 [DBG] 'CustomerDBContext' disposed.
+2023-03-09 19:22:06.934 +01:00 [DBG] Disposing connection to database 'CustomerDatabase' on server '.'.
+2023-03-09 19:22:06.935 +01:00 [DBG] Disposed connection to database '' on server '' (1ms).
+2023-03-09 19:22:06.936 +01:00 [INF] Request finished HTTP/2 POST https://localhost:7119/api/Customer/1 application/json 6 - 500 - text/plain;+charset=utf-8 20841.7408ms
+2023-03-09 19:22:48.437 +01:00 [DBG] An 'IServiceProvider' was created for internal use by Entity Framework.
+2023-03-09 19:22:48.872 +01:00 [DBG] Entity Framework Core 7.0.3 initialized 'CustomerDBContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:7.0.3' with options: None
+2023-03-09 19:22:49.002 +01:00 [DBG] 'CustomerDBContext' disposed.
+2023-03-09 19:22:55.280 +01:00 [DBG] An 'IServiceProvider' was created for internal use by Entity Framework.
+2023-03-09 19:22:55.714 +01:00 [DBG] Entity Framework Core 7.0.3 initialized 'CustomerDBContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:7.0.3' with options: None
+2023-03-09 19:22:55.726 +01:00 [DBG] Creating DbConnection.
+2023-03-09 19:22:55.748 +01:00 [DBG] Created DbConnection. (19ms).
+2023-03-09 19:22:55.751 +01:00 [DBG] Migrating using database 'CustomerDatabase' on server '.'.
+2023-03-09 19:22:55.754 +01:00 [DBG] Opening connection to database 'CustomerDatabase' on server '.'.
+2023-03-09 19:22:55.894 +01:00 [DBG] Opened connection to database 'CustomerDatabase' on server '.'.
+2023-03-09 19:22:55.899 +01:00 [DBG] Creating DbCommand for 'ExecuteNonQuery'.
+2023-03-09 19:22:55.902 +01:00 [DBG] Created DbCommand for 'ExecuteNonQuery' (3ms).
+2023-03-09 19:22:55.903 +01:00 [DBG] Initialized DbCommand for 'ExecuteNonQuery' (6ms).
+2023-03-09 19:22:55.907 +01:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2023-03-09 19:22:55.921 +01:00 [INF] Executed DbCommand (14ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2023-03-09 19:22:55.923 +01:00 [DBG] Closing connection to database 'CustomerDatabase' on server '.'.
+2023-03-09 19:22:55.928 +01:00 [DBG] Closed connection to database 'CustomerDatabase' on server '.' (2ms).
+2023-03-09 19:22:55.931 +01:00 [DBG] Creating DbCommand for 'ExecuteScalar'.
+2023-03-09 19:22:55.931 +01:00 [DBG] Created DbCommand for 'ExecuteScalar' (0ms).
+2023-03-09 19:22:55.931 +01:00 [DBG] Initialized DbCommand for 'ExecuteScalar' (0ms).
+2023-03-09 19:22:55.931 +01:00 [DBG] Opening connection to database 'CustomerDatabase' on server '.'.
+2023-03-09 19:22:55.931 +01:00 [DBG] Opened connection to database 'CustomerDatabase' on server '.'.
+2023-03-09 19:22:55.931 +01:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+2023-03-09 19:22:55.942 +01:00 [INF] Executed DbCommand (11ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+2023-03-09 19:22:55.942 +01:00 [DBG] Closing connection to database 'CustomerDatabase' on server '.'.
+2023-03-09 19:22:55.943 +01:00 [DBG] Closed connection to database 'CustomerDatabase' on server '.' (0ms).
+2023-03-09 19:22:55.943 +01:00 [DBG] Opening connection to database 'CustomerDatabase' on server '.'.
+2023-03-09 19:22:55.943 +01:00 [DBG] Opened connection to database 'CustomerDatabase' on server '.'.
+2023-03-09 19:22:55.943 +01:00 [DBG] Creating DbCommand for 'ExecuteNonQuery'.
+2023-03-09 19:22:55.943 +01:00 [DBG] Created DbCommand for 'ExecuteNonQuery' (0ms).
+2023-03-09 19:22:55.943 +01:00 [DBG] Initialized DbCommand for 'ExecuteNonQuery' (0ms).
+2023-03-09 19:22:55.944 +01:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2023-03-09 19:22:55.945 +01:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2023-03-09 19:22:55.945 +01:00 [DBG] Closing connection to database 'CustomerDatabase' on server '.'.
+2023-03-09 19:22:55.945 +01:00 [DBG] Closed connection to database 'CustomerDatabase' on server '.' (0ms).
+2023-03-09 19:22:55.945 +01:00 [DBG] Creating DbCommand for 'ExecuteScalar'.
+2023-03-09 19:22:55.945 +01:00 [DBG] Created DbCommand for 'ExecuteScalar' (0ms).
+2023-03-09 19:22:55.945 +01:00 [DBG] Initialized DbCommand for 'ExecuteScalar' (0ms).
+2023-03-09 19:22:55.945 +01:00 [DBG] Opening connection to database 'CustomerDatabase' on server '.'.
+2023-03-09 19:22:55.945 +01:00 [DBG] Opened connection to database 'CustomerDatabase' on server '.'.
+2023-03-09 19:22:55.945 +01:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+2023-03-09 19:22:55.945 +01:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+2023-03-09 19:22:55.945 +01:00 [DBG] Closing connection to database 'CustomerDatabase' on server '.'.
+2023-03-09 19:22:55.945 +01:00 [DBG] Closed connection to database 'CustomerDatabase' on server '.' (0ms).
+2023-03-09 19:22:55.957 +01:00 [DBG] Creating DbCommand for 'ExecuteReader'.
+2023-03-09 19:22:55.957 +01:00 [DBG] Created DbCommand for 'ExecuteReader' (0ms).
+2023-03-09 19:22:55.957 +01:00 [DBG] Initialized DbCommand for 'ExecuteReader' (0ms).
+2023-03-09 19:22:55.957 +01:00 [DBG] Opening connection to database 'CustomerDatabase' on server '.'.
+2023-03-09 19:22:55.957 +01:00 [DBG] Opened connection to database 'CustomerDatabase' on server '.'.
+2023-03-09 19:22:55.957 +01:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+2023-03-09 19:22:55.969 +01:00 [INF] Executed DbCommand (12ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+2023-03-09 19:22:55.970 +01:00 [DBG] Closing data reader to 'CustomerDatabase' on server '.'.
+2023-03-09 19:22:55.971 +01:00 [DBG] A data reader for 'CustomerDatabase' on server '.' is being disposed after spending 1ms reading results.
+2023-03-09 19:22:55.971 +01:00 [DBG] Closing connection to database 'CustomerDatabase' on server '.'.
+2023-03-09 19:22:55.971 +01:00 [DBG] Closed connection to database 'CustomerDatabase' on server '.' (0ms).
+2023-03-09 19:22:55.977 +01:00 [INF] Applying migration '20230309182248_Migration3'.
+2023-03-09 19:22:55.998 +01:00 [DBG] Opening connection to database 'CustomerDatabase' on server '.'.
+2023-03-09 19:22:55.999 +01:00 [DBG] Opened connection to database 'CustomerDatabase' on server '.'.
+2023-03-09 19:22:55.999 +01:00 [DBG] Beginning transaction with isolation level 'Unspecified'.
+2023-03-09 19:22:56.003 +01:00 [DBG] Began transaction with isolation level 'ReadCommitted'.
+2023-03-09 19:22:56.003 +01:00 [DBG] Creating DbCommand for 'ExecuteNonQuery'.
+2023-03-09 19:22:56.003 +01:00 [DBG] Created DbCommand for 'ExecuteNonQuery' (0ms).
+2023-03-09 19:22:56.004 +01:00 [DBG] Initialized DbCommand for 'ExecuteNonQuery' (0ms).
+2023-03-09 19:22:56.004 +01:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+ALTER TABLE [Customers] DROP CONSTRAINT [FK_Customers_Home_HomeID];
+2023-03-09 19:22:56.010 +01:00 [INF] Executed DbCommand (7ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+ALTER TABLE [Customers] DROP CONSTRAINT [FK_Customers_Home_HomeID];
+2023-03-09 19:22:56.011 +01:00 [DBG] Creating DbCommand for 'ExecuteNonQuery'.
+2023-03-09 19:22:56.011 +01:00 [DBG] Created DbCommand for 'ExecuteNonQuery' (0ms).
+2023-03-09 19:22:56.011 +01:00 [DBG] Initialized DbCommand for 'ExecuteNonQuery' (0ms).
+2023-03-09 19:22:56.011 +01:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+ALTER TABLE [Home] DROP CONSTRAINT [PK_Home];
+2023-03-09 19:22:56.018 +01:00 [INF] Executed DbCommand (7ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+ALTER TABLE [Home] DROP CONSTRAINT [PK_Home];
+2023-03-09 19:22:56.018 +01:00 [DBG] Creating DbCommand for 'ExecuteNonQuery'.
+2023-03-09 19:22:56.018 +01:00 [DBG] Created DbCommand for 'ExecuteNonQuery' (0ms).
+2023-03-09 19:22:56.018 +01:00 [DBG] Initialized DbCommand for 'ExecuteNonQuery' (0ms).
+2023-03-09 19:22:56.018 +01:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+EXEC sp_rename N'[Home]', N'Homes';
+2023-03-09 19:22:56.155 +01:00 [INF] Executed DbCommand (136ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+EXEC sp_rename N'[Home]', N'Homes';
+2023-03-09 19:22:56.155 +01:00 [DBG] Creating DbCommand for 'ExecuteNonQuery'.
+2023-03-09 19:22:56.155 +01:00 [DBG] Created DbCommand for 'ExecuteNonQuery' (0ms).
+2023-03-09 19:22:56.155 +01:00 [DBG] Initialized DbCommand for 'ExecuteNonQuery' (0ms).
+2023-03-09 19:22:56.155 +01:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+ALTER TABLE [Homes] ADD CONSTRAINT [PK_Homes] PRIMARY KEY ([Id]);
+2023-03-09 19:22:56.158 +01:00 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+ALTER TABLE [Homes] ADD CONSTRAINT [PK_Homes] PRIMARY KEY ([Id]);
+2023-03-09 19:22:56.158 +01:00 [DBG] Creating DbCommand for 'ExecuteNonQuery'.
+2023-03-09 19:22:56.158 +01:00 [DBG] Created DbCommand for 'ExecuteNonQuery' (0ms).
+2023-03-09 19:22:56.158 +01:00 [DBG] Initialized DbCommand for 'ExecuteNonQuery' (0ms).
+2023-03-09 19:22:56.158 +01:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+ALTER TABLE [Customers] ADD CONSTRAINT [FK_Customers_Homes_HomeID] FOREIGN KEY ([HomeID]) REFERENCES [Homes] ([Id]) ON DELETE CASCADE;
+2023-03-09 19:22:56.159 +01:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+ALTER TABLE [Customers] ADD CONSTRAINT [FK_Customers_Homes_HomeID] FOREIGN KEY ([HomeID]) REFERENCES [Homes] ([Id]) ON DELETE CASCADE;
+2023-03-09 19:22:56.159 +01:00 [DBG] Creating DbCommand for 'ExecuteNonQuery'.
+2023-03-09 19:22:56.159 +01:00 [DBG] Created DbCommand for 'ExecuteNonQuery' (0ms).
+2023-03-09 19:22:56.159 +01:00 [DBG] Initialized DbCommand for 'ExecuteNonQuery' (0ms).
+2023-03-09 19:22:56.159 +01:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO [__EFMigrationsHistory] ([MigrationId], [ProductVersion])
+VALUES (N'20230309182248_Migration3', N'7.0.3');
+2023-03-09 19:22:56.160 +01:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO [__EFMigrationsHistory] ([MigrationId], [ProductVersion])
+VALUES (N'20230309182248_Migration3', N'7.0.3');
+2023-03-09 19:22:56.160 +01:00 [DBG] Committing transaction.
+2023-03-09 19:22:56.162 +01:00 [DBG] Committed transaction.
+2023-03-09 19:22:56.163 +01:00 [DBG] Disposing transaction.
+2023-03-09 19:22:56.163 +01:00 [DBG] Closing connection to database 'CustomerDatabase' on server '.'.
+2023-03-09 19:22:56.163 +01:00 [DBG] Closed connection to database 'CustomerDatabase' on server '.' (0ms).
+2023-03-09 19:22:56.164 +01:00 [DBG] 'CustomerDBContext' disposed.
+2023-03-09 19:22:56.164 +01:00 [DBG] Disposing connection to database 'CustomerDatabase' on server '.'.
+2023-03-09 19:22:56.165 +01:00 [DBG] Disposed connection to database '' on server '' (0ms).
+2023-03-09 19:23:48.867 +01:00 [DBG] Registered model binder providers, in the following order: ["Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider"]
+2023-03-09 19:23:48.951 +01:00 [DBG] Hosting starting
+2023-03-09 19:23:49.090 +01:00 [DBG] Using development certificate: CN=localhost (Thumbprint: C157B902E5C0417D2199EABA8399DEF1CA376564)
+2023-03-09 19:23:49.139 +01:00 [INF] Now listening on: https://localhost:7119
+2023-03-09 19:23:49.139 +01:00 [INF] Now listening on: http://localhost:5148
+2023-03-09 19:23:49.139 +01:00 [DBG] Loaded hosting startup assembly BackEndAPI
+2023-03-09 19:23:49.139 +01:00 [DBG] Loaded hosting startup assembly Microsoft.AspNetCore.Watch.BrowserRefresh
+2023-03-09 19:23:49.139 +01:00 [DBG] Loaded hosting startup assembly Microsoft.WebTools.BrowserLink.Net
+2023-03-09 19:23:49.139 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-03-09 19:23:49.140 +01:00 [INF] Hosting environment: Development
+2023-03-09 19:23:49.140 +01:00 [INF] Content root path: C:\Kursevi\ComtradeTask\BackEndAPI\
+2023-03-09 19:23:49.140 +01:00 [DBG] Hosting started
+2023-03-09 19:23:49.465 +01:00 [DBG] Connection id "0HMP0PDMRQCEJ" accepted.
+2023-03-09 19:23:49.466 +01:00 [DBG] Connection id "0HMP0PDMRQCEJ" started.
+2023-03-09 19:23:49.469 +01:00 [DBG] Connection id "0HMP0PDMRQCEK" accepted.
+2023-03-09 19:23:49.469 +01:00 [DBG] Connection id "0HMP0PDMRQCEK" started.
+2023-03-09 19:23:49.503 +01:00 [DBG] Connection id "0HMP0PDMRQCEK" received FIN.
+2023-03-09 19:23:49.503 +01:00 [DBG] Connection id "0HMP0PDMRQCEJ" received FIN.
+2023-03-09 19:23:49.520 +01:00 [DBG] Failed to authenticate HTTPS connection.
+System.IO.IOException:  Received an unexpected EOF or 0 bytes from the transport stream.
+   at System.Net.Security.SslStream.<FillHandshakeBufferAsync>g__InternalFillHandshakeBufferAsync|189_0[TIOAdapter](TIOAdapter adap, ValueTask`1 task, Int32 minSize)
+   at System.Net.Security.SslStream.ReceiveBlobAsync[TIOAdapter](TIOAdapter adapter)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](TIOAdapter adapter, Boolean receiveFirst, Byte[] reAuthenticationData, Boolean isApm)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2023-03-09 19:23:49.520 +01:00 [DBG] Failed to authenticate HTTPS connection.
+System.IO.IOException:  Received an unexpected EOF or 0 bytes from the transport stream.
+   at System.Net.Security.SslStream.<FillHandshakeBufferAsync>g__InternalFillHandshakeBufferAsync|189_0[TIOAdapter](TIOAdapter adap, ValueTask`1 task, Int32 minSize)
+   at System.Net.Security.SslStream.ReceiveBlobAsync[TIOAdapter](TIOAdapter adapter)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](TIOAdapter adapter, Boolean receiveFirst, Byte[] reAuthenticationData, Boolean isApm)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2023-03-09 19:23:49.555 +01:00 [DBG] Connection id "0HMP0PDMRQCEJ" stopped.
+2023-03-09 19:23:49.555 +01:00 [DBG] Connection id "0HMP0PDMRQCEK" stopped.
+2023-03-09 19:23:49.557 +01:00 [DBG] Connection id "0HMP0PDMRQCEJ" sending FIN because: "The Socket transport's send loop completed gracefully."
+2023-03-09 19:23:49.557 +01:00 [DBG] Connection id "0HMP0PDMRQCEK" sending FIN because: "The Socket transport's send loop completed gracefully."
+2023-03-09 19:23:49.690 +01:00 [DBG] Connection id "0HMP0PDMRQCEL" accepted.
+2023-03-09 19:23:49.691 +01:00 [DBG] Connection id "0HMP0PDMRQCEL" started.
+2023-03-09 19:23:49.744 +01:00 [DBG] Connection 0HMP0PDMRQCEL established using the following protocol: "Tls12"
+2023-03-09 19:23:49.795 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7119/swagger/index.html - -
+2023-03-09 19:23:49.833 +01:00 [DBG] Wildcard detected, all requests with hosts will be allowed.
+2023-03-09 19:23:49.850 +01:00 [DBG] No candidates found for the request path '/swagger/index.html'
+2023-03-09 19:23:49.850 +01:00 [DBG] Request did not match any endpoints
+2023-03-09 19:23:50.047 +01:00 [DBG] Response markup is scheduled to include browser refresh script injection.
+2023-03-09 19:23:50.138 +01:00 [DBG] Response markup was updated to include browser refresh script injection.
+2023-03-09 19:23:50.142 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7119/swagger/index.html - - - 200 - text/html;charset=utf-8 350.9633ms
+2023-03-09 19:23:50.169 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7119/_framework/aspnetcore-browser-refresh.js - -
+2023-03-09 19:23:50.175 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7119/_framework/aspnetcore-browser-refresh.js - - - 200 11990 application/javascript;+charset=utf-8 5.4802ms
+2023-03-09 19:23:50.204 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7119/_vs/browserLink - -
+2023-03-09 19:23:50.228 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7119/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 23.9548ms
+2023-03-09 19:23:50.500 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7119/swagger/v1/swagger.json - -
+2023-03-09 19:23:50.500 +01:00 [DBG] No candidates found for the request path '/swagger/v1/swagger.json'
+2023-03-09 19:23:50.500 +01:00 [DBG] Request did not match any endpoints
+2023-03-09 19:23:50.671 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7119/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 171.3841ms
+2023-03-09 19:23:57.709 +01:00 [INF] Request starting HTTP/2 POST https://localhost:7119/api/Customer/1 application/json 6
+2023-03-09 19:23:57.715 +01:00 [DBG] 1 candidate(s) found for the request path '/api/Customer/1'
+2023-03-09 19:23:57.720 +01:00 [DBG] Endpoint 'BackEndAPI.Controllers.CustomerController.RewardCustomer (BackEndAPI)' with route pattern 'api/Customer/{id}' is valid for the request path '/api/Customer/1'
+2023-03-09 19:23:57.721 +01:00 [DBG] Request matched endpoint 'BackEndAPI.Controllers.CustomerController.RewardCustomer (BackEndAPI)'
+2023-03-09 19:23:57.721 +01:00 [DBG] Static files was skipped as the request already matched an endpoint.
+2023-03-09 19:23:57.723 +01:00 [INF] Executing endpoint 'BackEndAPI.Controllers.CustomerController.RewardCustomer (BackEndAPI)'
+2023-03-09 19:23:57.748 +01:00 [INF] Route matched with {action = "RewardCustomer", controller = "Customer"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult] RewardCustomer(Int32, System.String) on controller BackEndAPI.Controllers.CustomerController (BackEndAPI).
+2023-03-09 19:23:57.749 +01:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2023-03-09 19:23:57.749 +01:00 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2023-03-09 19:23:57.749 +01:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2023-03-09 19:23:57.749 +01:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2023-03-09 19:23:57.749 +01:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2023-03-09 19:23:57.750 +01:00 [DBG] Executing controller factory for controller BackEndAPI.Controllers.CustomerController (BackEndAPI)
+2023-03-09 19:23:57.873 +01:00 [DBG] An 'IServiceProvider' was created for internal use by Entity Framework.
+2023-03-09 19:23:58.093 +01:00 [DBG] Executed controller factory for controller BackEndAPI.Controllers.CustomerController (BackEndAPI)
+2023-03-09 19:23:58.104 +01:00 [DBG] Attempting to bind parameter 'id' of type 'System.Int32' ...
+2023-03-09 19:23:58.105 +01:00 [DBG] Attempting to bind parameter 'id' of type 'System.Int32' using the name 'id' in request data ...
+2023-03-09 19:23:58.106 +01:00 [DBG] Done attempting to bind parameter 'id' of type 'System.Int32'.
+2023-03-09 19:23:58.106 +01:00 [DBG] Done attempting to bind parameter 'id' of type 'System.Int32'.
+2023-03-09 19:23:58.106 +01:00 [DBG] Attempting to validate the bound parameter 'id' of type 'System.Int32' ...
+2023-03-09 19:23:58.107 +01:00 [DBG] Done attempting to validate the bound parameter 'id' of type 'System.Int32'.
+2023-03-09 19:23:58.108 +01:00 [DBG] Attempting to bind parameter 'agent' of type 'System.String' ...
+2023-03-09 19:23:58.108 +01:00 [DBG] Attempting to bind parameter 'agent' of type 'System.String' using the name '' in request data ...
+2023-03-09 19:23:58.109 +01:00 [DBG] Selected input formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonInputFormatter' for content type 'application/json'.
+2023-03-09 19:23:58.117 +01:00 [DBG] Connection id "0HMP0PDMRQCEL", Request id "0HMP0PDMRQCEL:00000009": started reading request body.
+2023-03-09 19:23:58.118 +01:00 [DBG] Connection id "0HMP0PDMRQCEL", Request id "0HMP0PDMRQCEL:00000009": done reading request body.
+2023-03-09 19:23:58.123 +01:00 [DBG] JSON input formatter succeeded, deserializing to type 'System.String'
+2023-03-09 19:23:58.123 +01:00 [DBG] Done attempting to bind parameter 'agent' of type 'System.String'.
+2023-03-09 19:23:58.123 +01:00 [DBG] Done attempting to bind parameter 'agent' of type 'System.String'.
+2023-03-09 19:23:58.123 +01:00 [DBG] Attempting to validate the bound parameter 'agent' of type 'System.String' ...
+2023-03-09 19:23:58.126 +01:00 [DBG] Done attempting to validate the bound parameter 'agent' of type 'System.String'.
+2023-03-09 19:23:58.819 +01:00 [DBG] Entity Framework Core 7.0.3 initialized 'CustomerDBContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:7.0.3' with options: None
+2023-03-09 19:23:58.880 +01:00 [DBG] Compiling query expression: 
+'DbSet<Customer>()
+    .Any(c => c.Id == __id_0)'
+2023-03-09 19:23:59.099 +01:00 [DBG] Generated query execution expression: 
+'queryContext => ShapedQueryCompilingExpressionVisitor.SingleAsync<bool>(
+    asyncEnumerable: new SingleQueryingEnumerable<bool>(
+        (RelationalQueryContext)queryContext, 
+        RelationalCommandCache.QueryExpression(
+            Projection Mapping:
+                EmptyProjectionMember -> 0
+            SELECT EXISTS (
+                SELECT 1
+                FROM Customers AS c
+                WHERE c.Id == @__id_0)), 
+        null, 
+        Func<QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator, bool>, 
+        BackEndAPI.Data.CustomerDBContext, 
+        False, 
+        False, 
+        True
+    ), 
+    cancellationToken: queryContext.CancellationToken)'
+2023-03-09 19:23:59.151 +01:00 [DBG] Creating DbCommand for 'ExecuteReader'.
+2023-03-09 19:23:59.153 +01:00 [DBG] Creating DbConnection.
+2023-03-09 19:23:59.185 +01:00 [DBG] Created DbConnection. (27ms).
+2023-03-09 19:23:59.192 +01:00 [DBG] Created DbCommand for 'ExecuteReader' (39ms).
+2023-03-09 19:23:59.200 +01:00 [DBG] Initialized DbCommand for 'ExecuteReader' (50ms).
+2023-03-09 19:23:59.206 +01:00 [DBG] Opening connection to database 'CustomerDatabase' on server '.'.
+2023-03-09 19:23:59.500 +01:00 [DBG] Opened connection to database 'CustomerDatabase' on server '.'.
+2023-03-09 19:23:59.516 +01:00 [DBG] Executing DbCommand [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Customers] AS [c]
+        WHERE [c].[Id] = @__id_0) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2023-03-09 19:23:59.590 +01:00 [INF] Executed DbCommand (81ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Customers] AS [c]
+        WHERE [c].[Id] = @__id_0) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2023-03-09 19:23:59.614 +01:00 [DBG] Closing data reader to 'CustomerDatabase' on server '.'.
+2023-03-09 19:23:59.624 +01:00 [DBG] A data reader for 'CustomerDatabase' on server '.' is being disposed after spending 29ms reading results.
+2023-03-09 19:23:59.629 +01:00 [DBG] Closing connection to database 'CustomerDatabase' on server '.'.
+2023-03-09 19:23:59.638 +01:00 [DBG] Closed connection to database 'CustomerDatabase' on server '.' (9ms).
+2023-03-09 19:23:59.640 +01:00 [DBG] Compiling query expression: 
+'DbSet<Customer>()
+    .Count(c => c.AgentUserName == __agent_0 && c.DateRewarded == DateTime.Today)'
+2023-03-09 19:23:59.671 +01:00 [DBG] Generated query execution expression: 
+'queryContext => ShapedQueryCompilingExpressionVisitor.SingleAsync<int>(
+    asyncEnumerable: new SingleQueryingEnumerable<int>(
+        (RelationalQueryContext)queryContext, 
+        RelationalCommandCache.QueryExpression(
+            Projection Mapping:
+                EmptyProjectionMember -> 0
+            SELECT COUNT(*)
+            FROM Customers AS c
+            WHERE (c.AgentUserName == @__agent_0) && (c.DateRewarded == CONVERT(date, GETDATE()))), 
+        null, 
+        Func<QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator, int>, 
+        BackEndAPI.Data.CustomerDBContext, 
+        False, 
+        False, 
+        True
+    ), 
+    cancellationToken: queryContext.CancellationToken)'
+2023-03-09 19:23:59.685 +01:00 [DBG] Creating DbCommand for 'ExecuteReader'.
+2023-03-09 19:23:59.686 +01:00 [DBG] Created DbCommand for 'ExecuteReader' (0ms).
+2023-03-09 19:23:59.686 +01:00 [DBG] Initialized DbCommand for 'ExecuteReader' (0ms).
+2023-03-09 19:23:59.686 +01:00 [DBG] Opening connection to database 'CustomerDatabase' on server '.'.
+2023-03-09 19:23:59.687 +01:00 [DBG] Opened connection to database 'CustomerDatabase' on server '.'.
+2023-03-09 19:23:59.687 +01:00 [DBG] Executing DbCommand [Parameters=[@__agent_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Customers] AS [c]
+WHERE [c].[AgentUserName] = @__agent_0 AND [c].[DateRewarded] = CONVERT(date, GETDATE())
+2023-03-09 19:23:59.691 +01:00 [INF] Executed DbCommand (4ms) [Parameters=[@__agent_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Customers] AS [c]
+WHERE [c].[AgentUserName] = @__agent_0 AND [c].[DateRewarded] = CONVERT(date, GETDATE())
+2023-03-09 19:23:59.693 +01:00 [DBG] Closing data reader to 'CustomerDatabase' on server '.'.
+2023-03-09 19:23:59.693 +01:00 [DBG] A data reader for 'CustomerDatabase' on server '.' is being disposed after spending 2ms reading results.
+2023-03-09 19:23:59.693 +01:00 [DBG] Closing connection to database 'CustomerDatabase' on server '.'.
+2023-03-09 19:23:59.693 +01:00 [DBG] Closed connection to database 'CustomerDatabase' on server '.' (0ms).
+2023-03-09 19:24:06.100 +01:00 [DBG] 'CustomerDBContext' generated a temporary value for the property 'Id.Home'. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-03-09 19:24:06.143 +01:00 [DBG] Context 'CustomerDBContext' started tracking 'Home' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-03-09 19:24:07.067 +01:00 [DBG] SaveChanges starting for 'CustomerDBContext'.
+2023-03-09 19:24:07.070 +01:00 [DBG] DetectChanges starting for 'CustomerDBContext'.
+2023-03-09 19:24:07.077 +01:00 [DBG] DetectChanges completed for 'CustomerDBContext'.
+2023-03-09 19:24:07.138 +01:00 [DBG] Opening connection to database 'CustomerDatabase' on server '.'.
+2023-03-09 19:24:07.138 +01:00 [DBG] Opened connection to database 'CustomerDatabase' on server '.'.
+2023-03-09 19:24:07.143 +01:00 [DBG] Creating DbCommand for 'ExecuteReader'.
+2023-03-09 19:24:07.143 +01:00 [DBG] Created DbCommand for 'ExecuteReader' (0ms).
+2023-03-09 19:24:07.143 +01:00 [DBG] Initialized DbCommand for 'ExecuteReader' (0ms).
+2023-03-09 19:24:07.143 +01:00 [DBG] Executing DbCommand [Parameters=[@p0='?' (Size = 4000), @p1='?' (Size = 4000), @p2='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [Homes] ([Adress], [City], [Zip])
+OUTPUT INSERTED.[Id]
+VALUES (@p0, @p1, @p2);
+2023-03-09 19:24:07.159 +01:00 [INF] Executed DbCommand (16ms) [Parameters=[@p0='?' (Size = 4000), @p1='?' (Size = 4000), @p2='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [Homes] ([Adress], [City], [Zip])
+OUTPUT INSERTED.[Id]
+VALUES (@p0, @p1, @p2);
+2023-03-09 19:24:07.172 +01:00 [DBG] The foreign key property 'Home.Id' was detected as changed. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see property values.
+2023-03-09 19:24:07.178 +01:00 [DBG] Closing data reader to 'CustomerDatabase' on server '.'.
+2023-03-09 19:24:07.178 +01:00 [DBG] A data reader for 'CustomerDatabase' on server '.' is being disposed after spending 19ms reading results.
+2023-03-09 19:24:07.179 +01:00 [DBG] Closing connection to database 'CustomerDatabase' on server '.'.
+2023-03-09 19:24:07.180 +01:00 [DBG] Closed connection to database 'CustomerDatabase' on server '.' (0ms).
+2023-03-09 19:24:07.189 +01:00 [DBG] An entity of type 'Home' tracked by 'CustomerDBContext' changed state from '"Added"' to '"Unchanged"'. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-03-09 19:24:07.192 +01:00 [DBG] SaveChanges completed for 'CustomerDBContext' with 1 entities written to the database.
+2023-03-09 19:24:32.283 +01:00 [INF] Executed action BackEndAPI.Controllers.CustomerController.RewardCustomer (BackEndAPI) in 34530.7579ms
+2023-03-09 19:24:32.284 +01:00 [INF] Executed endpoint 'BackEndAPI.Controllers.CustomerController.RewardCustomer (BackEndAPI)'
+2023-03-09 19:24:32.285 +01:00 [ERR] An unhandled exception has occurred while executing the request.
+AutoMapper.AutoMapperMappingException: Error mapping types.
+
+Mapping types:
+CustomerBO -> Customer
+BackEndAPI.Model.BO.CustomerBO -> BackEndAPI.Model.Customer
+
+Type Map configuration:
+CustomerBO -> Customer
+BackEndAPI.Model.BO.CustomerBO -> BackEndAPI.Model.Customer
+
+Destination Member:
+Home
+
+ ---> AutoMapper.AutoMapperMappingException: Missing type map configuration or unsupported mapping.
+
+Mapping types:
+HomeBO -> Home
+BackEndAPI.Model.BO.HomeBO -> BackEndAPI.Model.Home
+
+Destination Member:
+Home
+
+   at lambda_method65(Closure , HomeBO , Home , ResolutionContext )
+   at lambda_method64(Closure , Object , Customer , ResolutionContext )
+   --- End of inner exception stack trace ---
+   at lambda_method64(Closure , Object , Customer , ResolutionContext )
+   at BackEndAPI.Repository.CustomerRepository.RewardCustomer(Int32 id, String agent) in C:\Kursevi\ComtradeTask\BackEndAPI\Repository\CustomerRepository.cs:line 96
+   at BackEndAPI.Controllers.CustomerController.RewardCustomer(Int32 id, String agent) in C:\Kursevi\ComtradeTask\BackEndAPI\Controllers\CustomerController.cs:line 128
+   at lambda_method5(Closure , Object )
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2023-03-09 19:24:32.397 +01:00 [DBG] 'CustomerDBContext' disposed.
+2023-03-09 19:24:32.405 +01:00 [DBG] Disposing connection to database 'CustomerDatabase' on server '.'.
+2023-03-09 19:24:32.407 +01:00 [DBG] Disposed connection to database '' on server '' (2ms).
+2023-03-09 19:24:32.409 +01:00 [INF] Request finished HTTP/2 POST https://localhost:7119/api/Customer/1 application/json 6 - 500 - text/plain;+charset=utf-8 34700.2400ms
+2023-03-09 19:25:58.710 +01:00 [DBG] Registered model binder providers, in the following order: ["Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider"]
+2023-03-09 19:25:58.819 +01:00 [DBG] Hosting starting
+2023-03-09 19:25:58.981 +01:00 [DBG] Using development certificate: CN=localhost (Thumbprint: C157B902E5C0417D2199EABA8399DEF1CA376564)
+2023-03-09 19:25:59.017 +01:00 [INF] Now listening on: https://localhost:7119
+2023-03-09 19:25:59.017 +01:00 [INF] Now listening on: http://localhost:5148
+2023-03-09 19:25:59.017 +01:00 [DBG] Loaded hosting startup assembly BackEndAPI
+2023-03-09 19:25:59.017 +01:00 [DBG] Loaded hosting startup assembly Microsoft.AspNetCore.Watch.BrowserRefresh
+2023-03-09 19:25:59.017 +01:00 [DBG] Loaded hosting startup assembly Microsoft.WebTools.BrowserLink.Net
+2023-03-09 19:25:59.017 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-03-09 19:25:59.018 +01:00 [INF] Hosting environment: Development
+2023-03-09 19:25:59.018 +01:00 [INF] Content root path: C:\Kursevi\ComtradeTask\BackEndAPI\
+2023-03-09 19:25:59.018 +01:00 [DBG] Hosting started
+2023-03-09 19:25:59.375 +01:00 [DBG] Connection id "0HMP0PETINS82" accepted.
+2023-03-09 19:25:59.375 +01:00 [DBG] Connection id "0HMP0PETINS83" accepted.
+2023-03-09 19:25:59.385 +01:00 [DBG] Connection id "0HMP0PETINS82" started.
+2023-03-09 19:25:59.385 +01:00 [DBG] Connection id "0HMP0PETINS83" started.
+2023-03-09 19:25:59.387 +01:00 [DBG] Connection id "0HMP0PETINS83" received FIN.
+2023-03-09 19:25:59.397 +01:00 [DBG] Connection id "0HMP0PETINS82" received FIN.
+2023-03-09 19:25:59.411 +01:00 [DBG] Failed to authenticate HTTPS connection.
+System.IO.IOException:  Received an unexpected EOF or 0 bytes from the transport stream.
+   at System.Net.Security.SslStream.ReceiveBlobAsync[TIOAdapter](TIOAdapter adapter)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](TIOAdapter adapter, Boolean receiveFirst, Byte[] reAuthenticationData, Boolean isApm)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2023-03-09 19:25:59.411 +01:00 [DBG] Failed to authenticate HTTPS connection.
+System.IO.IOException:  Received an unexpected EOF or 0 bytes from the transport stream.
+   at System.Net.Security.SslStream.ReceiveBlobAsync[TIOAdapter](TIOAdapter adapter)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](TIOAdapter adapter, Boolean receiveFirst, Byte[] reAuthenticationData, Boolean isApm)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2023-03-09 19:25:59.446 +01:00 [DBG] Connection id "0HMP0PETINS83" stopped.
+2023-03-09 19:25:59.446 +01:00 [DBG] Connection id "0HMP0PETINS82" stopped.
+2023-03-09 19:25:59.447 +01:00 [DBG] Connection id "0HMP0PETINS83" sending FIN because: "The Socket transport's send loop completed gracefully."
+2023-03-09 19:25:59.447 +01:00 [DBG] Connection id "0HMP0PETINS82" sending FIN because: "The Socket transport's send loop completed gracefully."
+2023-03-09 19:25:59.570 +01:00 [DBG] Connection id "0HMP0PETINS84" accepted.
+2023-03-09 19:25:59.571 +01:00 [DBG] Connection id "0HMP0PETINS84" started.
+2023-03-09 19:25:59.625 +01:00 [DBG] Connection 0HMP0PETINS84 established using the following protocol: "Tls12"
+2023-03-09 19:25:59.682 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7119/swagger/index.html - -
+2023-03-09 19:25:59.730 +01:00 [DBG] Wildcard detected, all requests with hosts will be allowed.
+2023-03-09 19:25:59.757 +01:00 [DBG] No candidates found for the request path '/swagger/index.html'
+2023-03-09 19:25:59.757 +01:00 [DBG] Request did not match any endpoints
+2023-03-09 19:25:59.957 +01:00 [DBG] Response markup is scheduled to include browser refresh script injection.
+2023-03-09 19:26:00.070 +01:00 [DBG] Response markup was updated to include browser refresh script injection.
+2023-03-09 19:26:00.074 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7119/swagger/index.html - - - 200 - text/html;charset=utf-8 395.7182ms
+2023-03-09 19:26:00.101 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7119/_framework/aspnetcore-browser-refresh.js - -
+2023-03-09 19:26:00.108 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7119/_framework/aspnetcore-browser-refresh.js - - - 200 11990 application/javascript;+charset=utf-8 6.7588ms
+2023-03-09 19:26:00.138 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7119/_vs/browserLink - -
+2023-03-09 19:26:00.154 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7119/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 15.8812ms
+2023-03-09 19:26:00.334 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7119/swagger/v1/swagger.json - -
+2023-03-09 19:26:00.335 +01:00 [DBG] No candidates found for the request path '/swagger/v1/swagger.json'
+2023-03-09 19:26:00.335 +01:00 [DBG] Request did not match any endpoints
+2023-03-09 19:26:00.462 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7119/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 127.1211ms
+2023-03-09 19:26:07.966 +01:00 [INF] Request starting HTTP/2 POST https://localhost:7119/api/Customer/1 application/json 6
+2023-03-09 19:26:07.971 +01:00 [DBG] 1 candidate(s) found for the request path '/api/Customer/1'
+2023-03-09 19:26:07.975 +01:00 [DBG] Endpoint 'BackEndAPI.Controllers.CustomerController.RewardCustomer (BackEndAPI)' with route pattern 'api/Customer/{id}' is valid for the request path '/api/Customer/1'
+2023-03-09 19:26:07.975 +01:00 [DBG] Request matched endpoint 'BackEndAPI.Controllers.CustomerController.RewardCustomer (BackEndAPI)'
+2023-03-09 19:26:07.976 +01:00 [DBG] Static files was skipped as the request already matched an endpoint.
+2023-03-09 19:26:07.979 +01:00 [INF] Executing endpoint 'BackEndAPI.Controllers.CustomerController.RewardCustomer (BackEndAPI)'
+2023-03-09 19:26:08.007 +01:00 [INF] Route matched with {action = "RewardCustomer", controller = "Customer"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult] RewardCustomer(Int32, System.String) on controller BackEndAPI.Controllers.CustomerController (BackEndAPI).
+2023-03-09 19:26:08.007 +01:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2023-03-09 19:26:08.007 +01:00 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2023-03-09 19:26:08.007 +01:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2023-03-09 19:26:08.007 +01:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2023-03-09 19:26:08.007 +01:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2023-03-09 19:26:08.008 +01:00 [DBG] Executing controller factory for controller BackEndAPI.Controllers.CustomerController (BackEndAPI)
+2023-03-09 19:26:08.130 +01:00 [DBG] An 'IServiceProvider' was created for internal use by Entity Framework.
+2023-03-09 19:26:08.327 +01:00 [DBG] Executed controller factory for controller BackEndAPI.Controllers.CustomerController (BackEndAPI)
+2023-03-09 19:26:08.338 +01:00 [DBG] Attempting to bind parameter 'id' of type 'System.Int32' ...
+2023-03-09 19:26:08.339 +01:00 [DBG] Attempting to bind parameter 'id' of type 'System.Int32' using the name 'id' in request data ...
+2023-03-09 19:26:08.339 +01:00 [DBG] Done attempting to bind parameter 'id' of type 'System.Int32'.
+2023-03-09 19:26:08.339 +01:00 [DBG] Done attempting to bind parameter 'id' of type 'System.Int32'.
+2023-03-09 19:26:08.340 +01:00 [DBG] Attempting to validate the bound parameter 'id' of type 'System.Int32' ...
+2023-03-09 19:26:08.340 +01:00 [DBG] Done attempting to validate the bound parameter 'id' of type 'System.Int32'.
+2023-03-09 19:26:08.342 +01:00 [DBG] Attempting to bind parameter 'agent' of type 'System.String' ...
+2023-03-09 19:26:08.343 +01:00 [DBG] Attempting to bind parameter 'agent' of type 'System.String' using the name '' in request data ...
+2023-03-09 19:26:08.343 +01:00 [DBG] Selected input formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonInputFormatter' for content type 'application/json'.
+2023-03-09 19:26:08.351 +01:00 [DBG] Connection id "0HMP0PETINS84", Request id "0HMP0PETINS84:00000009": started reading request body.
+2023-03-09 19:26:08.351 +01:00 [DBG] Connection id "0HMP0PETINS84", Request id "0HMP0PETINS84:00000009": done reading request body.
+2023-03-09 19:26:08.355 +01:00 [DBG] JSON input formatter succeeded, deserializing to type 'System.String'
+2023-03-09 19:26:08.356 +01:00 [DBG] Done attempting to bind parameter 'agent' of type 'System.String'.
+2023-03-09 19:26:08.356 +01:00 [DBG] Done attempting to bind parameter 'agent' of type 'System.String'.
+2023-03-09 19:26:08.356 +01:00 [DBG] Attempting to validate the bound parameter 'agent' of type 'System.String' ...
+2023-03-09 19:26:08.360 +01:00 [DBG] Done attempting to validate the bound parameter 'agent' of type 'System.String'.
+2023-03-09 19:26:09.046 +01:00 [DBG] Entity Framework Core 7.0.3 initialized 'CustomerDBContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:7.0.3' with options: None
+2023-03-09 19:26:09.109 +01:00 [DBG] Compiling query expression: 
+'DbSet<Customer>()
+    .Any(c => c.Id == __id_0)'
+2023-03-09 19:26:09.333 +01:00 [DBG] Generated query execution expression: 
+'queryContext => ShapedQueryCompilingExpressionVisitor.SingleAsync<bool>(
+    asyncEnumerable: new SingleQueryingEnumerable<bool>(
+        (RelationalQueryContext)queryContext, 
+        RelationalCommandCache.QueryExpression(
+            Projection Mapping:
+                EmptyProjectionMember -> 0
+            SELECT EXISTS (
+                SELECT 1
+                FROM Customers AS c
+                WHERE c.Id == @__id_0)), 
+        null, 
+        Func<QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator, bool>, 
+        BackEndAPI.Data.CustomerDBContext, 
+        False, 
+        False, 
+        True
+    ), 
+    cancellationToken: queryContext.CancellationToken)'
+2023-03-09 19:26:09.386 +01:00 [DBG] Creating DbCommand for 'ExecuteReader'.
+2023-03-09 19:26:09.388 +01:00 [DBG] Creating DbConnection.
+2023-03-09 19:26:09.419 +01:00 [DBG] Created DbConnection. (28ms).
+2023-03-09 19:26:09.427 +01:00 [DBG] Created DbCommand for 'ExecuteReader' (37ms).
+2023-03-09 19:26:09.434 +01:00 [DBG] Initialized DbCommand for 'ExecuteReader' (48ms).
+2023-03-09 19:26:09.441 +01:00 [DBG] Opening connection to database 'CustomerDatabase' on server '.'.
+2023-03-09 19:26:09.724 +01:00 [DBG] Opened connection to database 'CustomerDatabase' on server '.'.
+2023-03-09 19:26:09.742 +01:00 [DBG] Executing DbCommand [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Customers] AS [c]
+        WHERE [c].[Id] = @__id_0) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2023-03-09 19:26:09.815 +01:00 [INF] Executed DbCommand (82ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Customers] AS [c]
+        WHERE [c].[Id] = @__id_0) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2023-03-09 19:26:09.838 +01:00 [DBG] Closing data reader to 'CustomerDatabase' on server '.'.
+2023-03-09 19:26:09.848 +01:00 [DBG] A data reader for 'CustomerDatabase' on server '.' is being disposed after spending 27ms reading results.
+2023-03-09 19:26:09.854 +01:00 [DBG] Closing connection to database 'CustomerDatabase' on server '.'.
+2023-03-09 19:26:09.864 +01:00 [DBG] Closed connection to database 'CustomerDatabase' on server '.' (10ms).
+2023-03-09 19:26:09.866 +01:00 [DBG] Compiling query expression: 
+'DbSet<Customer>()
+    .Count(c => c.AgentUserName == __agent_0 && c.DateRewarded == DateTime.Today)'
+2023-03-09 19:26:09.900 +01:00 [DBG] Generated query execution expression: 
+'queryContext => ShapedQueryCompilingExpressionVisitor.SingleAsync<int>(
+    asyncEnumerable: new SingleQueryingEnumerable<int>(
+        (RelationalQueryContext)queryContext, 
+        RelationalCommandCache.QueryExpression(
+            Projection Mapping:
+                EmptyProjectionMember -> 0
+            SELECT COUNT(*)
+            FROM Customers AS c
+            WHERE (c.AgentUserName == @__agent_0) && (c.DateRewarded == CONVERT(date, GETDATE()))), 
+        null, 
+        Func<QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator, int>, 
+        BackEndAPI.Data.CustomerDBContext, 
+        False, 
+        False, 
+        True
+    ), 
+    cancellationToken: queryContext.CancellationToken)'
+2023-03-09 19:26:09.915 +01:00 [DBG] Creating DbCommand for 'ExecuteReader'.
+2023-03-09 19:26:09.915 +01:00 [DBG] Created DbCommand for 'ExecuteReader' (0ms).
+2023-03-09 19:26:09.916 +01:00 [DBG] Initialized DbCommand for 'ExecuteReader' (0ms).
+2023-03-09 19:26:09.916 +01:00 [DBG] Opening connection to database 'CustomerDatabase' on server '.'.
+2023-03-09 19:26:09.917 +01:00 [DBG] Opened connection to database 'CustomerDatabase' on server '.'.
+2023-03-09 19:26:09.917 +01:00 [DBG] Executing DbCommand [Parameters=[@__agent_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Customers] AS [c]
+WHERE [c].[AgentUserName] = @__agent_0 AND [c].[DateRewarded] = CONVERT(date, GETDATE())
+2023-03-09 19:26:09.920 +01:00 [INF] Executed DbCommand (3ms) [Parameters=[@__agent_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Customers] AS [c]
+WHERE [c].[AgentUserName] = @__agent_0 AND [c].[DateRewarded] = CONVERT(date, GETDATE())
+2023-03-09 19:26:09.923 +01:00 [DBG] Closing data reader to 'CustomerDatabase' on server '.'.
+2023-03-09 19:26:09.923 +01:00 [DBG] A data reader for 'CustomerDatabase' on server '.' is being disposed after spending 2ms reading results.
+2023-03-09 19:26:09.923 +01:00 [DBG] Closing connection to database 'CustomerDatabase' on server '.'.
+2023-03-09 19:26:09.923 +01:00 [DBG] Closed connection to database 'CustomerDatabase' on server '.' (0ms).
+2023-03-09 19:26:25.004 +01:00 [DBG] 'CustomerDBContext' generated a temporary value for the property 'Id.Home'. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-03-09 19:26:25.047 +01:00 [DBG] Context 'CustomerDBContext' started tracking 'Home' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-03-09 19:26:25.777 +01:00 [DBG] SaveChanges starting for 'CustomerDBContext'.
+2023-03-09 19:26:25.779 +01:00 [DBG] DetectChanges starting for 'CustomerDBContext'.
+2023-03-09 19:26:25.786 +01:00 [DBG] DetectChanges completed for 'CustomerDBContext'.
+2023-03-09 19:26:25.849 +01:00 [DBG] Opening connection to database 'CustomerDatabase' on server '.'.
+2023-03-09 19:26:25.849 +01:00 [DBG] Opened connection to database 'CustomerDatabase' on server '.'.
+2023-03-09 19:26:25.854 +01:00 [DBG] Creating DbCommand for 'ExecuteReader'.
+2023-03-09 19:26:25.854 +01:00 [DBG] Created DbCommand for 'ExecuteReader' (0ms).
+2023-03-09 19:26:25.854 +01:00 [DBG] Initialized DbCommand for 'ExecuteReader' (0ms).
+2023-03-09 19:26:25.854 +01:00 [DBG] Executing DbCommand [Parameters=[@p0='?' (Size = 4000), @p1='?' (Size = 4000), @p2='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [Homes] ([Adress], [City], [Zip])
+OUTPUT INSERTED.[Id]
+VALUES (@p0, @p1, @p2);
+2023-03-09 19:26:25.870 +01:00 [INF] Executed DbCommand (15ms) [Parameters=[@p0='?' (Size = 4000), @p1='?' (Size = 4000), @p2='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [Homes] ([Adress], [City], [Zip])
+OUTPUT INSERTED.[Id]
+VALUES (@p0, @p1, @p2);
+2023-03-09 19:26:25.883 +01:00 [DBG] The foreign key property 'Home.Id' was detected as changed. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see property values.
+2023-03-09 19:26:25.889 +01:00 [DBG] Closing data reader to 'CustomerDatabase' on server '.'.
+2023-03-09 19:26:25.889 +01:00 [DBG] A data reader for 'CustomerDatabase' on server '.' is being disposed after spending 19ms reading results.
+2023-03-09 19:26:25.891 +01:00 [DBG] Closing connection to database 'CustomerDatabase' on server '.'.
+2023-03-09 19:26:25.891 +01:00 [DBG] Closed connection to database 'CustomerDatabase' on server '.' (0ms).
+2023-03-09 19:26:25.901 +01:00 [DBG] An entity of type 'Home' tracked by 'CustomerDBContext' changed state from '"Added"' to '"Unchanged"'. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-03-09 19:26:25.903 +01:00 [DBG] SaveChanges completed for 'CustomerDBContext' with 1 entities written to the database.
+2023-03-09 19:27:00.326 +01:00 [INF] Executed action BackEndAPI.Controllers.CustomerController.RewardCustomer (BackEndAPI) in 52315.4776ms
+2023-03-09 19:27:00.328 +01:00 [INF] Executed endpoint 'BackEndAPI.Controllers.CustomerController.RewardCustomer (BackEndAPI)'
+2023-03-09 19:27:00.329 +01:00 [ERR] An unhandled exception has occurred while executing the request.
+AutoMapper.AutoMapperMappingException: Error mapping types.
+
+Mapping types:
+CustomerBO -> Customer
+BackEndAPI.Model.BO.CustomerBO -> BackEndAPI.Model.Customer
+
+Type Map configuration:
+CustomerBO -> Customer
+BackEndAPI.Model.BO.CustomerBO -> BackEndAPI.Model.Customer
+
+Destination Member:
+Home
+
+ ---> AutoMapper.AutoMapperMappingException: Missing type map configuration or unsupported mapping.
+
+Mapping types:
+HomeBO -> Home
+BackEndAPI.Model.BO.HomeBO -> BackEndAPI.Model.Home
+
+Destination Member:
+Home
+
+   at lambda_method65(Closure , HomeBO , Home , ResolutionContext )
+   at lambda_method64(Closure , Object , Customer , ResolutionContext )
+   --- End of inner exception stack trace ---
+   at lambda_method64(Closure , Object , Customer , ResolutionContext )
+   at BackEndAPI.Repository.CustomerRepository.RewardCustomer(Int32 id, String agent) in C:\Kursevi\ComtradeTask\BackEndAPI\Repository\CustomerRepository.cs:line 96
+   at BackEndAPI.Controllers.CustomerController.RewardCustomer(Int32 id, String agent) in C:\Kursevi\ComtradeTask\BackEndAPI\Controllers\CustomerController.cs:line 128
+   at lambda_method5(Closure , Object )
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2023-03-09 19:27:00.385 +01:00 [DBG] 'CustomerDBContext' disposed.
+2023-03-09 19:27:00.391 +01:00 [DBG] Disposing connection to database 'CustomerDatabase' on server '.'.
+2023-03-09 19:27:00.393 +01:00 [DBG] Disposed connection to database '' on server '' (1ms).
+2023-03-09 19:27:00.394 +01:00 [INF] Request finished HTTP/2 POST https://localhost:7119/api/Customer/1 application/json 6 - 500 - text/plain;+charset=utf-8 52428.8041ms
+2023-03-09 19:31:32.549 +01:00 [DBG] Registered model binder providers, in the following order: ["Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider"]
+2023-03-09 19:31:32.632 +01:00 [DBG] Hosting starting
+2023-03-09 19:31:32.786 +01:00 [DBG] Using development certificate: CN=localhost (Thumbprint: C157B902E5C0417D2199EABA8399DEF1CA376564)
+2023-03-09 19:31:32.813 +01:00 [INF] Now listening on: https://localhost:7119
+2023-03-09 19:31:32.813 +01:00 [INF] Now listening on: http://localhost:5148
+2023-03-09 19:31:32.813 +01:00 [DBG] Loaded hosting startup assembly BackEndAPI
+2023-03-09 19:31:32.813 +01:00 [DBG] Loaded hosting startup assembly Microsoft.AspNetCore.Watch.BrowserRefresh
+2023-03-09 19:31:32.813 +01:00 [DBG] Loaded hosting startup assembly Microsoft.WebTools.BrowserLink.Net
+2023-03-09 19:31:32.814 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-03-09 19:31:32.814 +01:00 [INF] Hosting environment: Development
+2023-03-09 19:31:32.815 +01:00 [INF] Content root path: C:\Kursevi\ComtradeTask\BackEndAPI\
+2023-03-09 19:31:32.815 +01:00 [DBG] Hosting started
+2023-03-09 19:31:33.121 +01:00 [DBG] Connection id "0HMP0PI11J8E1" accepted.
+2023-03-09 19:31:33.122 +01:00 [DBG] Connection id "0HMP0PI11J8E1" started.
+2023-03-09 19:31:33.127 +01:00 [DBG] Connection id "0HMP0PI11J8E1" received FIN.
+2023-03-09 19:31:33.153 +01:00 [DBG] Failed to authenticate HTTPS connection.
+System.IO.IOException:  Received an unexpected EOF or 0 bytes from the transport stream.
+   at System.Net.Security.SslStream.ReceiveBlobAsync[TIOAdapter](TIOAdapter adapter)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](TIOAdapter adapter, Boolean receiveFirst, Byte[] reAuthenticationData, Boolean isApm)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2023-03-09 19:31:33.188 +01:00 [DBG] Connection id "0HMP0PI11J8E1" stopped.
+2023-03-09 19:31:33.189 +01:00 [DBG] Connection id "0HMP0PI11J8E1" sending FIN because: "The Socket transport's send loop completed gracefully."
+2023-03-09 19:31:33.313 +01:00 [DBG] Connection id "0HMP0PI11J8E2" accepted.
+2023-03-09 19:31:33.313 +01:00 [DBG] Connection id "0HMP0PI11J8E2" started.
+2023-03-09 19:31:33.378 +01:00 [DBG] Connection 0HMP0PI11J8E2 established using the following protocol: "Tls12"
+2023-03-09 19:31:33.429 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7119/swagger/index.html - -
+2023-03-09 19:31:33.459 +01:00 [DBG] Wildcard detected, all requests with hosts will be allowed.
+2023-03-09 19:31:33.478 +01:00 [DBG] No candidates found for the request path '/swagger/index.html'
+2023-03-09 19:31:33.478 +01:00 [DBG] Request did not match any endpoints
+2023-03-09 19:31:33.686 +01:00 [DBG] Response markup is scheduled to include browser refresh script injection.
+2023-03-09 19:31:33.793 +01:00 [DBG] Response markup was updated to include browser refresh script injection.
+2023-03-09 19:31:33.797 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7119/swagger/index.html - - - 200 - text/html;charset=utf-8 370.2647ms
+2023-03-09 19:31:33.833 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7119/_framework/aspnetcore-browser-refresh.js - -
+2023-03-09 19:31:33.838 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7119/_framework/aspnetcore-browser-refresh.js - - - 200 11990 application/javascript;+charset=utf-8 5.4188ms
+2023-03-09 19:31:33.867 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7119/_vs/browserLink - -
+2023-03-09 19:31:33.898 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7119/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 30.6233ms
+2023-03-09 19:31:34.064 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7119/swagger/v1/swagger.json - -
+2023-03-09 19:31:34.064 +01:00 [DBG] No candidates found for the request path '/swagger/v1/swagger.json'
+2023-03-09 19:31:34.064 +01:00 [DBG] Request did not match any endpoints
+2023-03-09 19:31:34.194 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7119/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 129.7395ms
+2023-03-09 19:31:41.025 +01:00 [INF] Request starting HTTP/2 POST https://localhost:7119/api/Customer/1 application/json 6
+2023-03-09 19:31:41.029 +01:00 [DBG] 1 candidate(s) found for the request path '/api/Customer/1'
+2023-03-09 19:31:41.033 +01:00 [DBG] Endpoint 'BackEndAPI.Controllers.CustomerController.RewardCustomer (BackEndAPI)' with route pattern 'api/Customer/{id}' is valid for the request path '/api/Customer/1'
+2023-03-09 19:31:41.033 +01:00 [DBG] Request matched endpoint 'BackEndAPI.Controllers.CustomerController.RewardCustomer (BackEndAPI)'
+2023-03-09 19:31:41.034 +01:00 [DBG] Static files was skipped as the request already matched an endpoint.
+2023-03-09 19:31:41.038 +01:00 [INF] Executing endpoint 'BackEndAPI.Controllers.CustomerController.RewardCustomer (BackEndAPI)'
+2023-03-09 19:31:41.064 +01:00 [INF] Route matched with {action = "RewardCustomer", controller = "Customer"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult] RewardCustomer(Int32, System.String) on controller BackEndAPI.Controllers.CustomerController (BackEndAPI).
+2023-03-09 19:31:41.064 +01:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2023-03-09 19:31:41.064 +01:00 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2023-03-09 19:31:41.064 +01:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2023-03-09 19:31:41.064 +01:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2023-03-09 19:31:41.064 +01:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2023-03-09 19:31:41.065 +01:00 [DBG] Executing controller factory for controller BackEndAPI.Controllers.CustomerController (BackEndAPI)
+2023-03-09 19:31:41.178 +01:00 [DBG] An 'IServiceProvider' was created for internal use by Entity Framework.
+2023-03-09 19:31:41.380 +01:00 [DBG] Executed controller factory for controller BackEndAPI.Controllers.CustomerController (BackEndAPI)
+2023-03-09 19:31:41.391 +01:00 [DBG] Attempting to bind parameter 'id' of type 'System.Int32' ...
+2023-03-09 19:31:41.392 +01:00 [DBG] Attempting to bind parameter 'id' of type 'System.Int32' using the name 'id' in request data ...
+2023-03-09 19:31:41.393 +01:00 [DBG] Done attempting to bind parameter 'id' of type 'System.Int32'.
+2023-03-09 19:31:41.393 +01:00 [DBG] Done attempting to bind parameter 'id' of type 'System.Int32'.
+2023-03-09 19:31:41.393 +01:00 [DBG] Attempting to validate the bound parameter 'id' of type 'System.Int32' ...
+2023-03-09 19:31:41.394 +01:00 [DBG] Done attempting to validate the bound parameter 'id' of type 'System.Int32'.
+2023-03-09 19:31:41.395 +01:00 [DBG] Attempting to bind parameter 'agent' of type 'System.String' ...
+2023-03-09 19:31:41.396 +01:00 [DBG] Attempting to bind parameter 'agent' of type 'System.String' using the name '' in request data ...
+2023-03-09 19:31:41.396 +01:00 [DBG] Selected input formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonInputFormatter' for content type 'application/json'.
+2023-03-09 19:31:41.406 +01:00 [DBG] Connection id "0HMP0PI11J8E2", Request id "0HMP0PI11J8E2:00000009": started reading request body.
+2023-03-09 19:31:41.407 +01:00 [DBG] Connection id "0HMP0PI11J8E2", Request id "0HMP0PI11J8E2:00000009": done reading request body.
+2023-03-09 19:31:41.412 +01:00 [DBG] JSON input formatter succeeded, deserializing to type 'System.String'
+2023-03-09 19:31:41.413 +01:00 [DBG] Done attempting to bind parameter 'agent' of type 'System.String'.
+2023-03-09 19:31:41.413 +01:00 [DBG] Done attempting to bind parameter 'agent' of type 'System.String'.
+2023-03-09 19:31:41.413 +01:00 [DBG] Attempting to validate the bound parameter 'agent' of type 'System.String' ...
+2023-03-09 19:31:41.419 +01:00 [DBG] Done attempting to validate the bound parameter 'agent' of type 'System.String'.
+2023-03-09 19:31:42.228 +01:00 [DBG] Entity Framework Core 7.0.3 initialized 'CustomerDBContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:7.0.3' with options: None
+2023-03-09 19:31:42.293 +01:00 [DBG] Compiling query expression: 
+'DbSet<Customer>()
+    .Any(c => c.Id == __id_0)'
+2023-03-09 19:31:42.515 +01:00 [DBG] Generated query execution expression: 
+'queryContext => ShapedQueryCompilingExpressionVisitor.SingleAsync<bool>(
+    asyncEnumerable: new SingleQueryingEnumerable<bool>(
+        (RelationalQueryContext)queryContext, 
+        RelationalCommandCache.QueryExpression(
+            Projection Mapping:
+                EmptyProjectionMember -> 0
+            SELECT EXISTS (
+                SELECT 1
+                FROM Customers AS c
+                WHERE c.Id == @__id_0)), 
+        null, 
+        Func<QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator, bool>, 
+        BackEndAPI.Data.CustomerDBContext, 
+        False, 
+        False, 
+        True
+    ), 
+    cancellationToken: queryContext.CancellationToken)'
+2023-03-09 19:31:42.566 +01:00 [DBG] Creating DbCommand for 'ExecuteReader'.
+2023-03-09 19:31:42.569 +01:00 [DBG] Creating DbConnection.
+2023-03-09 19:31:42.599 +01:00 [DBG] Created DbConnection. (27ms).
+2023-03-09 19:31:42.607 +01:00 [DBG] Created DbCommand for 'ExecuteReader' (38ms).
+2023-03-09 19:31:42.614 +01:00 [DBG] Initialized DbCommand for 'ExecuteReader' (48ms).
+2023-03-09 19:31:42.621 +01:00 [DBG] Opening connection to database 'CustomerDatabase' on server '.'.
+2023-03-09 19:31:42.910 +01:00 [DBG] Opened connection to database 'CustomerDatabase' on server '.'.
+2023-03-09 19:31:42.924 +01:00 [DBG] Executing DbCommand [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Customers] AS [c]
+        WHERE [c].[Id] = @__id_0) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2023-03-09 19:31:43.014 +01:00 [INF] Executed DbCommand (96ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Customers] AS [c]
+        WHERE [c].[Id] = @__id_0) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2023-03-09 19:31:43.039 +01:00 [DBG] Closing data reader to 'CustomerDatabase' on server '.'.
+2023-03-09 19:31:43.048 +01:00 [DBG] A data reader for 'CustomerDatabase' on server '.' is being disposed after spending 29ms reading results.
+2023-03-09 19:31:43.054 +01:00 [DBG] Closing connection to database 'CustomerDatabase' on server '.'.
+2023-03-09 19:31:43.063 +01:00 [DBG] Closed connection to database 'CustomerDatabase' on server '.' (8ms).
+2023-03-09 19:31:43.066 +01:00 [DBG] Compiling query expression: 
+'DbSet<Customer>()
+    .Count(c => c.AgentUserName == __agent_0 && c.DateRewarded == DateTime.Today)'
+2023-03-09 19:31:43.106 +01:00 [DBG] Generated query execution expression: 
+'queryContext => ShapedQueryCompilingExpressionVisitor.SingleAsync<int>(
+    asyncEnumerable: new SingleQueryingEnumerable<int>(
+        (RelationalQueryContext)queryContext, 
+        RelationalCommandCache.QueryExpression(
+            Projection Mapping:
+                EmptyProjectionMember -> 0
+            SELECT COUNT(*)
+            FROM Customers AS c
+            WHERE (c.AgentUserName == @__agent_0) && (c.DateRewarded == CONVERT(date, GETDATE()))), 
+        null, 
+        Func<QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator, int>, 
+        BackEndAPI.Data.CustomerDBContext, 
+        False, 
+        False, 
+        True
+    ), 
+    cancellationToken: queryContext.CancellationToken)'
+2023-03-09 19:31:43.122 +01:00 [DBG] Creating DbCommand for 'ExecuteReader'.
+2023-03-09 19:31:43.122 +01:00 [DBG] Created DbCommand for 'ExecuteReader' (0ms).
+2023-03-09 19:31:43.122 +01:00 [DBG] Initialized DbCommand for 'ExecuteReader' (0ms).
+2023-03-09 19:31:43.122 +01:00 [DBG] Opening connection to database 'CustomerDatabase' on server '.'.
+2023-03-09 19:31:43.123 +01:00 [DBG] Opened connection to database 'CustomerDatabase' on server '.'.
+2023-03-09 19:31:43.123 +01:00 [DBG] Executing DbCommand [Parameters=[@__agent_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Customers] AS [c]
+WHERE [c].[AgentUserName] = @__agent_0 AND [c].[DateRewarded] = CONVERT(date, GETDATE())
+2023-03-09 19:31:43.127 +01:00 [INF] Executed DbCommand (4ms) [Parameters=[@__agent_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Customers] AS [c]
+WHERE [c].[AgentUserName] = @__agent_0 AND [c].[DateRewarded] = CONVERT(date, GETDATE())
+2023-03-09 19:31:43.130 +01:00 [DBG] Closing data reader to 'CustomerDatabase' on server '.'.
+2023-03-09 19:31:43.130 +01:00 [DBG] A data reader for 'CustomerDatabase' on server '.' is being disposed after spending 2ms reading results.
+2023-03-09 19:31:43.130 +01:00 [DBG] Closing connection to database 'CustomerDatabase' on server '.'.
+2023-03-09 19:31:43.130 +01:00 [DBG] Closed connection to database 'CustomerDatabase' on server '.' (0ms).
+2023-03-09 19:32:03.079 +01:00 [DBG] 'CustomerDBContext' generated a temporary value for the property 'Id.Home'. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-03-09 19:32:03.128 +01:00 [DBG] Context 'CustomerDBContext' started tracking 'Home' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-03-09 19:32:03.910 +01:00 [DBG] SaveChanges starting for 'CustomerDBContext'.
+2023-03-09 19:32:03.912 +01:00 [DBG] DetectChanges starting for 'CustomerDBContext'.
+2023-03-09 19:32:03.922 +01:00 [DBG] DetectChanges completed for 'CustomerDBContext'.
+2023-03-09 19:32:03.985 +01:00 [DBG] Opening connection to database 'CustomerDatabase' on server '.'.
+2023-03-09 19:32:03.986 +01:00 [DBG] Opened connection to database 'CustomerDatabase' on server '.'.
+2023-03-09 19:32:03.989 +01:00 [DBG] Creating DbCommand for 'ExecuteReader'.
+2023-03-09 19:32:03.989 +01:00 [DBG] Created DbCommand for 'ExecuteReader' (0ms).
+2023-03-09 19:32:03.989 +01:00 [DBG] Initialized DbCommand for 'ExecuteReader' (0ms).
+2023-03-09 19:32:03.989 +01:00 [DBG] Executing DbCommand [Parameters=[@p0='?' (Size = 4000), @p1='?' (Size = 4000), @p2='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [Homes] ([Adress], [City], [Zip])
+OUTPUT INSERTED.[Id]
+VALUES (@p0, @p1, @p2);
+2023-03-09 19:32:04.008 +01:00 [INF] Executed DbCommand (19ms) [Parameters=[@p0='?' (Size = 4000), @p1='?' (Size = 4000), @p2='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [Homes] ([Adress], [City], [Zip])
+OUTPUT INSERTED.[Id]
+VALUES (@p0, @p1, @p2);
+2023-03-09 19:32:04.030 +01:00 [DBG] The foreign key property 'Home.Id' was detected as changed. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see property values.
+2023-03-09 19:32:04.038 +01:00 [DBG] Closing data reader to 'CustomerDatabase' on server '.'.
+2023-03-09 19:32:04.038 +01:00 [DBG] A data reader for 'CustomerDatabase' on server '.' is being disposed after spending 29ms reading results.
+2023-03-09 19:32:04.040 +01:00 [DBG] Closing connection to database 'CustomerDatabase' on server '.'.
+2023-03-09 19:32:04.040 +01:00 [DBG] Closed connection to database 'CustomerDatabase' on server '.' (0ms).
+2023-03-09 19:32:04.050 +01:00 [DBG] An entity of type 'Home' tracked by 'CustomerDBContext' changed state from '"Added"' to '"Unchanged"'. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-03-09 19:32:04.052 +01:00 [DBG] SaveChanges completed for 'CustomerDBContext' with 1 entities written to the database.
+2023-03-09 19:32:18.003 +01:00 [DBG] The navigation 'Customer.Home' was detected as changed. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-03-09 19:32:18.007 +01:00 [DBG] Context 'CustomerDBContext' started tracking 'Customer' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-03-09 19:32:20.924 +01:00 [DBG] SaveChanges starting for 'CustomerDBContext'.
+2023-03-09 19:32:20.924 +01:00 [DBG] DetectChanges starting for 'CustomerDBContext'.
+2023-03-09 19:32:20.935 +01:00 [DBG] DetectChanges completed for 'CustomerDBContext'.
+2023-03-09 19:32:20.937 +01:00 [DBG] Opening connection to database 'CustomerDatabase' on server '.'.
+2023-03-09 19:32:20.937 +01:00 [DBG] Opened connection to database 'CustomerDatabase' on server '.'.
+2023-03-09 19:32:20.937 +01:00 [DBG] Creating DbCommand for 'ExecuteReader'.
+2023-03-09 19:32:20.937 +01:00 [DBG] Created DbCommand for 'ExecuteReader' (0ms).
+2023-03-09 19:32:20.938 +01:00 [DBG] Initialized DbCommand for 'ExecuteReader' (0ms).
+2023-03-09 19:32:20.938 +01:00 [DBG] Executing DbCommand [Parameters=[@p0='?' (DbType = Int32), @p1='?' (Size = 4000), @p2='?' (DbType = DateTime2), @p3='?' (DbType = DateTime2), @p4='?' (DbType = Int32), @p5='?' (Size = 4000), @p6='?' (DbType = Int32), @p7='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [Customers] ([Id], [AgentUserName], [Birth], [DateRewarded], [HomeID], [Name], [ReturnCustomer], [SSN])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7);
+2023-03-09 19:32:20.955 +01:00 [INF] Executed DbCommand (18ms) [Parameters=[@p0='?' (DbType = Int32), @p1='?' (Size = 4000), @p2='?' (DbType = DateTime2), @p3='?' (DbType = DateTime2), @p4='?' (DbType = Int32), @p5='?' (Size = 4000), @p6='?' (DbType = Int32), @p7='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [Customers] ([Id], [AgentUserName], [Birth], [DateRewarded], [HomeID], [Name], [ReturnCustomer], [SSN])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7);
+2023-03-09 19:32:20.955 +01:00 [DBG] Closing data reader to 'CustomerDatabase' on server '.'.
+2023-03-09 19:32:20.955 +01:00 [DBG] A data reader for 'CustomerDatabase' on server '.' is being disposed after spending 0ms reading results.
+2023-03-09 19:32:20.955 +01:00 [DBG] Closing connection to database 'CustomerDatabase' on server '.'.
+2023-03-09 19:32:20.955 +01:00 [DBG] Closed connection to database 'CustomerDatabase' on server '.' (0ms).
+2023-03-09 19:32:20.956 +01:00 [DBG] An entity of type 'Customer' tracked by 'CustomerDBContext' changed state from '"Added"' to '"Unchanged"'. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-03-09 19:32:20.956 +01:00 [DBG] SaveChanges completed for 'CustomerDBContext' with 1 entities written to the database.
+2023-03-09 19:32:31.549 +01:00 [DBG] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter"]
+2023-03-09 19:32:31.551 +01:00 [DBG] No information found on request to perform content negotiation.
+2023-03-09 19:32:31.551 +01:00 [DBG] Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+2023-03-09 19:32:31.551 +01:00 [DBG] Attempting to select the first formatter in the output formatters list which can write the result.
+2023-03-09 19:32:31.552 +01:00 [DBG] Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter' and content type 'application/json' to write the response.
+2023-03-09 19:32:31.553 +01:00 [INF] Executing CreatedAtRouteResult, writing value of type '<>f__AnonymousType0`1[[System.Int32, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2023-03-09 19:32:31.562 +01:00 [DBG] No endpoints found for address Microsoft.AspNetCore.Routing.RouteValuesAddress
+2023-03-09 19:32:31.568 +01:00 [INF] Executed action BackEndAPI.Controllers.CustomerController.RewardCustomer (BackEndAPI) in 50499.7678ms
+2023-03-09 19:32:31.569 +01:00 [INF] Executed endpoint 'BackEndAPI.Controllers.CustomerController.RewardCustomer (BackEndAPI)'
+2023-03-09 19:32:31.571 +01:00 [ERR] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: No route matches the supplied values.
+   at Microsoft.AspNetCore.Mvc.CreatedAtRouteResult.OnFormatting(ActionContext context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor.ExecuteAsyncCore(ActionContext context, ObjectResult result, Type objectType, Object value)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor.ExecuteAsync(ActionContext context, ObjectResult result)
+   at Microsoft.AspNetCore.Mvc.ObjectResult.ExecuteResultAsync(ActionContext context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeResultAsync(IActionResult result)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.ResultNext[TFilter,TFilterAsync](State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeNextResultFilterAsync[TFilter,TFilterAsync]()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResultExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.ResultNext[TFilter,TFilterAsync](State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeResultFilters()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2023-03-09 19:32:31.692 +01:00 [DBG] 'CustomerDBContext' disposed.
+2023-03-09 19:32:31.701 +01:00 [DBG] Disposing connection to database 'CustomerDatabase' on server '.'.
+2023-03-09 19:32:31.703 +01:00 [DBG] Disposed connection to database '' on server '' (2ms).
+2023-03-09 19:32:31.705 +01:00 [INF] Request finished HTTP/2 POST https://localhost:7119/api/Customer/1 application/json 6 - 500 - text/plain;+charset=utf-8 50680.3623ms

@@ -10,6 +10,8 @@ namespace BackEndAPI.Data
             
         }
 
-        public DbSet<Customer> Customers {get; set; }    
+        public DbSet<Customer> Customers {get; set; }   
+        
+        public DbSet<Home> Homes { get; set; }  
     }
 }
