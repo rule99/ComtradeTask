@@ -89,14 +89,12 @@ namespace BackEndAPI.Controllers
                 CustomerBO result = await _customerRepository.GetByName(name);
                 if (result != null)
                 {
-                    _response.Result = result;
-                    _response.StatusCode = HttpStatusCode.OK;
+                    
                     return Ok(result);
                 }
                 else
                 {
-                    _response.Result = "Customer not FOund";
-                    _response.StatusCode = HttpStatusCode.NotFound;
+                    
                     return NotFound(result);
                 }
 
