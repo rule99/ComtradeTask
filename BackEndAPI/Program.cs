@@ -1,9 +1,12 @@
 using BackEndAPI;
 using BackEndAPI.Data;
 using Microsoft.EntityFrameworkCore;
+using Serilog;
 
 var builder = WebApplication.CreateBuilder(args);
 
+Log.Logger = new LoggerConfiguration().MinimumLevel.Information().WriteTo.File("Log/CustomerLog.txt", rollingInterval: RollingInterval.Day).CreateLogger();
+builder.Host.UseSerilog();
 // Add services to the container.
 builder.Services.AddDbContext<CustomerDBContext>(options =>
 {
