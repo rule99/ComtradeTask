@@ -1,9 +1,12 @@
 ﻿using AutoMapper.Configuration.Conventions;
+using BackEndAPI.Model;
 using BackEndAPI.Model.BO;
+using BackEndAPI.Repository;
 using CustomerSoapService;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
-
+using System.Net;
+using System.Net.WebSockets;
 
 namespace BackEndAPI.Controllers
 {
@@ -11,25 +14,39 @@ namespace BackEndAPI.Controllers
     [ApiController]
     public class CustomerController : ControllerBase
     {
-        private SOAPDemoSoapClient _SOAPDemoSoapClient;
-        public CustomerController(SOAPDemoSoapClient SOAPDemoSoapClient)
+        protected APIResponse _response;
+        private CustomerRepository _customerRepository;
+        public CustomerController(CustomerRepository customerRepository)
         {
-            _SOAPDemoSoapClient=SOAPDemoSoapClient;
+            _response = new();
+            _customerRepository=customerRepository;
         }
 
         [HttpGet]
-        public async Task<ActionResult> GetAll()
+        public async Task<ActionResult<APIResponse>> GetAll()
         {
-            var results=await _SOAPDemoSoapClient.GetListByNameAsync("");
-            return Ok(results);
+            try
+            {
+                var result = await _customerRepository.GetAll();
+                _response.Result = result;
+                _response.StatusCode = HttpStatusCode.OK;
+            }
+            catch (Exception ex)
+            {
+
+                _response.Result = "Server Error";
+                _response.StatusCode = HttpStatusCode.InternalServerError;
+                _response.IsSuccess = false;
+            }
+            return _response;
         }
 
         [HttpGet("{id:int}")]
         public async Task<ActionResult> GetAll(int id)
         {
-            Person result = await _SOAPDemoSoapClient.FindPersonAsync(id.ToString());
+           
             
-            return Ok(result);
+            return Ok();
         }
 
     }

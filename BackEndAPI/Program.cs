@@ -1,18 +1,19 @@
 using BackEndAPI;
 using BackEndAPI.Data;
+using BackEndAPI.Repository;
 using Microsoft.EntityFrameworkCore;
 using Serilog;
 
 var builder = WebApplication.CreateBuilder(args);
 
-Log.Logger = new LoggerConfiguration().MinimumLevel.Information().WriteTo.File("Log/CustomerLog.txt", rollingInterval: RollingInterval.Day).CreateLogger();
+Log.Logger = new LoggerConfiguration().MinimumLevel.Debug().WriteTo.File("Log/CustomerLog.txt", rollingInterval: RollingInterval.Day).CreateLogger();
 builder.Host.UseSerilog();
 // Add services to the container.
 builder.Services.AddDbContext<CustomerDBContext>(options =>
 {
     options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnectionString"));
 });
-
+builder.Services.AddScoped<CustomerRepository>();
 builder.Services.AddScoped<CustomerSoapService.SOAPDemoSoapClient>();
 builder.Services.AddAutoMapper(typeof(MappingConfig));
 builder.Services.AddControllers();
