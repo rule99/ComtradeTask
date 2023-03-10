@@ -25,13 +25,23 @@ namespace BackEndAPI.Repository
 
         public async Task<CustomerBO> Get(int id)
         {
-           CustomerBO customerBO = _mapper.Map<CustomerBO>(await _db.Customers.FirstOrDefaultAsync(c=>c.Id==id));
-            if(customerBO == null) 
+            CustomerBO customerBO = new CustomerBO();
+            Customer cus = await _db.Customers.FirstOrDefaultAsync(c => c.Id == id);
+            if (cus != null)
             {
+                 customerBO = _mapper.Map<CustomerBO>(cus);
+                customerBO.Agent = cus.AgentUserName;
+                return customerBO;
+            }
+            
                 Person result = await _SOAPDemoSoapClient.FindPersonAsync(id.ToString());
                 if(result == null) { return null; }
-                customerBO =PersonToCustomerBOTransform(result,id);   
-            }
+                customerBO =PersonToCustomerBOTransform(result,id);  
+                if(await _db.Customers.AnyAsync(c=> c.Id==id))
+                {
+                    customerBO.Agent= await _db.Customers.Where(a=>a.Id==id).Select(a=>a.AgentUserName).FirstOrDefaultAsync();
+                }
+            
             return customerBO;
         }
 
@@ -58,23 +68,34 @@ namespace BackEndAPI.Repository
         public async Task<List<Customer>> GetAll()
         {
           List<Customer> customersList = new List<Customer>();
-            var result =await _SOAPDemoSoapClient.GetListByNameAsync("");
-            foreach(PersonIdentification p in result) 
+           var result =await _db.Customers.Include(c=>c.Home).ToListAsync();
+            foreach (Customer p in result) 
             {
-                customersList.Add(_mapper.Map<Customer>(p));
+                customersList.Add(p);
             }
             return customersList;
         }
 
         public async Task<CustomerBO> GetByName(string name)
         {
-            CustomerBO customerBO = _mapper.Map<CustomerBO>(await _db.Customers.FirstOrDefaultAsync(c => c.Name == name));
-            if (customerBO == null)
+            CustomerBO customerBO = new CustomerBO();
+            Customer cus = await _db.Customers.FirstOrDefaultAsync(c => c.Name == name);
+            if(cus != null)
             {
+                 customerBO = _mapper.Map<CustomerBO>(cus);
+                customerBO.Agent = cus.AgentUserName;
+                return customerBO;
+            }
+            
+            
                 PersonIdentification[] result = await _SOAPDemoSoapClient.GetListByNameAsync(name);
                 if (result == null) { return null; }
                 customerBO = _mapper.Map<CustomerBO>(result[0]);
-            }
+                if (await _db.Customers.AnyAsync(c => c.Name == name))
+                {
+                    customerBO.Agent = await _db.Customers.Where(a => a.Name == name).Select(a => a.AgentUserName).FirstOrDefaultAsync();
+                }
+            
             return customerBO;
         }
 
@@ -168,6 +189,7 @@ namespace BackEndAPI.Repository
         public async Task<CustomerBO> MarkAsReturned(int id)
         {
             Customer cus=await _db.Customers.FirstOrDefaultAsync(c=> c.Id == id);
+          
             cus.ReturnCustomer = 1;
             await _db.SaveChangesAsync();
             CustomerBO cusBo=_mapper.Map<CustomerBO>(cus);

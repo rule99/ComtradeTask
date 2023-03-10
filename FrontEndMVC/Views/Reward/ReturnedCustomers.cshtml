@@ -1,0 +1,46 @@
+﻿@model IEnumerable<FrontEndMVC.Models.CustomerBO>
+
+@{
+    ViewBag.Title = "ReturnedCustomers";
+}
+
+<div class="row">
+    <div class="col-6">
+        <ul class="list-group">
+            @foreach (var customer in Model)
+            {
+                <li class="list-group-item" onclick="ShowDetails(@Json.Encode(customer))">@customer.Name</li>
+            }
+        </ul>
+    </div>
+
+
+
+
+    <div class="col-6" id="detalji" style="display:none">
+        <div class="card">
+            <div class="card-body">
+                <h5 class="card-title " id="imeDetalji"></h5>
+                <h6 class="card-subtitle mb-2 text-muted" id="idDetalji">ID:</h6>
+                
+                <p class="card-text " id="ssnDetalji"></p>
+                <p class="card-text " id="adressDetalji">Adress:</p>
+                <p class="card-text" style="font-weight:500" id="agentDetalji"></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    function ShowDetails(item) {
+        $('li.list-group-item.active').removeClass('active');
+        $(item).addClass('active');
+        $('#detalji').show();
+        document.getElementById('idDetalji').innerHTML ='ID:'+ item.Id;
+        document.getElementById('imeDetalji').innerHTML = item.Name;
+        document.getElementById('ssnDetalji').innerHTML = item.SSN;
+        document.getElementById('agentDetalji').innerHTML ='Agent:' +item.Agent;
+        document.getElementById('adressDetalji').innerHTML ='Adress:'+ item.Home.Adress + ' , ' + item.Home.City;
+    }
+</script>
+

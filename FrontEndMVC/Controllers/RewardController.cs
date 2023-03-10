@@ -35,14 +35,21 @@ namespace FrontEndMVC.Controllers
         public ActionResult Confirm() 
         {
             return View();
-        }   
-        
+        }
+
         //public JsonResult FindCustomer(int id) 
         //{
         //    var result=_customerService.GetCustomerByID(id);
         //    return Json(result);
-           
+
         //}
+
+
+        public async Task<ActionResult> ReturnedCustomers()
+        {
+            var result=await _customerService.GetCustomers();
+            return View(result);
+        }
 
         public async Task<ActionResult> FindCustomerButtonCLicked(int id)
         {
@@ -111,6 +118,51 @@ namespace FrontEndMVC.Controllers
             }
             TempData["odgovor"] = result;
             return View("Confirm", customerBO);
+        }
+
+        public async Task<ActionResult> ReturnCustomerByName(string name)
+        {
+            var result = await _customerService.GetCustomerByName(name);
+            CustomerBO customerBO = result;
+            if (customerBO == null)
+            {
+                TempData["error"] = "Customer not found";
+                return View("Confirm");
+            }
+            if (customerBO.Agent == null)
+            {
+                TempData["error"] = "Customer was not rewarded";
+                return View("Confirm");
+            }
+            if (customerBO.ReturnCustomer == 1)
+            {
+                TempData["error"] = "Customer already listed as returned";
+                return View("Confirm");
+            }
+            TempData["odgovor"] = result;
+            return View("Confirm", customerBO);
+        }
+
+        public async Task<ActionResult> ConfirmReturn(int id)
+        {
+            var result=await _customerService.MarkAsReturned(id);
+            if (result == "NotFound")
+            {
+                TempData["error"] = "This Customer was not rewarded";
+                return View("Index");
+            }
+            if (result == "BadRequest")
+            {
+                TempData["error"] = "Customer already marked as returned";
+                return View("Index");
+            }
+            if(result== "InternalServerError")
+            {
+                TempData["error"] = "Internal server-side error";
+                return View("Index");
+            }
+            TempData["Message"] = "Customer marked as returned";
+            return RedirectToAction("MainMenu", "Home");
         }
 
     }

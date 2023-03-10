@@ -42,8 +42,17 @@ namespace FrontEndMVC.Service
         public async Task<IEnumerable<CustomerBO>> GetCustomers()
         {
             var response = await _httpClient.GetAsync("api/Customer");
-            
+           
+
+
             return await response.Content.ReadAsAsync<IEnumerable<CustomerBO>>();
+        }
+
+        public async Task<string> MarkAsReturned(int id)
+        {
+            var response = await _httpClient.PutAsync($"api/Customer/{id}",1, new JsonMediaTypeFormatter());
+
+            return response.StatusCode.ToString();
         }
 
         public async Task<string> RewardCustomer(int id,string agent)

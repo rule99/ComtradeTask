@@ -48,13 +48,13 @@
             <div class="mb-3">
                 <label class="col-form-label">Search Customer</label>
                 <div class="form-check">
-                    <input class="form-check-input" type="radio" name="searchOptions" id="rbID">
+                    <input class="form-check-input" type="radio" name="searchOptions" id="rbID" onclick="Promena()">
                     <label class="form-check-label" for="rbID">
                         By ID
                     </label>
                 </div>
                 <div class="form-check">
-                    <input class="form-check-input" type="radio" name="searchOptions" id="rbName" checked>
+                    <input class="form-check-input" type="radio" name="searchOptions" id="rbName" checked onclick="Promena()">
                     <label class="form-check-label" for="rbName">
                         By Name
                     </label>
@@ -69,7 +69,7 @@
             <div class="mb-3">
                 <div class="input-group mb-3">
                     <span class="input-group-text" id="lblID">Customer ID</span>
-                    <input type="text" class="form-control" placeholder="" aria-label="ID" aria-describedby="basic-addon1" id="Cid" name="Cid">
+                    <input type="text" class="form-control" placeholder="" aria-label="ID" aria-describedby="basic-addon1" id="Cid" name="Cid" disabled="disabled">
                 </div>
 
             </div>
@@ -80,6 +80,19 @@
     <div class="col-2"></div>
 </div>
 <script>
+
+    function Promena() {
+        if ($('#rbID').is(":checked")) {
+            $('#name').prop("disabled", true);
+            $('#Cid').prop("disabled", false);
+        }
+        else {
+            $('#name').prop("disabled", false);
+            $('#Cid').prop("disabled", true);
+        }
+    }
+
+   
 
     function FindCustomer() {
         if ($('#rbID').is(":checked")) {

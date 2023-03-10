@@ -5,6 +5,7 @@ using BackEndAPI.Repository;
 using CustomerSoapService;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using Serilog.Events;
 using System.Net;
 using System.Net.WebSockets;
 
@@ -25,19 +26,42 @@ namespace BackEndAPI.Controllers
         [HttpGet]
         [ProducesResponseType(StatusCodes.Status200OK)]
         [ProducesResponseType(StatusCodes.Status400BadRequest)]
+        [ProducesResponseType(StatusCodes.Status500InternalServerError)]
         public async Task<ActionResult<List<Customer>>> GetAll()
         {
             try
             {
                 var result = await _customerRepository.GetAll();
 
-                return Ok(result);
+                //Ovaj deo sam morao da dodam posto sam rzlicito nazvao kolone i kako ne bih trazio svuda u kodu
+                List<CustomerBO> list = new List<CustomerBO>();
+                foreach (var item in result)
+                {
+                    CustomerBO cus = new CustomerBO()
+                    {
+                        Id = item.Id,
+                        Birth = item.Birth,
+                        SSN = item.SSN,
+                        Name = item.Name,
+                        Agent = item.AgentUserName,
+                        Home = new HomeBO()
+                        {
+                            Id = item.HomeID,
+                            Adress = item.Home.Adress,
+                            City = item.Home.City,
+                            Zip = item.Home.Zip
+                        }
+                    };
+                    list.Add(cus);
+                }
+
+                return Ok(list);
             }
             catch (Exception ex)
             {
 
 
-                return BadRequest(ex);
+                return StatusCode(500,ex);
             }
 
         }
@@ -46,6 +70,7 @@ namespace BackEndAPI.Controllers
         [ProducesResponseType(StatusCodes.Status200OK)]
         [ProducesResponseType(StatusCodes.Status404NotFound)]
         [ProducesResponseType(StatusCodes.Status400BadRequest)]
+        [ProducesResponseType(StatusCodes.Status500InternalServerError)]
         public async Task<ActionResult<CustomerBO>> GetByID(int id)
         {
             try
@@ -65,10 +90,8 @@ namespace BackEndAPI.Controllers
             catch (Exception ex)
             {
 
-                _response.Result = "Server Error" + ex;
-                _response.StatusCode = HttpStatusCode.InternalServerError;
-                _response.IsSuccess = false;
-                return BadRequest(ex);
+             
+                return StatusCode(500, ex); 
             }
 
 
@@ -78,6 +101,7 @@ namespace BackEndAPI.Controllers
         [ProducesResponseType(StatusCodes.Status200OK)]
         [ProducesResponseType(StatusCodes.Status404NotFound)]
         [ProducesResponseType(StatusCodes.Status400BadRequest)]
+        [ProducesResponseType(StatusCodes.Status500InternalServerError)]
         public async Task<ActionResult<CustomerBO>> GetByName(string name)
         {
 
@@ -99,10 +123,8 @@ namespace BackEndAPI.Controllers
             catch (Exception ex)
             {
 
-                _response.Result = "Server Error" + ex;
-                _response.StatusCode = HttpStatusCode.InternalServerError;
-                _response.IsSuccess = false;
-                return BadRequest(ex);
+              
+                return  StatusCode(500, ex);
             }
 
 
@@ -111,21 +133,30 @@ namespace BackEndAPI.Controllers
         [HttpPost("{id}")]
         [ProducesResponseType(StatusCodes.Status400BadRequest)]
         [ProducesResponseType(StatusCodes.Status201Created)]
+        [ProducesResponseType(StatusCodes.Status500InternalServerError)]
         public async Task<ActionResult> RewardCustomer(int id, [FromBody] string agent)
         {
-            if (await _customerRepository.AlreadyRewardCustomer(id, agent))
+            try
             {
-                return BadRequest("Already rewarded");
-            }
-            else if (await _customerRepository.AgentLimit(agent))
-            {
-                return Forbid("Agent reached max customer rewarded");
-            }
-            else
-            {
-                await _customerRepository.RewardCustomer(id, agent);
-                return CreatedAtRoute(GetByID, new { id = id });
+                if (await _customerRepository.AlreadyRewardCustomer(id, agent))
+                {
+                    return BadRequest("Already rewarded");
+                }
+                else if (await _customerRepository.AgentLimit(agent))
+                {
+                    return Forbid("Agent reached max customer rewarded");
+                }
+                else
+                {
+                    await _customerRepository.RewardCustomer(id, agent);
+                    return CreatedAtRoute(GetByID, new { id = id });
 
+                }
+            }
+            catch (Exception ex)
+            {
+                
+                return StatusCode(500,ex);
             }
 
 
@@ -134,6 +165,10 @@ namespace BackEndAPI.Controllers
         }
 
         [HttpPut("{id:int}")]
+        [ProducesResponseType(StatusCodes.Status400BadRequest)]
+        [ProducesResponseType(StatusCodes.Status204NoContent)]
+        [ProducesResponseType(StatusCodes.Status404NotFound)]
+        [ProducesResponseType(StatusCodes.Status500InternalServerError)]
         public async Task<ActionResult> ConfirmReturnCustomer(int id)
         {
             try
@@ -156,7 +191,7 @@ namespace BackEndAPI.Controllers
             catch (Exception ex)
             {
 
-                return BadRequest(ex);
+                return StatusCode(500, ex);
             }
         }
 

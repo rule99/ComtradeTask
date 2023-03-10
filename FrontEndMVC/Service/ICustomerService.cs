@@ -16,6 +16,7 @@ namespace FrontEndMVC.Service
         Task<CustomerBO> GetCustomerByID(int id);
         Task<CustomerBO> GetCustomerByName(string name);
         Task<string> RewardCustomer(int id,string agent); 
+        Task<string> MarkAsReturned(int id);
         
 
 

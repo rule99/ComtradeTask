@@ -8,6 +8,8 @@
 
         public DateTime Birth { get; set; }
 
+        public string Agent { get; set; }
+
         public string SSN { get; set; }
 
         public HomeBO Home { get; set; }

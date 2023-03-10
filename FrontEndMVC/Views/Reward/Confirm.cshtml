@@ -39,7 +39,7 @@
                         <label class="col-form-label fw-bold CUstomerSSN">Customer SSN:@Model.SSN </label>
                     </div>
                 </div>
-                <button type="submit" class="btn btn-primary mt-2" onclick="ConfirmReturn(@Json.Encode(Model))">Reward</button>
+                <button type="submit" class="btn btn-primary mt-2" onclick="ConfirmReturn(@Json.Encode(Model))">Confirm</button>
             </div>
         </div>
     }
@@ -99,7 +99,7 @@
         }
     }
 
-    function RewardCustomer(item) {
+    function ConfirmReturn(item) {
 
         window.location.href = "/Reward/ConfirmReturn/" + item.Id;
 
