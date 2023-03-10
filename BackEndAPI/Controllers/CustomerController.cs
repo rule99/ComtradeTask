@@ -19,7 +19,7 @@ namespace BackEndAPI.Controllers
         public CustomerController(CustomerRepository customerRepository)
         {
             _response = new();
-            _customerRepository=customerRepository;
+            _customerRepository = customerRepository;
         }
 
         [HttpGet]
@@ -30,25 +30,22 @@ namespace BackEndAPI.Controllers
             try
             {
                 var result = await _customerRepository.GetAll();
-                
-                return result;
+
+                return Ok(result);
             }
             catch (Exception ex)
             {
 
-                _response.Result = "Server Error"+ ex;
-                _response.StatusCode = HttpStatusCode.InternalServerError;
-                _response.IsSuccess = false;
-                return BadRequest( ex);
+
+                return BadRequest(ex);
             }
-            
+
         }
 
         [HttpGet("{id:int}", Name = "GetByID")]
         [ProducesResponseType(StatusCodes.Status200OK)]
         [ProducesResponseType(StatusCodes.Status404NotFound)]
         [ProducesResponseType(StatusCodes.Status400BadRequest)]
-        
         public async Task<ActionResult<CustomerBO>> GetByID(int id)
         {
             try
@@ -60,10 +57,10 @@ namespace BackEndAPI.Controllers
                 }
                 else
                 {
-                    
+
                     return NotFound(result);
                 }
-               
+
             }
             catch (Exception ex)
             {
@@ -73,8 +70,8 @@ namespace BackEndAPI.Controllers
                 _response.IsSuccess = false;
                 return BadRequest(ex);
             }
-           
-            
+
+
         }
 
         [HttpGet("{name}")]
@@ -89,12 +86,12 @@ namespace BackEndAPI.Controllers
                 CustomerBO result = await _customerRepository.GetByName(name);
                 if (result != null)
                 {
-                    
+
                     return Ok(result);
                 }
                 else
                 {
-                    
+
                     return NotFound(result);
                 }
 
@@ -108,30 +105,59 @@ namespace BackEndAPI.Controllers
                 return BadRequest(ex);
             }
 
-            
+
         }
 
         [HttpPost("{id}")]
-        public async Task<ActionResult> RewardCustomer(int id, [FromBody]string agent)
+        [ProducesResponseType(StatusCodes.Status400BadRequest)]
+        [ProducesResponseType(StatusCodes.Status201Created)]
+        public async Task<ActionResult> RewardCustomer(int id, [FromBody] string agent)
         {
-           if(await _customerRepository.AlreadyRewardCustomer(id, agent))
+            if (await _customerRepository.AlreadyRewardCustomer(id, agent))
             {
                 return BadRequest("Already rewarded");
             }
-           else if(await _customerRepository.AgentLimit(agent)) 
+            else if (await _customerRepository.AgentLimit(agent))
             {
                 return BadRequest("Agent reached max customer rewarded");
             }
             else
             {
-               await _customerRepository.RewardCustomer(id, agent);
-                return CreatedAtRoute("GetByID", new { id = id });
+                await _customerRepository.RewardCustomer(id, agent);
+                return CreatedAtRoute(GetByID, new { id = id });
 
             }
-            
 
-            
 
+
+
+        }
+
+        [HttpPut("{id:int}")]
+        public async Task<ActionResult> ConfirmReturnCustomer(int id)
+        {
+            try
+            {
+
+                if (await _customerRepository.CustomerNotRewarded(id))
+                {
+                    return NotFound("Customer was not rewarded");
+                }
+                else if (await _customerRepository.AlreadyReturnedCustomer(id))
+                {
+                    return BadRequest("Already returend customer");
+                }
+                else
+                {
+                    await _customerRepository.MarkAsReturned(id);
+                    return NoContent();
+                }
+            }
+            catch (Exception ex)
+            {
+
+                return BadRequest(ex);
+            }
         }
 
     }

@@ -99,6 +99,7 @@ namespace BackEndAPI.Repository
             customer.AgentUserName = agent;
             await _db.Customers.AddAsync(customer);
             await _db.SaveChangesAsync();
+            
         }
 
         private Customer CustomerBoToCustomerTransformation(CustomerBO customerBO)
@@ -133,7 +134,7 @@ namespace BackEndAPI.Repository
 
         internal async Task<bool> AgentLimit(string agent)
         {
-            int count=await _db.Customers.CountAsync(c=>c.AgentUserName==agent && c.DateRewarded==DateTime.Today);
+            int count=await _db.Customers.CountAsync(c=>c.AgentUserName==agent && c.DateRewarded.Date==DateTime.Now.Date);
             if(count>4) 
             {
                 return true;
@@ -142,6 +143,35 @@ namespace BackEndAPI.Repository
             {
                 return false;
             }
+        }
+
+        internal async Task<bool> AlreadyReturnedCustomer(int id)
+        {
+            Customer cus = await _db.Customers.FirstOrDefaultAsync(c => c.Id == id);
+            if (cus.ReturnCustomer == 1)
+            {
+                return true;
+            }
+            else { return false; }
+        }
+
+        internal async Task<bool> CustomerNotRewarded(int id)
+        {
+            if(await _db.Customers.AnyAsync(c => c.Id == id))
+            {
+                return false;
+            }
+            else { return true; }
+
+        }
+
+        public async Task<CustomerBO> MarkAsReturned(int id)
+        {
+            Customer cus=await _db.Customers.FirstOrDefaultAsync(c=> c.Id == id);
+            cus.ReturnCustomer = 1;
+            await _db.SaveChangesAsync();
+            CustomerBO cusBo=_mapper.Map<CustomerBO>(cus);
+            return cusBo;
         }
     }
 }

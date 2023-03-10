@@ -52,14 +52,10 @@ namespace FrontEndMVC.Service
 
         public async Task<string> RewardCustomer(int id,string agent)
         {
-            CustomerBO rewarderCustomer = new CustomerBO()
-            {
-                Id = id,
-
-            };
-            var response = await _httpClient.PostAsync($"api/Customer/{id}", rewarderCustomer, new JsonMediaTypeFormatter());
            
-            return response.StatusCode.ToString();
+            var response = await _httpClient.PostAsync($"api/Customer/{id}", agent, new JsonMediaTypeFormatter());
+           
+            return response.ReasonPhrase.ToString();
         }
     }
 }

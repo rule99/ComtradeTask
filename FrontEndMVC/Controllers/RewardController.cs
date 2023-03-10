@@ -46,7 +46,7 @@ namespace FrontEndMVC.Controllers
 
         public async Task<ActionResult> FindCustomerButtonCLicked(int id)
         {
-            var result = await _customerService.GetCustomerByID(1);
+            var result = await _customerService.GetCustomerByID(id);
             CustomerBO customerBO = result;
             TempData["odgovor"]=result;
             return View("Index", customerBO);
@@ -65,7 +65,7 @@ namespace FrontEndMVC.Controllers
         public async Task<ActionResult> RewardCustomer(int id)
         {
             string agent= HttpContext.Session["username"].ToString();
-            await _customerService.RewardCustomer(id, agent);
+            string response=await _customerService.RewardCustomer(id, agent);
             return RedirectToAction("Index");
         }
     }

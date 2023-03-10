@@ -22,7 +22,7 @@
                     <label class="col-form-label fw-bold CUstomerSSN">Customer SSN:@Model.SSN </label>
                 </div>
             </div>
-            <button type="submit" class="btn btn-primary mt-2" onclick="RewardCustomer(@Html.Raw(Json.Encode(Model)))">Reward</button>
+            <button type="submit" class="btn btn-primary mt-2" onclick="RewardCustomer(@Json.Encode(Model))">Reward</button>
         </div>
     </div>
             }
