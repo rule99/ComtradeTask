@@ -35,14 +35,14 @@ namespace FrontEndMVC.Service
         public async Task<CustomerBO> GetCustomerByName(string name)
         {
             var response = await _httpClient.GetAsync($"api/Customer/{name}");
-            response.EnsureSuccessStatusCode();
+           
             return await response.Content.ReadAsAsync<CustomerBO>();
         }
 
         public async Task<IEnumerable<CustomerBO>> GetCustomers()
         {
             var response = await _httpClient.GetAsync("api/Customer");
-            response.EnsureSuccessStatusCode();
+            
             return await response.Content.ReadAsAsync<IEnumerable<CustomerBO>>();
         }
 

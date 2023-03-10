@@ -89,5 +89,29 @@ namespace FrontEndMVC.Controllers
             TempData["Message"] = "Customer Rewarded";
             return RedirectToAction("MainMenu","Home");
         }
+
+        public async Task<ActionResult> ReturnCustomer(int id)
+        {
+            var result = await _customerService.GetCustomerByID(id);
+            CustomerBO customerBO = result;
+            if (customerBO == null)
+            {
+                TempData["error"] = "Customer not found";
+                return View("Confirm");
+            }
+            if(customerBO.Agent==null)
+            {
+                TempData["error"] = "Customer was not rewarded";
+                return View("Confirm");
+            }
+            if (customerBO.ReturnCustomer == 1)
+            {
+                TempData["error"] = "Customer already listed as returned";
+                return View("Confirm");
+            }
+            TempData["odgovor"] = result;
+            return View("Confirm", customerBO);
+        }
+
     }
 }
