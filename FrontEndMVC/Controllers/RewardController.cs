@@ -66,7 +66,18 @@ namespace FrontEndMVC.Controllers
         {
             string agent= HttpContext.Session["username"].ToString();
             string response=await _customerService.RewardCustomer(id, agent);
-            return RedirectToAction("Index");
+            if (response== "Forbid")
+            {
+                TempData["error"] = "Agent reached max customer rewarded";
+                return View("Index");
+            }
+            if (response == "BadRequest")
+            {
+                TempData["error"] = "Customer already rewarded";
+                return View("Index");
+            }
+            TempData["Message"] = "Customer Rewarded";
+            return RedirectToAction("MainMenu","Home");
         }
     }
 }

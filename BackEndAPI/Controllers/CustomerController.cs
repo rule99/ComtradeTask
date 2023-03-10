@@ -119,7 +119,7 @@ namespace BackEndAPI.Controllers
             }
             else if (await _customerRepository.AgentLimit(agent))
             {
-                return BadRequest("Agent reached max customer rewarded");
+                return Forbid("Agent reached max customer rewarded");
             }
             else
             {

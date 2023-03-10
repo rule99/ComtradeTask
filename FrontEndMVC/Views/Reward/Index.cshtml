@@ -4,28 +4,41 @@
 }
 
 @{
-    if (TempData["odgovor"]!=null)
-            {
-    <div class="row">
-        <div class="mb-3 CustomerDetails">
-
-            <div class="row">
-                <div class="col-2">
-                    <label class="col-form-label fw-bold CustomerIme">Customer Name: @Model.Name</label>
-                </div>
-                <div class="col-2" style="text-align:left">
-                    <label class="col-form-label fw-bold CustomerID">Customer ID: @Model.Id</label>
+    if (TempData["error"] != null)
+    {
+        <div class="row">
+            <div class="col">
+                <div class="alert alert-warning" role="alert">
+                    @TempData["error"].ToString()
                 </div>
             </div>
-            <div class="row mt-2">
-                <div class="col">
-                    <label class="col-form-label fw-bold CUstomerSSN">Customer SSN:@Model.SSN </label>
-                </div>
-            </div>
-            <button type="submit" class="btn btn-primary mt-2" onclick="RewardCustomer(@Json.Encode(Model))">Reward</button>
         </div>
-    </div>
-            }
+    }
+}
+
+@{
+    if (TempData["odgovor"] != null)
+    {
+        <div class="row">
+            <div class="mb-3 CustomerDetails">
+
+                <div class="row">
+                    <div class="col-2">
+                        <label class="col-form-label fw-bold CustomerIme">Customer Name: @Model.Name</label>
+                    </div>
+                    <div class="col-2" style="text-align:left">
+                        <label class="col-form-label fw-bold CustomerID">Customer ID: @Model.Id</label>
+                    </div>
+                </div>
+                <div class="row mt-2">
+                    <div class="col">
+                        <label class="col-form-label fw-bold CUstomerSSN">Customer SSN:@Model.SSN </label>
+                    </div>
+                </div>
+                <button type="submit" class="btn btn-primary mt-2" onclick="RewardCustomer(@Json.Encode(Model))">Reward</button>
+            </div>
+        </div>
+    }
 }
 
 <div class="row">
@@ -60,8 +73,8 @@
                 </div>
 
             </div>
-         
-             <button type="button" class="btn btn-primary" onclick="FindCustomer()">Search</button>
+
+            <button type="button" class="btn btn-primary" onclick="FindCustomer()">Search</button>
         </form>
     </div>
     <div class="col-2"></div>
@@ -80,9 +93,9 @@
     }
 
     function RewardCustomer(item) {
-        
-      window.location.href = "/Reward/RewardCustomer/" + item.Id;
-    
-}
+
+        window.location.href = "/Reward/RewardCustomer/" + item.Id;
+
+    }
 
 </script>

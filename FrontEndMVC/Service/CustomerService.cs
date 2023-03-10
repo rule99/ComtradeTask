@@ -19,11 +19,7 @@ namespace FrontEndMVC.Service
 
         public CustomerService(HttpClient httpClient)
         {
-            _httpClient = new HttpClient();
-            _httpClient.BaseAddress = new Uri("https://localhost:7119/");
-            _httpClient.DefaultRequestHeaders.Accept.Clear();
-            _httpClient.DefaultRequestHeaders.Accept.Add(
-                new MediaTypeWithQualityHeaderValue("application/json"));
+            _httpClient = httpClient;
             
         }
 
@@ -55,7 +51,7 @@ namespace FrontEndMVC.Service
            
             var response = await _httpClient.PostAsync($"api/Customer/{id}", agent, new JsonMediaTypeFormatter());
            
-            return response.ReasonPhrase.ToString();
+            return response.StatusCode.ToString();
         }
     }
 }
