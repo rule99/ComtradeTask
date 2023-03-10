@@ -27,7 +27,7 @@ namespace FrontEndMVC.Service
         {
 
             var response = await _httpClient.GetAsync($"api/Customer/{id}");
-            response.EnsureSuccessStatusCode();
+        
             return await response.Content.ReadAsAsync<CustomerBO>();
         }
 

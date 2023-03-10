@@ -37,17 +37,22 @@ namespace FrontEndMVC.Controllers
             return View();
         }   
         
-        public JsonResult FindCustomer(int id) 
-        {
-            var result=_customerService.GetCustomerByID(id);
-            return Json(result);
+        //public JsonResult FindCustomer(int id) 
+        //{
+        //    var result=_customerService.GetCustomerByID(id);
+        //    return Json(result);
            
-        }
+        //}
 
         public async Task<ActionResult> FindCustomerButtonCLicked(int id)
         {
             var result = await _customerService.GetCustomerByID(id);
             CustomerBO customerBO = result;
+            if(customerBO==null)
+            {
+                TempData["error"] = "Customer not found";
+                return View("Index");
+            }
             TempData["odgovor"]=result;
             return View("Index", customerBO);
         }
@@ -58,6 +63,11 @@ namespace FrontEndMVC.Controllers
             
             var result = await _customerService.GetCustomerByName(name);
             CustomerBO customerBO = result;
+            if (customerBO == null)
+            {
+                TempData["error"] = "Customer not found";
+                return View("Index");
+            }
             TempData["odgovor"] = result;
             return View("Index", customerBO);
         }
