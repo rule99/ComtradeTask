@@ -26,6 +26,7 @@
                 <p class="card-text " id="ssnDetalji"></p>
                 <p class="card-text " id="adressDetalji">Adress:</p>
                 <p class="card-text" style="font-weight:500" id="agentDetalji"></p>
+                <p class="card-text" style="font-weight:700" id="returnedDetalji"></p>
             </div>
         </div>
     </div>
@@ -40,7 +41,13 @@
         document.getElementById('imeDetalji').innerHTML = item.Name;
         document.getElementById('ssnDetalji').innerHTML = item.SSN;
         document.getElementById('agentDetalji').innerHTML ='Agent:' +item.Agent;
-        document.getElementById('adressDetalji').innerHTML ='Adress:'+ item.Home.Adress + ' , ' + item.Home.City;
+        document.getElementById('adressDetalji').innerHTML = 'Adress:' + item.Home.Adress + ' , ' + item.Home.City;
+        if (item.ReturnCustomer == 1) {
+            document.getElementById('returnedDetalji').innerHTML = "RETURNED CUSTOMER";
+        }
+        else {
+            document.getElementById('returnedDetalji').innerHTML = "";
+        }
     }
 </script>
 

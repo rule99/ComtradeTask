@@ -7357,3 +7357,565 @@ System.IO.IOException:  Received an unexpected EOF or 0 bytes from the transport
 2023-03-10 14:14:40.633 +01:00 [DBG] No candidates found for the request path '/swagger/v1/swagger.json'
 2023-03-10 14:14:40.633 +01:00 [DBG] Request did not match any endpoints
 2023-03-10 14:14:40.743 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7119/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 110.7021ms
+2023-03-10 14:31:26.759 +01:00 [DBG] Registered model binder providers, in the following order: ["Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider"]
+2023-03-10 14:31:26.871 +01:00 [DBG] Hosting starting
+2023-03-10 14:31:27.015 +01:00 [DBG] Using development certificate: CN=localhost (Thumbprint: C157B902E5C0417D2199EABA8399DEF1CA376564)
+2023-03-10 14:31:27.037 +01:00 [INF] Now listening on: https://localhost:7119
+2023-03-10 14:31:27.037 +01:00 [INF] Now listening on: http://localhost:5148
+2023-03-10 14:31:27.037 +01:00 [DBG] Loaded hosting startup assembly BackEndAPI
+2023-03-10 14:31:27.037 +01:00 [DBG] Loaded hosting startup assembly Microsoft.AspNetCore.Watch.BrowserRefresh
+2023-03-10 14:31:27.037 +01:00 [DBG] Loaded hosting startup assembly Microsoft.WebTools.BrowserLink.Net
+2023-03-10 14:31:27.037 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-03-10 14:31:27.038 +01:00 [INF] Hosting environment: Development
+2023-03-10 14:31:27.038 +01:00 [INF] Content root path: C:\Kursevi\ComtradeTask\BackEndAPI\
+2023-03-10 14:31:27.038 +01:00 [DBG] Hosting started
+2023-03-10 14:31:27.049 +01:00 [DBG] Connection id "0HMP1DF00TQJS" accepted.
+2023-03-10 14:31:27.050 +01:00 [DBG] Connection id "0HMP1DF00TQJS" started.
+2023-03-10 14:31:27.069 +01:00 [DBG] Connection id "0HMP1DF00TQJT" accepted.
+2023-03-10 14:31:27.069 +01:00 [DBG] Connection id "0HMP1DF00TQJT" started.
+2023-03-10 14:31:27.495 +01:00 [DBG] Connection id "0HMP1DF00TQJU" accepted.
+2023-03-10 14:31:27.495 +01:00 [DBG] Connection id "0HMP1DF00TQJU" started.
+2023-03-10 14:31:27.578 +01:00 [DBG] Connection 0HMP1DF00TQJU established using the following protocol: "Tls12"
+2023-03-10 14:31:27.640 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7119/swagger/index.html - -
+2023-03-10 14:31:27.674 +01:00 [DBG] Wildcard detected, all requests with hosts will be allowed.
+2023-03-10 14:31:27.692 +01:00 [DBG] No candidates found for the request path '/swagger/index.html'
+2023-03-10 14:31:27.692 +01:00 [DBG] Request did not match any endpoints
+2023-03-10 14:31:27.886 +01:00 [DBG] Response markup is scheduled to include browser refresh script injection.
+2023-03-10 14:31:28.055 +01:00 [DBG] Response markup was updated to include browser refresh script injection.
+2023-03-10 14:31:28.059 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7119/swagger/index.html - - - 200 - text/html;charset=utf-8 421.6308ms
+2023-03-10 14:31:28.104 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7119/_framework/aspnetcore-browser-refresh.js - -
+2023-03-10 14:31:28.109 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7119/_framework/aspnetcore-browser-refresh.js - - - 200 11990 application/javascript;+charset=utf-8 5.2248ms
+2023-03-10 14:31:28.128 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7119/_vs/browserLink - -
+2023-03-10 14:31:28.201 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7119/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 73.0696ms
+2023-03-10 14:31:28.339 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7119/swagger/v1/swagger.json - -
+2023-03-10 14:31:28.339 +01:00 [DBG] No candidates found for the request path '/swagger/v1/swagger.json'
+2023-03-10 14:31:28.339 +01:00 [DBG] Request did not match any endpoints
+2023-03-10 14:31:28.444 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7119/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 104.5874ms
+2023-03-10 14:31:37.075 +01:00 [DBG] Authentication of the HTTPS connection timed out.
+2023-03-10 14:31:37.075 +01:00 [DBG] Authentication of the HTTPS connection timed out.
+2023-03-10 14:31:37.078 +01:00 [DBG] Connection id "0HMP1DF00TQJT" stopped.
+2023-03-10 14:31:37.078 +01:00 [DBG] Connection id "0HMP1DF00TQJS" stopped.
+2023-03-10 14:31:37.079 +01:00 [DBG] Connection id "0HMP1DF00TQJT" sending FIN because: "The Socket transport's send loop completed gracefully."
+2023-03-10 14:31:37.079 +01:00 [DBG] Connection id "0HMP1DF00TQJS" sending FIN because: "The Socket transport's send loop completed gracefully."
+2023-03-10 14:31:37.894 +01:00 [DBG] Connection id "0HMP1DF00TQJV" accepted.
+2023-03-10 14:31:37.894 +01:00 [DBG] Connection id "0HMP1DF00TQJV" started.
+2023-03-10 14:31:37.901 +01:00 [DBG] Connection 0HMP1DF00TQJV established using the following protocol: "Tls12"
+2023-03-10 14:31:37.925 +01:00 [INF] Request starting HTTP/1.1 GET https://localhost:7119/api/Customer - -
+2023-03-10 14:31:37.929 +01:00 [DBG] 1 candidate(s) found for the request path '/api/Customer'
+2023-03-10 14:31:37.932 +01:00 [DBG] Endpoint 'BackEndAPI.Controllers.CustomerController.GetAll (BackEndAPI)' with route pattern 'api/Customer' is valid for the request path '/api/Customer'
+2023-03-10 14:31:37.933 +01:00 [DBG] Request matched endpoint 'BackEndAPI.Controllers.CustomerController.GetAll (BackEndAPI)'
+2023-03-10 14:31:37.934 +01:00 [DBG] Static files was skipped as the request already matched an endpoint.
+2023-03-10 14:31:37.936 +01:00 [INF] Executing endpoint 'BackEndAPI.Controllers.CustomerController.GetAll (BackEndAPI)'
+2023-03-10 14:31:37.959 +01:00 [INF] Route matched with {action = "GetAll", controller = "Customer"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.List`1[BackEndAPI.Model.Customer]]] GetAll() on controller BackEndAPI.Controllers.CustomerController (BackEndAPI).
+2023-03-10 14:31:37.960 +01:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2023-03-10 14:31:37.960 +01:00 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2023-03-10 14:31:37.960 +01:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2023-03-10 14:31:37.960 +01:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2023-03-10 14:31:37.960 +01:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2023-03-10 14:31:37.961 +01:00 [DBG] Executing controller factory for controller BackEndAPI.Controllers.CustomerController (BackEndAPI)
+2023-03-10 14:31:38.083 +01:00 [DBG] An 'IServiceProvider' was created for internal use by Entity Framework.
+2023-03-10 14:31:38.315 +01:00 [DBG] Executed controller factory for controller BackEndAPI.Controllers.CustomerController (BackEndAPI)
+2023-03-10 14:31:39.037 +01:00 [DBG] Entity Framework Core 7.0.3 initialized 'CustomerDBContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:7.0.3' with options: None
+2023-03-10 14:31:39.105 +01:00 [DBG] Compiling query expression: 
+'DbSet<Customer>()
+    .Include(c => c.Home)'
+2023-03-10 14:31:39.220 +01:00 [DBG] Including navigation: 'Customer.Home'.
+2023-03-10 14:31:39.446 +01:00 [DBG] Generated query execution expression: 
+'queryContext => new SingleQueryingEnumerable<Customer>(
+    (RelationalQueryContext)queryContext, 
+    RelationalCommandCache.QueryExpression(
+        Client Projections:
+            0 -> Dictionary<IProperty, int> { [Property: Customer.Id (int) Required PK AfterSave:Throw, 0], [Property: Customer.AgentUserName (string) Required, 1], [Property: Customer.Birth (DateTime) Required, 2], [Property: Customer.DateRewarded (DateTime) Required, 3], [Property: Customer.HomeID (int) Required FK Index, 4], [Property: Customer.Name (string) Required, 5], [Property: Customer.ReturnCustomer (int) Required, 6], [Property: Customer.SSN (string) Required, 7] }
+            1 -> Dictionary<IProperty, int> { [Property: Home.Id (int) Required PK AfterSave:Throw ValueGenerated.OnAdd, 8], [Property: Home.Adress (string) Required, 9], [Property: Home.City (string) Required, 10], [Property: Home.Zip (string) Required, 11] }
+        SELECT c.Id, c.AgentUserName, c.Birth, c.DateRewarded, c.HomeID, c.Name, c.ReturnCustomer, c.SSN, h.Id, h.Adress, h.City, h.Zip
+        FROM Customers AS c
+        INNER JOIN Homes AS h ON c.HomeID == h.Id), 
+    null, 
+    Func<QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator, Customer>, 
+    BackEndAPI.Data.CustomerDBContext, 
+    False, 
+    False, 
+    True
+)'
+2023-03-10 14:31:39.503 +01:00 [DBG] Creating DbCommand for 'ExecuteReader'.
+2023-03-10 14:31:39.506 +01:00 [DBG] Creating DbConnection.
+2023-03-10 14:31:39.538 +01:00 [DBG] Created DbConnection. (29ms).
+2023-03-10 14:31:39.546 +01:00 [DBG] Created DbCommand for 'ExecuteReader' (40ms).
+2023-03-10 14:31:39.548 +01:00 [DBG] Initialized DbCommand for 'ExecuteReader' (45ms).
+2023-03-10 14:31:39.555 +01:00 [DBG] Opening connection to database 'CustomerDatabase' on server '.'.
+2023-03-10 14:31:39.878 +01:00 [DBG] Opened connection to database 'CustomerDatabase' on server '.'.
+2023-03-10 14:31:39.886 +01:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[Id], [c].[AgentUserName], [c].[Birth], [c].[DateRewarded], [c].[HomeID], [c].[Name], [c].[ReturnCustomer], [c].[SSN], [h].[Id], [h].[Adress], [h].[City], [h].[Zip]
+FROM [Customers] AS [c]
+INNER JOIN [Homes] AS [h] ON [c].[HomeID] = [h].[Id]
+2023-03-10 14:31:39.947 +01:00 [INF] Executed DbCommand (61ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[Id], [c].[AgentUserName], [c].[Birth], [c].[DateRewarded], [c].[HomeID], [c].[Name], [c].[ReturnCustomer], [c].[SSN], [h].[Id], [h].[Adress], [h].[City], [h].[Zip]
+FROM [Customers] AS [c]
+INNER JOIN [Homes] AS [h] ON [c].[HomeID] = [h].[Id]
+2023-03-10 14:31:39.992 +01:00 [DBG] Context 'CustomerDBContext' started tracking 'Customer' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-03-10 14:31:40.024 +01:00 [DBG] The navigation 'Customer.Home' was detected as changed. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-03-10 14:31:40.026 +01:00 [DBG] Context 'CustomerDBContext' started tracking 'Home' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-03-10 14:31:40.031 +01:00 [DBG] Context 'CustomerDBContext' started tracking 'Customer' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-03-10 14:31:40.032 +01:00 [DBG] The navigation 'Customer.Home' was detected as changed. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-03-10 14:31:40.032 +01:00 [DBG] Context 'CustomerDBContext' started tracking 'Home' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-03-10 14:31:40.032 +01:00 [DBG] Context 'CustomerDBContext' started tracking 'Customer' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-03-10 14:31:40.032 +01:00 [DBG] The navigation 'Customer.Home' was detected as changed. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-03-10 14:31:40.032 +01:00 [DBG] Context 'CustomerDBContext' started tracking 'Home' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-03-10 14:31:40.032 +01:00 [DBG] Context 'CustomerDBContext' started tracking 'Customer' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-03-10 14:31:40.032 +01:00 [DBG] The navigation 'Customer.Home' was detected as changed. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-03-10 14:31:40.032 +01:00 [DBG] Context 'CustomerDBContext' started tracking 'Home' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-03-10 14:31:40.032 +01:00 [DBG] Context 'CustomerDBContext' started tracking 'Customer' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-03-10 14:31:40.032 +01:00 [DBG] The navigation 'Customer.Home' was detected as changed. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-03-10 14:31:40.032 +01:00 [DBG] Context 'CustomerDBContext' started tracking 'Home' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-03-10 14:31:40.032 +01:00 [DBG] Context 'CustomerDBContext' started tracking 'Customer' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-03-10 14:31:40.032 +01:00 [DBG] The navigation 'Customer.Home' was detected as changed. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-03-10 14:31:40.032 +01:00 [DBG] Context 'CustomerDBContext' started tracking 'Home' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-03-10 14:31:40.033 +01:00 [DBG] Context 'CustomerDBContext' started tracking 'Customer' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-03-10 14:31:40.033 +01:00 [DBG] The navigation 'Customer.Home' was detected as changed. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-03-10 14:31:40.033 +01:00 [DBG] Context 'CustomerDBContext' started tracking 'Home' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-03-10 14:31:40.033 +01:00 [DBG] Context 'CustomerDBContext' started tracking 'Customer' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-03-10 14:31:40.033 +01:00 [DBG] The navigation 'Customer.Home' was detected as changed. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-03-10 14:31:40.033 +01:00 [DBG] Context 'CustomerDBContext' started tracking 'Home' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-03-10 14:31:40.041 +01:00 [DBG] Closing data reader to 'CustomerDatabase' on server '.'.
+2023-03-10 14:31:40.048 +01:00 [DBG] A data reader for 'CustomerDatabase' on server '.' is being disposed after spending 95ms reading results.
+2023-03-10 14:31:40.055 +01:00 [DBG] Closing connection to database 'CustomerDatabase' on server '.'.
+2023-03-10 14:31:40.063 +01:00 [DBG] Closed connection to database 'CustomerDatabase' on server '.' (9ms).
+2023-03-10 14:31:40.068 +01:00 [DBG] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter"]
+2023-03-10 14:31:40.072 +01:00 [DBG] Attempting to select an output formatter based on Accept header '["application/json"]'.
+2023-03-10 14:31:40.074 +01:00 [DBG] Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter' and content type 'application/json' to write the response.
+2023-03-10 14:31:40.074 +01:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[BackEndAPI.Model.BO.CustomerBO, BackEndAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2023-03-10 14:31:40.106 +01:00 [INF] Executed action BackEndAPI.Controllers.CustomerController.GetAll (BackEndAPI) in 2140.1571ms
+2023-03-10 14:31:40.108 +01:00 [INF] Executed endpoint 'BackEndAPI.Controllers.CustomerController.GetAll (BackEndAPI)'
+2023-03-10 14:31:40.109 +01:00 [DBG] Connection id "0HMP1DF00TQJV" completed keep alive response.
+2023-03-10 14:31:40.117 +01:00 [DBG] 'CustomerDBContext' disposed.
+2023-03-10 14:31:40.125 +01:00 [DBG] Disposing connection to database 'CustomerDatabase' on server '.'.
+2023-03-10 14:31:40.127 +01:00 [DBG] Disposed connection to database '' on server '' (2ms).
+2023-03-10 14:31:40.127 +01:00 [INF] Request finished HTTP/1.1 GET https://localhost:7119/api/Customer - - - 200 - application/json;+charset=utf-8 2201.9393ms
+2023-03-10 14:32:40.715 +01:00 [DBG] Connection id "0HMP1DF00TQJV" received FIN.
+2023-03-10 14:33:15.270 +01:00 [DBG] Registered model binder providers, in the following order: ["Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider"]
+2023-03-10 14:33:15.350 +01:00 [DBG] Hosting starting
+2023-03-10 14:33:15.496 +01:00 [DBG] Using development certificate: CN=localhost (Thumbprint: C157B902E5C0417D2199EABA8399DEF1CA376564)
+2023-03-10 14:33:15.545 +01:00 [INF] Now listening on: https://localhost:7119
+2023-03-10 14:33:15.545 +01:00 [INF] Now listening on: http://localhost:5148
+2023-03-10 14:33:15.545 +01:00 [DBG] Loaded hosting startup assembly BackEndAPI
+2023-03-10 14:33:15.545 +01:00 [DBG] Loaded hosting startup assembly Microsoft.AspNetCore.Watch.BrowserRefresh
+2023-03-10 14:33:15.545 +01:00 [DBG] Loaded hosting startup assembly Microsoft.WebTools.BrowserLink.Net
+2023-03-10 14:33:15.545 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-03-10 14:33:15.545 +01:00 [INF] Hosting environment: Development
+2023-03-10 14:33:15.545 +01:00 [INF] Content root path: C:\Kursevi\ComtradeTask\BackEndAPI\
+2023-03-10 14:33:15.545 +01:00 [DBG] Hosting started
+2023-03-10 14:33:15.555 +01:00 [DBG] Connection id "0HMP1DG0BN25R" accepted.
+2023-03-10 14:33:15.555 +01:00 [DBG] Connection id "0HMP1DG0BN25S" accepted.
+2023-03-10 14:33:15.557 +01:00 [DBG] Connection id "0HMP1DG0BN25R" started.
+2023-03-10 14:33:15.557 +01:00 [DBG] Connection id "0HMP1DG0BN25S" started.
+2023-03-10 14:33:15.568 +01:00 [DBG] Connection id "0HMP1DG0BN25S" received FIN.
+2023-03-10 14:33:15.568 +01:00 [DBG] Connection id "0HMP1DG0BN25R" received FIN.
+2023-03-10 14:33:15.579 +01:00 [DBG] Failed to authenticate HTTPS connection.
+System.IO.IOException:  Received an unexpected EOF or 0 bytes from the transport stream.
+   at System.Net.Security.SslStream.ReceiveBlobAsync[TIOAdapter](TIOAdapter adapter)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](TIOAdapter adapter, Boolean receiveFirst, Byte[] reAuthenticationData, Boolean isApm)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2023-03-10 14:33:15.579 +01:00 [DBG] Failed to authenticate HTTPS connection.
+System.IO.IOException:  Received an unexpected EOF or 0 bytes from the transport stream.
+   at System.Net.Security.SslStream.<FillHandshakeBufferAsync>g__InternalFillHandshakeBufferAsync|189_0[TIOAdapter](TIOAdapter adap, ValueTask`1 task, Int32 minSize)
+   at System.Net.Security.SslStream.ReceiveBlobAsync[TIOAdapter](TIOAdapter adapter)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](TIOAdapter adapter, Boolean receiveFirst, Byte[] reAuthenticationData, Boolean isApm)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2023-03-10 14:33:15.609 +01:00 [DBG] Connection id "0HMP1DG0BN25R" stopped.
+2023-03-10 14:33:15.609 +01:00 [DBG] Connection id "0HMP1DG0BN25S" stopped.
+2023-03-10 14:33:15.611 +01:00 [DBG] Connection id "0HMP1DG0BN25R" sending FIN because: "The Socket transport's send loop completed gracefully."
+2023-03-10 14:33:15.611 +01:00 [DBG] Connection id "0HMP1DG0BN25S" sending FIN because: "The Socket transport's send loop completed gracefully."
+2023-03-10 14:33:15.753 +01:00 [DBG] Connection id "0HMP1DG0BN25T" accepted.
+2023-03-10 14:33:15.753 +01:00 [DBG] Connection id "0HMP1DG0BN25T" started.
+2023-03-10 14:33:15.805 +01:00 [DBG] Connection 0HMP1DG0BN25T established using the following protocol: "Tls12"
+2023-03-10 14:33:15.847 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7119/swagger/index.html - -
+2023-03-10 14:33:15.877 +01:00 [DBG] Wildcard detected, all requests with hosts will be allowed.
+2023-03-10 14:33:15.897 +01:00 [DBG] No candidates found for the request path '/swagger/index.html'
+2023-03-10 14:33:15.898 +01:00 [DBG] Request did not match any endpoints
+2023-03-10 14:33:16.032 +01:00 [DBG] Connection id "0HMP1DG0BN25U" accepted.
+2023-03-10 14:33:16.032 +01:00 [DBG] Connection id "0HMP1DG0BN25U" started.
+2023-03-10 14:33:16.041 +01:00 [DBG] Connection 0HMP1DG0BN25U established using the following protocol: "Tls12"
+2023-03-10 14:33:16.071 +01:00 [INF] Request starting HTTP/1.1 GET https://localhost:7119/api/Customer - -
+2023-03-10 14:33:16.074 +01:00 [DBG] 1 candidate(s) found for the request path '/api/Customer'
+2023-03-10 14:33:16.078 +01:00 [DBG] Endpoint 'BackEndAPI.Controllers.CustomerController.GetAll (BackEndAPI)' with route pattern 'api/Customer' is valid for the request path '/api/Customer'
+2023-03-10 14:33:16.079 +01:00 [DBG] Request matched endpoint 'BackEndAPI.Controllers.CustomerController.GetAll (BackEndAPI)'
+2023-03-10 14:33:16.080 +01:00 [DBG] Static files was skipped as the request already matched an endpoint.
+2023-03-10 14:33:16.082 +01:00 [INF] Executing endpoint 'BackEndAPI.Controllers.CustomerController.GetAll (BackEndAPI)'
+2023-03-10 14:33:16.093 +01:00 [DBG] Response markup is scheduled to include browser refresh script injection.
+2023-03-10 14:33:16.113 +01:00 [INF] Route matched with {action = "GetAll", controller = "Customer"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.List`1[BackEndAPI.Model.Customer]]] GetAll() on controller BackEndAPI.Controllers.CustomerController (BackEndAPI).
+2023-03-10 14:33:16.114 +01:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2023-03-10 14:33:16.115 +01:00 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2023-03-10 14:33:16.115 +01:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2023-03-10 14:33:16.115 +01:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2023-03-10 14:33:16.115 +01:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2023-03-10 14:33:16.116 +01:00 [DBG] Executing controller factory for controller BackEndAPI.Controllers.CustomerController (BackEndAPI)
+2023-03-10 14:33:16.239 +01:00 [DBG] Response markup was updated to include browser refresh script injection.
+2023-03-10 14:33:16.250 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7119/swagger/index.html - - - 200 - text/html;charset=utf-8 407.9268ms
+2023-03-10 14:33:16.281 +01:00 [DBG] An 'IServiceProvider' was created for internal use by Entity Framework.
+2023-03-10 14:33:16.286 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7119/_framework/aspnetcore-browser-refresh.js - -
+2023-03-10 14:33:16.292 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7119/_framework/aspnetcore-browser-refresh.js - - - 200 11990 application/javascript;+charset=utf-8 6.4638ms
+2023-03-10 14:33:16.321 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7119/_vs/browserLink - -
+2023-03-10 14:33:16.348 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7119/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 26.9876ms
+2023-03-10 14:33:16.535 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7119/swagger/v1/swagger.json - -
+2023-03-10 14:33:16.535 +01:00 [DBG] No candidates found for the request path '/swagger/v1/swagger.json'
+2023-03-10 14:33:16.535 +01:00 [DBG] Request did not match any endpoints
+2023-03-10 14:33:16.554 +01:00 [DBG] Executed controller factory for controller BackEndAPI.Controllers.CustomerController (BackEndAPI)
+2023-03-10 14:33:16.656 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7119/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 121.2214ms
+2023-03-10 14:33:17.299 +01:00 [DBG] Entity Framework Core 7.0.3 initialized 'CustomerDBContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:7.0.3' with options: None
+2023-03-10 14:33:17.362 +01:00 [DBG] Compiling query expression: 
+'DbSet<Customer>()
+    .Include(c => c.Home)'
+2023-03-10 14:33:17.485 +01:00 [DBG] Including navigation: 'Customer.Home'.
+2023-03-10 14:33:17.694 +01:00 [DBG] Generated query execution expression: 
+'queryContext => new SingleQueryingEnumerable<Customer>(
+    (RelationalQueryContext)queryContext, 
+    RelationalCommandCache.QueryExpression(
+        Client Projections:
+            0 -> Dictionary<IProperty, int> { [Property: Customer.Id (int) Required PK AfterSave:Throw, 0], [Property: Customer.AgentUserName (string) Required, 1], [Property: Customer.Birth (DateTime) Required, 2], [Property: Customer.DateRewarded (DateTime) Required, 3], [Property: Customer.HomeID (int) Required FK Index, 4], [Property: Customer.Name (string) Required, 5], [Property: Customer.ReturnCustomer (int) Required, 6], [Property: Customer.SSN (string) Required, 7] }
+            1 -> Dictionary<IProperty, int> { [Property: Home.Id (int) Required PK AfterSave:Throw ValueGenerated.OnAdd, 8], [Property: Home.Adress (string) Required, 9], [Property: Home.City (string) Required, 10], [Property: Home.Zip (string) Required, 11] }
+        SELECT c.Id, c.AgentUserName, c.Birth, c.DateRewarded, c.HomeID, c.Name, c.ReturnCustomer, c.SSN, h.Id, h.Adress, h.City, h.Zip
+        FROM Customers AS c
+        INNER JOIN Homes AS h ON c.HomeID == h.Id), 
+    null, 
+    Func<QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator, Customer>, 
+    BackEndAPI.Data.CustomerDBContext, 
+    False, 
+    False, 
+    True
+)'
+2023-03-10 14:33:17.735 +01:00 [DBG] Creating DbCommand for 'ExecuteReader'.
+2023-03-10 14:33:17.737 +01:00 [DBG] Creating DbConnection.
+2023-03-10 14:33:17.770 +01:00 [DBG] Created DbConnection. (31ms).
+2023-03-10 14:33:17.778 +01:00 [DBG] Created DbCommand for 'ExecuteReader' (40ms).
+2023-03-10 14:33:17.781 +01:00 [DBG] Initialized DbCommand for 'ExecuteReader' (46ms).
+2023-03-10 14:33:17.788 +01:00 [DBG] Opening connection to database 'CustomerDatabase' on server '.'.
+2023-03-10 14:33:18.109 +01:00 [DBG] Opened connection to database 'CustomerDatabase' on server '.'.
+2023-03-10 14:33:18.118 +01:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[Id], [c].[AgentUserName], [c].[Birth], [c].[DateRewarded], [c].[HomeID], [c].[Name], [c].[ReturnCustomer], [c].[SSN], [h].[Id], [h].[Adress], [h].[City], [h].[Zip]
+FROM [Customers] AS [c]
+INNER JOIN [Homes] AS [h] ON [c].[HomeID] = [h].[Id]
+2023-03-10 14:33:18.184 +01:00 [INF] Executed DbCommand (66ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[Id], [c].[AgentUserName], [c].[Birth], [c].[DateRewarded], [c].[HomeID], [c].[Name], [c].[ReturnCustomer], [c].[SSN], [h].[Id], [h].[Adress], [h].[City], [h].[Zip]
+FROM [Customers] AS [c]
+INNER JOIN [Homes] AS [h] ON [c].[HomeID] = [h].[Id]
+2023-03-10 14:33:18.244 +01:00 [DBG] Context 'CustomerDBContext' started tracking 'Customer' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-03-10 14:33:18.281 +01:00 [DBG] The navigation 'Customer.Home' was detected as changed. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-03-10 14:33:18.283 +01:00 [DBG] Context 'CustomerDBContext' started tracking 'Home' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-03-10 14:33:18.287 +01:00 [DBG] Context 'CustomerDBContext' started tracking 'Customer' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-03-10 14:33:18.288 +01:00 [DBG] The navigation 'Customer.Home' was detected as changed. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-03-10 14:33:18.288 +01:00 [DBG] Context 'CustomerDBContext' started tracking 'Home' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-03-10 14:33:18.288 +01:00 [DBG] Context 'CustomerDBContext' started tracking 'Customer' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-03-10 14:33:18.288 +01:00 [DBG] The navigation 'Customer.Home' was detected as changed. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-03-10 14:33:18.288 +01:00 [DBG] Context 'CustomerDBContext' started tracking 'Home' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-03-10 14:33:18.288 +01:00 [DBG] Context 'CustomerDBContext' started tracking 'Customer' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-03-10 14:33:18.288 +01:00 [DBG] The navigation 'Customer.Home' was detected as changed. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-03-10 14:33:18.288 +01:00 [DBG] Context 'CustomerDBContext' started tracking 'Home' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-03-10 14:33:18.288 +01:00 [DBG] Context 'CustomerDBContext' started tracking 'Customer' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-03-10 14:33:18.288 +01:00 [DBG] The navigation 'Customer.Home' was detected as changed. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-03-10 14:33:18.288 +01:00 [DBG] Context 'CustomerDBContext' started tracking 'Home' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-03-10 14:33:18.288 +01:00 [DBG] Context 'CustomerDBContext' started tracking 'Customer' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-03-10 14:33:18.288 +01:00 [DBG] The navigation 'Customer.Home' was detected as changed. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-03-10 14:33:18.288 +01:00 [DBG] Context 'CustomerDBContext' started tracking 'Home' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-03-10 14:33:18.288 +01:00 [DBG] Context 'CustomerDBContext' started tracking 'Customer' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-03-10 14:33:18.288 +01:00 [DBG] The navigation 'Customer.Home' was detected as changed. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-03-10 14:33:18.288 +01:00 [DBG] Context 'CustomerDBContext' started tracking 'Home' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-03-10 14:33:18.288 +01:00 [DBG] Context 'CustomerDBContext' started tracking 'Customer' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-03-10 14:33:18.288 +01:00 [DBG] The navigation 'Customer.Home' was detected as changed. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-03-10 14:33:18.288 +01:00 [DBG] Context 'CustomerDBContext' started tracking 'Home' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-03-10 14:33:18.299 +01:00 [DBG] Closing data reader to 'CustomerDatabase' on server '.'.
+2023-03-10 14:33:18.315 +01:00 [DBG] A data reader for 'CustomerDatabase' on server '.' is being disposed after spending 120ms reading results.
+2023-03-10 14:33:18.321 +01:00 [DBG] Closing connection to database 'CustomerDatabase' on server '.'.
+2023-03-10 14:33:18.335 +01:00 [DBG] Closed connection to database 'CustomerDatabase' on server '.' (13ms).
+2023-03-10 14:33:18.342 +01:00 [DBG] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter"]
+2023-03-10 14:33:18.347 +01:00 [DBG] Attempting to select an output formatter based on Accept header '["application/json"]'.
+2023-03-10 14:33:18.348 +01:00 [DBG] Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter' and content type 'application/json' to write the response.
+2023-03-10 14:33:18.348 +01:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[BackEndAPI.Model.BO.CustomerBO, BackEndAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2023-03-10 14:33:18.386 +01:00 [INF] Executed action BackEndAPI.Controllers.CustomerController.GetAll (BackEndAPI) in 2266.0533ms
+2023-03-10 14:33:18.388 +01:00 [INF] Executed endpoint 'BackEndAPI.Controllers.CustomerController.GetAll (BackEndAPI)'
+2023-03-10 14:33:18.389 +01:00 [DBG] Connection id "0HMP1DG0BN25U" completed keep alive response.
+2023-03-10 14:33:18.400 +01:00 [DBG] 'CustomerDBContext' disposed.
+2023-03-10 14:33:18.410 +01:00 [DBG] Disposing connection to database 'CustomerDatabase' on server '.'.
+2023-03-10 14:33:18.413 +01:00 [DBG] Disposed connection to database '' on server '' (4ms).
+2023-03-10 14:33:18.413 +01:00 [INF] Request finished HTTP/1.1 GET https://localhost:7119/api/Customer - - - 200 - application/json;+charset=utf-8 2342.2639ms
+2023-03-10 14:33:41.285 +01:00 [DBG] Connection id "0HMP1DG0BN25U" received FIN.
+2023-03-10 14:34:08.686 +01:00 [DBG] Registered model binder providers, in the following order: ["Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider"]
+2023-03-10 14:34:08.766 +01:00 [DBG] Hosting starting
+2023-03-10 14:34:08.927 +01:00 [DBG] Using development certificate: CN=localhost (Thumbprint: C157B902E5C0417D2199EABA8399DEF1CA376564)
+2023-03-10 14:34:08.956 +01:00 [INF] Now listening on: https://localhost:7119
+2023-03-10 14:34:08.956 +01:00 [INF] Now listening on: http://localhost:5148
+2023-03-10 14:34:08.956 +01:00 [DBG] Loaded hosting startup assembly BackEndAPI
+2023-03-10 14:34:08.956 +01:00 [DBG] Loaded hosting startup assembly Microsoft.AspNetCore.Watch.BrowserRefresh
+2023-03-10 14:34:08.956 +01:00 [DBG] Loaded hosting startup assembly Microsoft.WebTools.BrowserLink.Net
+2023-03-10 14:34:08.956 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-03-10 14:34:08.957 +01:00 [INF] Hosting environment: Development
+2023-03-10 14:34:08.957 +01:00 [INF] Content root path: C:\Kursevi\ComtradeTask\BackEndAPI\
+2023-03-10 14:34:08.957 +01:00 [DBG] Hosting started
+2023-03-10 14:34:09.242 +01:00 [DBG] Connection id "0HMP1DGGBNL0U" received FIN.
+2023-03-10 14:34:09.248 +01:00 [DBG] Connection id "0HMP1DGGBNL0U" accepted.
+2023-03-10 14:34:09.252 +01:00 [DBG] Connection id "0HMP1DGGBNL0U" started.
+2023-03-10 14:34:09.286 +01:00 [DBG] Failed to authenticate HTTPS connection.
+System.IO.IOException:  Received an unexpected EOF or 0 bytes from the transport stream.
+   at System.Net.Security.SslStream.ReceiveBlobAsync[TIOAdapter](TIOAdapter adapter)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](TIOAdapter adapter, Boolean receiveFirst, Byte[] reAuthenticationData, Boolean isApm)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2023-03-10 14:34:09.326 +01:00 [DBG] Connection id "0HMP1DGGBNL0U" stopped.
+2023-03-10 14:34:09.329 +01:00 [DBG] Connection id "0HMP1DGGBNL0U" sending FIN because: "The Socket transport's send loop completed gracefully."
+2023-03-10 14:34:09.430 +01:00 [DBG] Connection id "0HMP1DGGBNL0V" accepted.
+2023-03-10 14:34:09.431 +01:00 [DBG] Connection id "0HMP1DGGBNL0V" started.
+2023-03-10 14:34:09.487 +01:00 [DBG] Connection 0HMP1DGGBNL0V established using the following protocol: "Tls12"
+2023-03-10 14:34:09.535 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7119/swagger/index.html - -
+2023-03-10 14:34:09.563 +01:00 [DBG] Wildcard detected, all requests with hosts will be allowed.
+2023-03-10 14:34:09.582 +01:00 [DBG] No candidates found for the request path '/swagger/index.html'
+2023-03-10 14:34:09.582 +01:00 [DBG] Request did not match any endpoints
+2023-03-10 14:34:09.891 +01:00 [DBG] Response markup is scheduled to include browser refresh script injection.
+2023-03-10 14:34:09.993 +01:00 [DBG] Response markup was updated to include browser refresh script injection.
+2023-03-10 14:34:09.997 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7119/swagger/index.html - - - 200 - text/html;charset=utf-8 466.0040ms
+2023-03-10 14:34:10.029 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7119/_framework/aspnetcore-browser-refresh.js - -
+2023-03-10 14:34:10.038 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7119/_framework/aspnetcore-browser-refresh.js - - - 200 11990 application/javascript;+charset=utf-8 9.3642ms
+2023-03-10 14:34:10.057 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7119/_vs/browserLink - -
+2023-03-10 14:34:10.093 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7119/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 35.8330ms
+2023-03-10 14:34:10.275 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7119/swagger/v1/swagger.json - -
+2023-03-10 14:34:10.275 +01:00 [DBG] No candidates found for the request path '/swagger/v1/swagger.json'
+2023-03-10 14:34:10.275 +01:00 [DBG] Request did not match any endpoints
+2023-03-10 14:34:10.393 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7119/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 117.9925ms
+2023-03-10 14:34:17.331 +01:00 [DBG] Connection id "0HMP1DGGBNL10" accepted.
+2023-03-10 14:34:17.331 +01:00 [DBG] Connection id "0HMP1DGGBNL10" started.
+2023-03-10 14:34:17.337 +01:00 [DBG] Connection 0HMP1DGGBNL10 established using the following protocol: "Tls12"
+2023-03-10 14:34:17.357 +01:00 [INF] Request starting HTTP/1.1 GET https://localhost:7119/api/Customer - -
+2023-03-10 14:34:17.362 +01:00 [DBG] 1 candidate(s) found for the request path '/api/Customer'
+2023-03-10 14:34:17.365 +01:00 [DBG] Endpoint 'BackEndAPI.Controllers.CustomerController.GetAll (BackEndAPI)' with route pattern 'api/Customer' is valid for the request path '/api/Customer'
+2023-03-10 14:34:17.365 +01:00 [DBG] Request matched endpoint 'BackEndAPI.Controllers.CustomerController.GetAll (BackEndAPI)'
+2023-03-10 14:34:17.366 +01:00 [DBG] Static files was skipped as the request already matched an endpoint.
+2023-03-10 14:34:17.368 +01:00 [INF] Executing endpoint 'BackEndAPI.Controllers.CustomerController.GetAll (BackEndAPI)'
+2023-03-10 14:34:17.387 +01:00 [INF] Route matched with {action = "GetAll", controller = "Customer"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.List`1[BackEndAPI.Model.Customer]]] GetAll() on controller BackEndAPI.Controllers.CustomerController (BackEndAPI).
+2023-03-10 14:34:17.388 +01:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2023-03-10 14:34:17.388 +01:00 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2023-03-10 14:34:17.388 +01:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2023-03-10 14:34:17.388 +01:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2023-03-10 14:34:17.388 +01:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2023-03-10 14:34:17.389 +01:00 [DBG] Executing controller factory for controller BackEndAPI.Controllers.CustomerController (BackEndAPI)
+2023-03-10 14:34:17.510 +01:00 [DBG] An 'IServiceProvider' was created for internal use by Entity Framework.
+2023-03-10 14:34:17.720 +01:00 [DBG] Executed controller factory for controller BackEndAPI.Controllers.CustomerController (BackEndAPI)
+2023-03-10 14:34:18.435 +01:00 [DBG] Entity Framework Core 7.0.3 initialized 'CustomerDBContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:7.0.3' with options: None
+2023-03-10 14:34:18.496 +01:00 [DBG] Compiling query expression: 
+'DbSet<Customer>()
+    .Include(c => c.Home)'
+2023-03-10 14:34:18.618 +01:00 [DBG] Including navigation: 'Customer.Home'.
+2023-03-10 14:34:18.830 +01:00 [DBG] Generated query execution expression: 
+'queryContext => new SingleQueryingEnumerable<Customer>(
+    (RelationalQueryContext)queryContext, 
+    RelationalCommandCache.QueryExpression(
+        Client Projections:
+            0 -> Dictionary<IProperty, int> { [Property: Customer.Id (int) Required PK AfterSave:Throw, 0], [Property: Customer.AgentUserName (string) Required, 1], [Property: Customer.Birth (DateTime) Required, 2], [Property: Customer.DateRewarded (DateTime) Required, 3], [Property: Customer.HomeID (int) Required FK Index, 4], [Property: Customer.Name (string) Required, 5], [Property: Customer.ReturnCustomer (int) Required, 6], [Property: Customer.SSN (string) Required, 7] }
+            1 -> Dictionary<IProperty, int> { [Property: Home.Id (int) Required PK AfterSave:Throw ValueGenerated.OnAdd, 8], [Property: Home.Adress (string) Required, 9], [Property: Home.City (string) Required, 10], [Property: Home.Zip (string) Required, 11] }
+        SELECT c.Id, c.AgentUserName, c.Birth, c.DateRewarded, c.HomeID, c.Name, c.ReturnCustomer, c.SSN, h.Id, h.Adress, h.City, h.Zip
+        FROM Customers AS c
+        INNER JOIN Homes AS h ON c.HomeID == h.Id), 
+    null, 
+    Func<QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator, Customer>, 
+    BackEndAPI.Data.CustomerDBContext, 
+    False, 
+    False, 
+    True
+)'
+2023-03-10 14:34:18.874 +01:00 [DBG] Creating DbCommand for 'ExecuteReader'.
+2023-03-10 14:34:18.876 +01:00 [DBG] Creating DbConnection.
+2023-03-10 14:34:18.909 +01:00 [DBG] Created DbConnection. (29ms).
+2023-03-10 14:34:18.916 +01:00 [DBG] Created DbCommand for 'ExecuteReader' (39ms).
+2023-03-10 14:34:18.918 +01:00 [DBG] Initialized DbCommand for 'ExecuteReader' (44ms).
+2023-03-10 14:34:18.926 +01:00 [DBG] Opening connection to database 'CustomerDatabase' on server '.'.
+2023-03-10 14:34:19.261 +01:00 [DBG] Opened connection to database 'CustomerDatabase' on server '.'.
+2023-03-10 14:34:19.269 +01:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[Id], [c].[AgentUserName], [c].[Birth], [c].[DateRewarded], [c].[HomeID], [c].[Name], [c].[ReturnCustomer], [c].[SSN], [h].[Id], [h].[Adress], [h].[City], [h].[Zip]
+FROM [Customers] AS [c]
+INNER JOIN [Homes] AS [h] ON [c].[HomeID] = [h].[Id]
+2023-03-10 14:34:19.329 +01:00 [INF] Executed DbCommand (58ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[Id], [c].[AgentUserName], [c].[Birth], [c].[DateRewarded], [c].[HomeID], [c].[Name], [c].[ReturnCustomer], [c].[SSN], [h].[Id], [h].[Adress], [h].[City], [h].[Zip]
+FROM [Customers] AS [c]
+INNER JOIN [Homes] AS [h] ON [c].[HomeID] = [h].[Id]
+2023-03-10 14:34:19.382 +01:00 [DBG] Context 'CustomerDBContext' started tracking 'Customer' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-03-10 14:34:19.425 +01:00 [DBG] The navigation 'Customer.Home' was detected as changed. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-03-10 14:34:19.428 +01:00 [DBG] Context 'CustomerDBContext' started tracking 'Home' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-03-10 14:34:19.435 +01:00 [DBG] Context 'CustomerDBContext' started tracking 'Customer' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-03-10 14:34:19.435 +01:00 [DBG] The navigation 'Customer.Home' was detected as changed. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-03-10 14:34:19.435 +01:00 [DBG] Context 'CustomerDBContext' started tracking 'Home' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-03-10 14:34:19.435 +01:00 [DBG] Context 'CustomerDBContext' started tracking 'Customer' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-03-10 14:34:19.435 +01:00 [DBG] The navigation 'Customer.Home' was detected as changed. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-03-10 14:34:19.435 +01:00 [DBG] Context 'CustomerDBContext' started tracking 'Home' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-03-10 14:34:19.435 +01:00 [DBG] Context 'CustomerDBContext' started tracking 'Customer' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-03-10 14:34:19.435 +01:00 [DBG] The navigation 'Customer.Home' was detected as changed. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-03-10 14:34:19.435 +01:00 [DBG] Context 'CustomerDBContext' started tracking 'Home' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-03-10 14:34:19.435 +01:00 [DBG] Context 'CustomerDBContext' started tracking 'Customer' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-03-10 14:34:19.435 +01:00 [DBG] The navigation 'Customer.Home' was detected as changed. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-03-10 14:34:19.435 +01:00 [DBG] Context 'CustomerDBContext' started tracking 'Home' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-03-10 14:34:19.435 +01:00 [DBG] Context 'CustomerDBContext' started tracking 'Customer' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-03-10 14:34:19.435 +01:00 [DBG] The navigation 'Customer.Home' was detected as changed. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-03-10 14:34:19.435 +01:00 [DBG] Context 'CustomerDBContext' started tracking 'Home' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-03-10 14:34:19.435 +01:00 [DBG] Context 'CustomerDBContext' started tracking 'Customer' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-03-10 14:34:19.435 +01:00 [DBG] The navigation 'Customer.Home' was detected as changed. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-03-10 14:34:19.435 +01:00 [DBG] Context 'CustomerDBContext' started tracking 'Home' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-03-10 14:34:19.435 +01:00 [DBG] Context 'CustomerDBContext' started tracking 'Customer' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-03-10 14:34:19.435 +01:00 [DBG] The navigation 'Customer.Home' was detected as changed. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-03-10 14:34:19.435 +01:00 [DBG] Context 'CustomerDBContext' started tracking 'Home' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-03-10 14:34:19.445 +01:00 [DBG] Closing data reader to 'CustomerDatabase' on server '.'.
+2023-03-10 14:34:19.453 +01:00 [DBG] A data reader for 'CustomerDatabase' on server '.' is being disposed after spending 118ms reading results.
+2023-03-10 14:34:19.459 +01:00 [DBG] Closing connection to database 'CustomerDatabase' on server '.'.
+2023-03-10 14:34:19.469 +01:00 [DBG] Closed connection to database 'CustomerDatabase' on server '.' (9ms).
+2023-03-10 14:34:19.474 +01:00 [DBG] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter"]
+2023-03-10 14:34:19.477 +01:00 [DBG] Attempting to select an output formatter based on Accept header '["application/json"]'.
+2023-03-10 14:34:19.477 +01:00 [DBG] Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter' and content type 'application/json' to write the response.
+2023-03-10 14:34:19.477 +01:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[BackEndAPI.Model.BO.CustomerBO, BackEndAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2023-03-10 14:34:19.508 +01:00 [INF] Executed action BackEndAPI.Controllers.CustomerController.GetAll (BackEndAPI) in 2116.4155ms
+2023-03-10 14:34:19.509 +01:00 [INF] Executed endpoint 'BackEndAPI.Controllers.CustomerController.GetAll (BackEndAPI)'
+2023-03-10 14:34:19.510 +01:00 [DBG] Connection id "0HMP1DGGBNL10" completed keep alive response.
+2023-03-10 14:34:19.518 +01:00 [DBG] 'CustomerDBContext' disposed.
+2023-03-10 14:34:19.526 +01:00 [DBG] Disposing connection to database 'CustomerDatabase' on server '.'.
+2023-03-10 14:34:19.529 +01:00 [DBG] Disposed connection to database '' on server '' (2ms).
+2023-03-10 14:34:19.529 +01:00 [INF] Request finished HTTP/1.1 GET https://localhost:7119/api/Customer - - - 200 - application/json;+charset=utf-8 2171.8621ms
+2023-03-10 14:35:49.499 +01:00 [DBG] Registered model binder providers, in the following order: ["Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider"]
+2023-03-10 14:35:49.576 +01:00 [DBG] Hosting starting
+2023-03-10 14:35:49.717 +01:00 [DBG] Using development certificate: CN=localhost (Thumbprint: C157B902E5C0417D2199EABA8399DEF1CA376564)
+2023-03-10 14:35:49.768 +01:00 [INF] Now listening on: https://localhost:7119
+2023-03-10 14:35:49.768 +01:00 [INF] Now listening on: http://localhost:5148
+2023-03-10 14:35:49.768 +01:00 [DBG] Loaded hosting startup assembly BackEndAPI
+2023-03-10 14:35:49.768 +01:00 [DBG] Loaded hosting startup assembly Microsoft.AspNetCore.Watch.BrowserRefresh
+2023-03-10 14:35:49.768 +01:00 [DBG] Loaded hosting startup assembly Microsoft.WebTools.BrowserLink.Net
+2023-03-10 14:35:49.769 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-03-10 14:35:49.769 +01:00 [INF] Hosting environment: Development
+2023-03-10 14:35:49.769 +01:00 [INF] Content root path: C:\Kursevi\ComtradeTask\BackEndAPI\
+2023-03-10 14:35:49.769 +01:00 [DBG] Hosting started
+2023-03-10 14:35:50.178 +01:00 [DBG] Connection id "0HMP1DHEE909G" accepted.
+2023-03-10 14:35:50.178 +01:00 [DBG] Connection id "0HMP1DHEE909F" accepted.
+2023-03-10 14:35:50.179 +01:00 [DBG] Connection id "0HMP1DHEE909F" started.
+2023-03-10 14:35:50.179 +01:00 [DBG] Connection id "0HMP1DHEE909G" started.
+2023-03-10 14:35:50.180 +01:00 [DBG] Connection id "0HMP1DHEE909G" received FIN.
+2023-03-10 14:35:50.180 +01:00 [DBG] Connection id "0HMP1DHEE909F" received FIN.
+2023-03-10 14:35:50.197 +01:00 [DBG] Failed to authenticate HTTPS connection.
+System.IO.IOException:  Received an unexpected EOF or 0 bytes from the transport stream.
+   at System.Net.Security.SslStream.ReceiveBlobAsync[TIOAdapter](TIOAdapter adapter)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](TIOAdapter adapter, Boolean receiveFirst, Byte[] reAuthenticationData, Boolean isApm)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2023-03-10 14:35:50.197 +01:00 [DBG] Failed to authenticate HTTPS connection.
+System.IO.IOException:  Received an unexpected EOF or 0 bytes from the transport stream.
+   at System.Net.Security.SslStream.ReceiveBlobAsync[TIOAdapter](TIOAdapter adapter)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](TIOAdapter adapter, Boolean receiveFirst, Byte[] reAuthenticationData, Boolean isApm)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2023-03-10 14:35:50.224 +01:00 [DBG] Connection id "0HMP1DHEE909G" stopped.
+2023-03-10 14:35:50.224 +01:00 [DBG] Connection id "0HMP1DHEE909F" stopped.
+2023-03-10 14:35:50.226 +01:00 [DBG] Connection id "0HMP1DHEE909G" sending FIN because: "The Socket transport's send loop completed gracefully."
+2023-03-10 14:35:50.226 +01:00 [DBG] Connection id "0HMP1DHEE909F" sending FIN because: "The Socket transport's send loop completed gracefully."
+2023-03-10 14:35:50.252 +01:00 [DBG] Connection id "0HMP1DHEE909H" accepted.
+2023-03-10 14:35:50.252 +01:00 [DBG] Connection id "0HMP1DHEE909H" started.
+2023-03-10 14:35:50.306 +01:00 [DBG] Connection 0HMP1DHEE909H established using the following protocol: "Tls12"
+2023-03-10 14:35:50.338 +01:00 [INF] Request starting HTTP/1.1 GET https://localhost:7119/api/Customer - -
+2023-03-10 14:35:50.357 +01:00 [DBG] Wildcard detected, all requests with hosts will be allowed.
+2023-03-10 14:35:50.381 +01:00 [DBG] 1 candidate(s) found for the request path '/api/Customer'
+2023-03-10 14:35:50.385 +01:00 [DBG] Endpoint 'BackEndAPI.Controllers.CustomerController.GetAll (BackEndAPI)' with route pattern 'api/Customer' is valid for the request path '/api/Customer'
+2023-03-10 14:35:50.386 +01:00 [DBG] Request matched endpoint 'BackEndAPI.Controllers.CustomerController.GetAll (BackEndAPI)'
+2023-03-10 14:35:50.437 +01:00 [DBG] Static files was skipped as the request already matched an endpoint.
+2023-03-10 14:35:50.441 +01:00 [INF] Executing endpoint 'BackEndAPI.Controllers.CustomerController.GetAll (BackEndAPI)'
+2023-03-10 14:35:50.444 +01:00 [DBG] Connection id "0HMP1DHEE909I" accepted.
+2023-03-10 14:35:50.444 +01:00 [DBG] Connection id "0HMP1DHEE909I" started.
+2023-03-10 14:35:50.459 +01:00 [DBG] Connection 0HMP1DHEE909I established using the following protocol: "Tls12"
+2023-03-10 14:35:50.473 +01:00 [INF] Route matched with {action = "GetAll", controller = "Customer"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.List`1[BackEndAPI.Model.Customer]]] GetAll() on controller BackEndAPI.Controllers.CustomerController (BackEndAPI).
+2023-03-10 14:35:50.475 +01:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2023-03-10 14:35:50.476 +01:00 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2023-03-10 14:35:50.476 +01:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2023-03-10 14:35:50.476 +01:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2023-03-10 14:35:50.476 +01:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2023-03-10 14:35:50.476 +01:00 [DBG] Executing controller factory for controller BackEndAPI.Controllers.CustomerController (BackEndAPI)
+2023-03-10 14:35:50.490 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7119/swagger/index.html - -
+2023-03-10 14:35:50.506 +01:00 [DBG] No candidates found for the request path '/swagger/index.html'
+2023-03-10 14:35:50.506 +01:00 [DBG] Request did not match any endpoints
+2023-03-10 14:35:50.594 +01:00 [DBG] An 'IServiceProvider' was created for internal use by Entity Framework.
+2023-03-10 14:35:50.701 +01:00 [DBG] Response markup is scheduled to include browser refresh script injection.
+2023-03-10 14:35:50.828 +01:00 [DBG] Response markup was updated to include browser refresh script injection.
+2023-03-10 14:35:50.831 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7119/swagger/index.html - - - 200 - text/html;charset=utf-8 340.9075ms
+2023-03-10 14:35:50.864 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7119/_framework/aspnetcore-browser-refresh.js - -
+2023-03-10 14:35:50.869 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7119/_framework/aspnetcore-browser-refresh.js - - - 200 11990 application/javascript;+charset=utf-8 4.1099ms
+2023-03-10 14:35:50.877 +01:00 [DBG] Executed controller factory for controller BackEndAPI.Controllers.CustomerController (BackEndAPI)
+2023-03-10 14:35:50.894 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7119/_vs/browserLink - -
+2023-03-10 14:35:50.913 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7119/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 18.7496ms
+2023-03-10 14:35:51.118 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7119/swagger/v1/swagger.json - -
+2023-03-10 14:35:51.118 +01:00 [DBG] No candidates found for the request path '/swagger/v1/swagger.json'
+2023-03-10 14:35:51.119 +01:00 [DBG] Request did not match any endpoints
+2023-03-10 14:35:51.235 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7119/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 116.5134ms
+2023-03-10 14:35:51.701 +01:00 [DBG] Entity Framework Core 7.0.3 initialized 'CustomerDBContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:7.0.3' with options: None
+2023-03-10 14:35:51.771 +01:00 [DBG] Compiling query expression: 
+'DbSet<Customer>()
+    .Include(c => c.Home)'
+2023-03-10 14:35:51.892 +01:00 [DBG] Including navigation: 'Customer.Home'.
+2023-03-10 14:35:52.113 +01:00 [DBG] Generated query execution expression: 
+'queryContext => new SingleQueryingEnumerable<Customer>(
+    (RelationalQueryContext)queryContext, 
+    RelationalCommandCache.QueryExpression(
+        Client Projections:
+            0 -> Dictionary<IProperty, int> { [Property: Customer.Id (int) Required PK AfterSave:Throw, 0], [Property: Customer.AgentUserName (string) Required, 1], [Property: Customer.Birth (DateTime) Required, 2], [Property: Customer.DateRewarded (DateTime) Required, 3], [Property: Customer.HomeID (int) Required FK Index, 4], [Property: Customer.Name (string) Required, 5], [Property: Customer.ReturnCustomer (int) Required, 6], [Property: Customer.SSN (string) Required, 7] }
+            1 -> Dictionary<IProperty, int> { [Property: Home.Id (int) Required PK AfterSave:Throw ValueGenerated.OnAdd, 8], [Property: Home.Adress (string) Required, 9], [Property: Home.City (string) Required, 10], [Property: Home.Zip (string) Required, 11] }
+        SELECT c.Id, c.AgentUserName, c.Birth, c.DateRewarded, c.HomeID, c.Name, c.ReturnCustomer, c.SSN, h.Id, h.Adress, h.City, h.Zip
+        FROM Customers AS c
+        INNER JOIN Homes AS h ON c.HomeID == h.Id), 
+    null, 
+    Func<QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator, Customer>, 
+    BackEndAPI.Data.CustomerDBContext, 
+    False, 
+    False, 
+    True
+)'
+2023-03-10 14:35:52.157 +01:00 [DBG] Creating DbCommand for 'ExecuteReader'.
+2023-03-10 14:35:52.159 +01:00 [DBG] Creating DbConnection.
+2023-03-10 14:35:52.193 +01:00 [DBG] Created DbConnection. (31ms).
+2023-03-10 14:35:52.202 +01:00 [DBG] Created DbCommand for 'ExecuteReader' (39ms).
+2023-03-10 14:35:52.206 +01:00 [DBG] Initialized DbCommand for 'ExecuteReader' (47ms).
+2023-03-10 14:35:52.217 +01:00 [DBG] Opening connection to database 'CustomerDatabase' on server '.'.
+2023-03-10 14:35:52.578 +01:00 [DBG] Opened connection to database 'CustomerDatabase' on server '.'.
+2023-03-10 14:35:52.589 +01:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[Id], [c].[AgentUserName], [c].[Birth], [c].[DateRewarded], [c].[HomeID], [c].[Name], [c].[ReturnCustomer], [c].[SSN], [h].[Id], [h].[Adress], [h].[City], [h].[Zip]
+FROM [Customers] AS [c]
+INNER JOIN [Homes] AS [h] ON [c].[HomeID] = [h].[Id]
+2023-03-10 14:35:52.671 +01:00 [INF] Executed DbCommand (81ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[Id], [c].[AgentUserName], [c].[Birth], [c].[DateRewarded], [c].[HomeID], [c].[Name], [c].[ReturnCustomer], [c].[SSN], [h].[Id], [h].[Adress], [h].[City], [h].[Zip]
+FROM [Customers] AS [c]
+INNER JOIN [Homes] AS [h] ON [c].[HomeID] = [h].[Id]
+2023-03-10 14:35:52.725 +01:00 [DBG] Context 'CustomerDBContext' started tracking 'Customer' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-03-10 14:35:52.767 +01:00 [DBG] The navigation 'Customer.Home' was detected as changed. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-03-10 14:35:52.770 +01:00 [DBG] Context 'CustomerDBContext' started tracking 'Home' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-03-10 14:35:52.776 +01:00 [DBG] Context 'CustomerDBContext' started tracking 'Customer' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-03-10 14:35:52.776 +01:00 [DBG] The navigation 'Customer.Home' was detected as changed. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-03-10 14:35:52.776 +01:00 [DBG] Context 'CustomerDBContext' started tracking 'Home' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-03-10 14:35:52.777 +01:00 [DBG] Context 'CustomerDBContext' started tracking 'Customer' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-03-10 14:35:52.777 +01:00 [DBG] The navigation 'Customer.Home' was detected as changed. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-03-10 14:35:52.777 +01:00 [DBG] Context 'CustomerDBContext' started tracking 'Home' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-03-10 14:35:52.777 +01:00 [DBG] Context 'CustomerDBContext' started tracking 'Customer' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-03-10 14:35:52.777 +01:00 [DBG] The navigation 'Customer.Home' was detected as changed. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-03-10 14:35:52.777 +01:00 [DBG] Context 'CustomerDBContext' started tracking 'Home' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-03-10 14:35:52.777 +01:00 [DBG] Context 'CustomerDBContext' started tracking 'Customer' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-03-10 14:35:52.777 +01:00 [DBG] The navigation 'Customer.Home' was detected as changed. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-03-10 14:35:52.777 +01:00 [DBG] Context 'CustomerDBContext' started tracking 'Home' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-03-10 14:35:52.777 +01:00 [DBG] Context 'CustomerDBContext' started tracking 'Customer' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-03-10 14:35:52.777 +01:00 [DBG] The navigation 'Customer.Home' was detected as changed. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-03-10 14:35:52.777 +01:00 [DBG] Context 'CustomerDBContext' started tracking 'Home' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-03-10 14:35:52.777 +01:00 [DBG] Context 'CustomerDBContext' started tracking 'Customer' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-03-10 14:35:52.777 +01:00 [DBG] The navigation 'Customer.Home' was detected as changed. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-03-10 14:35:52.777 +01:00 [DBG] Context 'CustomerDBContext' started tracking 'Home' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-03-10 14:35:52.777 +01:00 [DBG] Context 'CustomerDBContext' started tracking 'Customer' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-03-10 14:35:52.777 +01:00 [DBG] The navigation 'Customer.Home' was detected as changed. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-03-10 14:35:52.777 +01:00 [DBG] Context 'CustomerDBContext' started tracking 'Home' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-03-10 14:35:52.788 +01:00 [DBG] Closing data reader to 'CustomerDatabase' on server '.'.
+2023-03-10 14:35:52.799 +01:00 [DBG] A data reader for 'CustomerDatabase' on server '.' is being disposed after spending 120ms reading results.
+2023-03-10 14:35:52.805 +01:00 [DBG] Closing connection to database 'CustomerDatabase' on server '.'.
+2023-03-10 14:35:52.819 +01:00 [DBG] Closed connection to database 'CustomerDatabase' on server '.' (13ms).
+2023-03-10 14:35:52.824 +01:00 [DBG] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter"]
+2023-03-10 14:35:52.827 +01:00 [DBG] Attempting to select an output formatter based on Accept header '["application/json"]'.
+2023-03-10 14:35:52.827 +01:00 [DBG] Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter' and content type 'application/json' to write the response.
+2023-03-10 14:35:52.827 +01:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[BackEndAPI.Model.BO.CustomerBO, BackEndAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2023-03-10 14:35:52.865 +01:00 [INF] Executed action BackEndAPI.Controllers.CustomerController.GetAll (BackEndAPI) in 2384.5845ms
+2023-03-10 14:35:52.866 +01:00 [INF] Executed endpoint 'BackEndAPI.Controllers.CustomerController.GetAll (BackEndAPI)'
+2023-03-10 14:35:52.867 +01:00 [DBG] Connection id "0HMP1DHEE909H" completed keep alive response.
+2023-03-10 14:35:52.873 +01:00 [DBG] 'CustomerDBContext' disposed.
+2023-03-10 14:35:52.880 +01:00 [DBG] Disposing connection to database 'CustomerDatabase' on server '.'.
+2023-03-10 14:35:52.882 +01:00 [DBG] Disposed connection to database '' on server '' (2ms).
+2023-03-10 14:35:52.882 +01:00 [INF] Request finished HTTP/1.1 GET https://localhost:7119/api/Customer - - - 200 - application/json;+charset=utf-8 2546.9161ms
+2023-03-10 14:36:00.829 +01:00 [DBG] Connection id "0HMP1DHEE909H" received FIN.
+2023-03-10 14:36:00.829 +01:00 [DBG] Connection id "0HMP1DHEE909H" disconnecting.
+2023-03-10 14:36:00.830 +01:00 [DBG] Connection id "0HMP1DHEE909H" sending FIN because: "The client closed the connection."

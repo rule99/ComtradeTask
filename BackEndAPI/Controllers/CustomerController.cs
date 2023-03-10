@@ -44,6 +44,7 @@ namespace BackEndAPI.Controllers
                         SSN = item.SSN,
                         Name = item.Name,
                         Agent = item.AgentUserName,
+                        ReturnCustomer=item.ReturnCustomer,
                         Home = new HomeBO()
                         {
                             Id = item.HomeID,
